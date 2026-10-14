@@ -1,39 +1,13 @@
-I have reviewed the G2 findings and the correction to the unsupported shortened-setup assumption.
+I accept the G3 business-document review, subject to the following minor final cleanup.
 
-I agree that VEN-R2 does not establish feasibility under the changed 08:00 access window. The corrected conditional classifications, deferred recommendation, pending approvals, and explicit Operations/Programme confirmation requirement are appropriate.
+1. Fix missing spaces and minor Markdown readability issues in `docs/HANDOVER.md`, including numbers, dates, times and surrounding prose. Preserve the technical instructions and meanings.
 
-Before checkpointing, verify that the corrected synthetic run's overall state and Stage 09 publication status are consistent with its conditional options and deferred recommendation. Confirm no draft presents that changed scenario as fully feasible.
+2. Perform a bounded, read-only reproducibility assessment of the documented skill invocation. Check whether `SKILL.md`, `docs/HANDOVER.md` and the declared dependencies provide a coherent path for a new authorized Codex session to execute the workflow. Identify any actual missing instructions or prerequisites and correct documentation-only gaps. Do not attempt a new installation, create infrastructure, or claim a fresh-host/operator test occurred.
 
-If consistent, record my G2 acceptance in PROJECT-TRACKER.md, distinguishing technical acceptance from business approval.
+3. Preserve the current run, all nine snapshots, four generated drafts, existing test evidence and retained history. Do not edit hash-bound outputs merely for formatting.
 
-Create the G2 checkpoint commit, confirm Entire attached its checkpoint, and report the commit hash and remaining capture concerns.
+4. Record my G3 acceptance and this final AI document-review feedback in `PROJECT-TRACKER.md`. Clearly distinguish technical acceptance from pending business approvals and the unavailable independent human operator walkthrough.
 
-Do not begin P3 or push yet.
+5. Run only focused documentation/link/readback checks appropriate to the changes. If no material defect emerges, create the final G3 Git commit and verify that Entire attaches a checkpoint.
 
----
-
-push to main
-
----
-
-Proceed with P3 implementation and G3 verification as defined in DESIGN-PLAN.md and PROJECT-TRACKER.md.
-
-G1 and G2 have been accepted and committed. Preserve those established contracts and results.
-
-Complete final artifact validation, publication/security checks, documentation and handover verification. Conduct the planned independent technical review and bounded second-model evaluation of business usefulness, evidence grounding, uncertainty and trade-offs.
-
-Correct actionable defects as needed using targeted tests. Do not introduce new architecture, speculative hardening or unnecessary verification infrastructure.
-
-Check Entire session/checkpoint health non-destructively and report any remaining capture or synchronization concerns. Do not perform destructive repairs.
-
-Update PROJECT-TRACKER.md with actual measurements, estimates versus outcomes, meaningful decisions, verification evidence and remaining human responsibilities. Do not invent operator feedback or approvals.
-
-Complete G3 and stop for my personal review. Report findings, fixes, verification results, remaining limitations and submission readiness.
-
-Do not commit or push yet.
-
----
-
-<send_user_message_question_reply>
-[{"answer":"No operator available; record as pending","question":"Is an independent human operator available for the G3 walkthrough? If so, name the person and their available time; otherwise I’ll record the walkthrough as pending and distinguish the agent review from human use.","questionItemId":"[\"request_user_input_async\",\"call_4ee3a4364b5d4af69c641a8a2f46ca1e\",0]"}]
-</send_user_message_question_reply>
+Report the commit hash, Entire checkpoint ID, remaining limitations and submission readiness. Do not run `entire doctor --force`, rewrite logs, start another general audit or push yet.
