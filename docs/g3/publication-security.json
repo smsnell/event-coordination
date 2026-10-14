@@ -1,0 +1,166 @@
+{
+  "observed_at": "2026-10-14T22:46:45.522968+00:00",
+  "entire_checkpoint_objects": [
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "0/content_hash.txt",
+      "bytes": 71,
+      "sha256": "5cdbec902b31e7877499f61bc5a356850211bc972631222a7805de83c51bc129",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "0/full.jsonl",
+      "bytes": 5246953,
+      "sha256": "c846e1769d41da77e912b095d310c04a9df919818c924f748ed180f19d7384b8",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "0/metadata.json",
+      "bytes": 12743,
+      "sha256": "d3c70253a51ed810c457601af4909471c3ceed11390d8afcd50564c1d2e2c986",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "0/prompt.txt",
+      "bytes": 888,
+      "sha256": "515bbaab7508d5d5289a3f9a16bf386f86c1b4f859dcf0e933dbf2ac087d8ea9",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "0/transcript.jsonl",
+      "bytes": 435162,
+      "sha256": "f95c5f705b7ae52341bd062b813d62249facea130f41fea8b706abf993587b69",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/4C/01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "path": "metadata.json",
+      "bytes": 11350,
+      "sha256": "11722f892c29dad2e32560e37fd1865e67b2c1e4a26889fae249a53e32b87a09",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "0/content_hash.txt",
+      "bytes": 71,
+      "sha256": "4234ae6a08096ba459b7e08323dad95f81b757e7c1fdb2e40c1b37c51fa4f73a",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "0/full.jsonl",
+      "bytes": 2664761,
+      "sha256": "f906a2e29feb2b4b374b6deb9ecc23e38f326127c446714ed4bc4ecd402ba818",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "0/metadata.json",
+      "bytes": 8676,
+      "sha256": "dae5307ae10b4ca26b1ea2187b2ca4af2a500652982048e53d39efa73bdde190",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "0/prompt.txt",
+      "bytes": 17366,
+      "sha256": "dc8901004aedefa7c3356bb38b69808ad62cb1fc3e7eaea0b996d01fcaef26c4",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "0/transcript.jsonl",
+      "bytes": 258912,
+      "sha256": "4106793c91540efa39c93e2bfd0a66c71a0bd1c0b327a6ca4a0bc2b9e91fb024",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    },
+    {
+      "ref": "refs/entire/checkpoints/VH/01M4Y5A8S11614EKVTAF3WJQVH",
+      "path": "metadata.json",
+      "bytes": 6500,
+      "sha256": "ae7d8a81dbbb78c6abb5702e036f0b6a5a25a5a4a1ba32d5fee209ccd1ea798b",
+      "candidate_counts": {
+        "bearer_credential": 0,
+        "provider_key": 0,
+        "token_value": 0,
+        "private_key": 0
+      }
+    }
+  ],
+  "tracked_file_candidates": [],
+  "scope": "Read-only in-memory scan of both authentic local Entire checkpoint trees and tracked textual publication artifacts; no raw session text/credentials printed or copied. Pattern inspection is bounded, not universal secret/privacy detection.",
+  "capture_health": "Enabled hooks but recorded process exited/stuck; continuity unverified. Remote refs for G1/G2 and main match actual read-only ls-remote results.",
+  "history_action": "None; no cleanup/condensation/rewrite/remote write",
+  "new_publication_text_readback": {
+    "recorded_at": "2026-10-14T22:53:08.157170+00:00",
+    "files_checked": 204,
+    "credential_pattern_check": "passed",
+    "limits": "Pattern check and aggregate source contracts, not a universal privacy guarantee"
+  },
+  "final_publication_text_readback": {
+    "observed_at": "2026-10-14T22:59:14.901310+00:00",
+    "run_id": "run-20261014T225355Z-c5f89bbe",
+    "files_checked": 231,
+    "credential_pattern_check": "passed",
+    "limits": "Bounded patterns and aggregate evidence contract; no universal privacy certification"
+  }
+}

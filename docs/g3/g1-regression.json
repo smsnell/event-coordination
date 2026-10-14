@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-14T22:47:39.536825+00:00",
+  "run_id": "run-20261014T224707Z-f9c78a0d",
+  "checks": [
+    {
+      "check": "live shared basis / lineage / drafts / programme / inspected media",
+      "result": "passed",
+      "run_id": "run-20261014T224707Z-f9c78a0d"
+    },
+    {
+      "check": "SYNTHETIC unavailable media: partial, withheld claims, nine snapshots/four drafts",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC unavailable vendors: blocked, empty calendar, unknown costs and unsent clarification",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC invalid required number held before headcount interpretation",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC missing supported deadline: failure.json, no invented stage/draft success",
+      "result": "passed"
+    }
+  ],
+  "synthetic_path": "/home/mike/event-coordination/.planning-tmp/g1-synthetic-dafb2dds",
+  "scope": "G1 checks only; this report does not establish G2 acceptance or G3 independent review/operator feedback"
+}

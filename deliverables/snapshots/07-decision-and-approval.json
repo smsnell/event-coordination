@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T215247Z-0376ac6d-07",
-  "run_id": "run-20261014T215247Z-0376ac6d",
+  "snapshot_id": "run-20261014T225355Z-c5f89bbe-07",
+  "run_id": "run-20261014T225355Z-c5f89bbe",
   "stage": "decision-and-approval",
   "sequence": 7,
-  "created_at": "2026-10-14T21:52:47.157633+00:00",
+  "created_at": "2026-10-14T22:53:55.564436+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T215247Z-0376ac6d-06",
+    "snapshot_id": "run-20261014T225355Z-c5f89bbe-06",
     "path": "/home/mike/event-coordination/deliverables/snapshots/06-feasibility-testing.json",
-    "sha256": "sha256:278dcfc04e82b13aff728b6f80cc4cabfe02083e87bd7a84c04856a0364b22d8"
+    "sha256": "sha256:226752f4a80c4524a39b7d80b59c95b4b8cbb736b503a8db84b3938b13439640"
   },
   "consumed_record_ids": [
     "basis",
@@ -72,7 +72,7 @@
         ],
         "owner": "Operations",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-accessibility",
@@ -82,7 +82,7 @@
         ],
         "owner": "Learner Experience",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-catering",
@@ -92,7 +92,7 @@
         ],
         "owner": "Operations",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-communications",
@@ -102,7 +102,7 @@
         ],
         "owner": "Communications",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-contingency",
@@ -112,7 +112,7 @@
         ],
         "owner": "Operations",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-production",
@@ -122,7 +122,7 @@
         ],
         "owner": "Programme",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-security",
@@ -132,7 +132,7 @@
         ],
         "owner": "Operations",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       },
       {
         "id": "approval-venue",
@@ -142,7 +142,7 @@
         ],
         "owner": "Operations",
         "status": "pending",
-        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+        "basis_run_id": "run-20261014T225355Z-c5f89bbe"
       }
     ],
     "boundary": {

@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T215247Z-0376ac6d-08",
-  "run_id": "run-20261014T215247Z-0376ac6d",
+  "snapshot_id": "run-20261014T225355Z-c5f89bbe-08",
+  "run_id": "run-20261014T225355Z-c5f89bbe",
   "stage": "draft-propagation",
   "sequence": 8,
-  "created_at": "2026-10-14T21:52:47.172486+00:00",
+  "created_at": "2026-10-14T22:53:55.581016+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T215247Z-0376ac6d-07",
+    "snapshot_id": "run-20261014T225355Z-c5f89bbe-07",
     "path": "/home/mike/event-coordination/deliverables/snapshots/07-decision-and-approval.json",
-    "sha256": "sha256:6e7a23b4bb6cbd281040f3e2d57de04cb1a1ccfd40a2fb485455244ac728e395"
+    "sha256": "sha256:f37c2df0dc6555c05adc03b53390c58141815a9b052437cebe002dcc33ccc42f"
   },
   "consumed_record_ids": [
     "basis",
@@ -39,19 +39,19 @@
       {
         "id": "artifact-2",
         "path": "/home/mike/event-coordination/deliverables/event-plan.md",
-        "sha256": "sha256:0136134ec84398f8b98c727ef1a2099a66c3176412b8dccee263028f686e82fa",
+        "sha256": "sha256:88ceb3a63482cb079cdb142edf61376429abc926edcdff7de0a4b71c142408e4",
         "validation_status": "valid"
       },
       {
         "id": "artifact-3",
         "path": "/home/mike/event-coordination/deliverables/event-calendar.ics",
-        "sha256": "sha256:4a6f542b10d2247f20ffc067fe1da11622f46c890b2377e1fb14e4756791cec0",
+        "sha256": "sha256:63b8ae396368ad8320edae469f686982e88cec26461b67347348829cb744f659",
         "validation_status": "valid"
       },
       {
         "id": "artifact-4",
         "path": "/home/mike/event-coordination/deliverables/draft-communications.md",
-        "sha256": "sha256:5fa3474a927ba69908602f9fecd55bb9ae881e298d4b197023097d2039e6ef6e",
+        "sha256": "sha256:92609d4758cdb3f46463dc4ce5e1af47442071779b4bcb5cbcce2799c8921bc9",
         "validation_status": "valid"
       }
     ],

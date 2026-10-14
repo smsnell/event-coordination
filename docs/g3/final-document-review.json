@@ -1,0 +1,57 @@
+{
+  "observed_at": "2026-10-14T23:18:16.894078+00:00",
+  "scope": "Bounded documentation reproducibility and preservation assessment; no new general audit or application test suite",
+  "checks": [
+    {
+      "check": "docs/HANDOVER.md local links",
+      "result": "passed"
+    },
+    {
+      "check": "event-planning-coordination-brief/SKILL.md local links",
+      "result": "passed"
+    },
+    {
+      "check": "README.md local links",
+      "result": "passed"
+    },
+    {
+      "check": "Shell snippets and embedded Python syntax",
+      "result": "passed",
+      "limit": "No installation, render, source retrieval or new Codex session executed"
+    },
+    {
+      "check": "342 protected run/evidence/history/source files byte-identical; current nine/four bindings validate",
+      "result": "passed",
+      "run_id": "run-20261014T225355Z-c5f89bbe"
+    },
+    {
+      "check": "Existing runtime imports and inspected PDF bitmap interface match documentation",
+      "result": "passed",
+      "limit": "Current installed host only; no fresh-host/operator test"
+    }
+  ],
+  "protected_file_count": 342,
+  "run_id": "run-20261014T225355Z-c5f89bbe",
+  "documentation_gaps_fixed": [
+    "jsonschema install example consistent and explicit",
+    "Same Python installer/runner requirement",
+    "Explicit file loading versus unregistered skill name",
+    "Capture filenames, example types and hash construction",
+    "Declared-library PDF preview route without extra imaging dependencies"
+  ],
+  "prerequisites_remaining": [
+    "Authorized model/Codex session and repository access",
+    "Compatible Python with pip for any future setup",
+    "Authorized Sheets/web/media tools and an image viewer",
+    "Capture continuity/guide confirmation",
+    "Independent human operator unavailable"
+  ],
+  "fresh_install_or_operator_test": "not performed",
+  "final_readback": {
+    "observed_at": "2026-10-14T23:21:06.554709+00:00",
+    "preserved_files": 342,
+    "run_id": "run-20261014T225355Z-c5f89bbe",
+    "links_and_bindings": "passed",
+    "human_walkthrough": "pending; user confirmed unavailable"
+  }
+}

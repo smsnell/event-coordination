@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-14T22:47:45.177008+00:00",
+  "runtime_seconds": 6.937,
+  "live_run_id": "run-20261014T224707Z-f9c78a0d",
+  "checks": [
+    {
+      "check": "SYNTHETIC original access supported; changed access conditional in all four drafts, recommendation deferred, owner preserved, prices propagated and history exact",
+      "result": "passed",
+      "run_id": "run-20261014T224738Z-35b376c0"
+    },
+    {
+      "check": "SYNTHETIC combined header/row reordering plus harmless extra columns in every structured source preserves normalized meaning and captured representation",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC invalid-number: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC missing-field: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC duplicate-id: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC invalid-unit: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC unknown-signal: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC conflicting-headcount: held dependency, explicit partial, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC missing-needs: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC keynote-conflict: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC expired-hold: held dependency, explicit blocked, no invented recommendation/approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC unavailable-quote: reject affected option, supported alternative retained, partial status",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC capacity-change: reject affected option, supported alternative retained, partial status",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC expired-quote: reject affected option, supported alternative retained, partial status",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC incompatible quote category: affected meaning held and cost unknown, supported alternative retained",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC missing-output: damage detected with unchanged inputs, exact damaged history retained, coherent actual repair",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC corrupt-output: damage detected with unchanged inputs, exact damaged history retained, coherent actual repair",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC bootstrap hash mismatch: explicit failure, old success withdrawn; actual retry retains failed attempt and grants no approval",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC private-field response: retention refused before raw values enter general outputs or failure evidence",
+      "result": "passed"
+    },
+    {
+      "check": "Actual current run: nine bindings/four drafts, readable comparison, arrival assumptions, revised break, 12 demos/changeovers, exercise/booking distinction",
+      "result": "passed",
+      "run_id": "run-20261014T224707Z-f9c78a0d"
+    }
+  ],
+  "synthetic_path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-ebgxj_fv",
+  "scope": "G2 focused technical checks; user gate acceptance and G3 independent review/operator use pending"
+}

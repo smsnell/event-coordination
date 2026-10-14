@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-10-14T22:53:07.969286+00:00",
+  "hooks": "Enabled/installed; Codex approval records present",
+  "session_process": "Exited/stuck; process656; no force repair performed",
+  "continuity": "unverified",
+  "elected_remote": "origin",
+  "multiple_remote_advisory": true,
+  "remote_readback": {
+    "command": "git ls-remote origin refs/heads/main refs/entire/checkpoints/*",
+    "route": "Sandbox DNS failed; authorized network execution succeeded",
+    "main": "64a8ab066d8f98b08a7ff69961943d8c95d6372a",
+    "G1": {
+      "checkpoint": "01M4Y5A8S11614EKVTAF3WJQVH",
+      "local_and_remote_object": "48aeee4fca2176d76bdbcb7a835b29911acbb362"
+    },
+    "G2": {
+      "checkpoint": "01M4Y8GVXFY9ZC7V0RZEV3GV4C",
+      "local_and_remote_object": "4668f032d7852ccbba0dfb02524e1c65447bc654"
+    }
+  },
+  "course_guide_attempt": {
+    "url": "https://classroom.google.com/c/ODcyMjA4NTkwNDk2/m/ODc0NzI2NzQzMzQ2/details",
+    "recorded_at": "2026-10-14T22:51:55Z",
+    "retrieval_status": "unavailable",
+    "actual_result": "Web tool reported inaccessible; no contents retrieved",
+    "source_version": null,
+    "owner": "User / facilitator",
+    "interim": "Do not claim compliance with unavailable capture-guide details; obtain authorized human confirmation"
+  },
+  "usage_observation": {
+    "entire_cumulative_tokens": "10637.3k",
+    "scoped_P3_usage": null,
+    "billing_basis": null,
+    "limitation": "Unchanged cumulative session value, not attributable project usage"
+  },
+  "destructive_repairs": "None",
+  "P3_commit_or_push": "None"
+}

@@ -11,7 +11,7 @@ Review-ready Fellowship Demo Day with every scheduled fellow demonstration, at l
 |Green Table (option-green-table)|494000|26000|260|15|Exercise-feasible; booking unconfirmed|Supported base bundle; approvals pending|
 |City Pantry (option-city-pantry)|512000|8000|300|55|Exercise-feasible; booking unconfirmed|Supported base bundle; approvals pending|
 
-City Pantry buys 40 additional catering places for TWD 18000 more. Familiar vendors are a preference. Safety and accessibility requirements remain mandatory. Optional livestream is excluded from the base bundles; its conditions and cost rejection are retained below.
+City Pantry buys 40 additional catering places for TWD 18000 more. Familiar vendors are a preference [src-interview, supplier-preference response], never a reason to narrow the comparison prematurely. Safety and accessibility requirements remain mandatory. Optional livestream is excluded from the base bundles; its conditions and cost rejection are retained below.
 
 ## Decisions needed
 
@@ -22,7 +22,7 @@ City Pantry buys 40 additional catering places for TWD 18000 more. Familiar vend
 |Arrival and break allocations|Operations / Programme|Check arrival capacity and accessible assistance; review break after keynote|
 |Venue and release prerequisites|Operations|Confirm venue before walkthrough; arrange technical coordination/safety briefing; approve publication|
 
-Plan/budget decision deadline: **2026-09-04T17:00:00+08:00** (CAL-005); the hold expires September 5. These are distinct. All requests remain pending.
+Plan/budget decision deadline: **2026-09-04T17:00:00+08:00** (CAL-005); the hold expires **2026-09-05**. Quote expiry dates are separate. All requests remain pending.
 
 ## Budget and allocation review
 
@@ -70,7 +70,7 @@ Registered attendees, required staff/speakers and forecast walk-ins are separate
 |Vegetarian meals|28|
 |Wheelchair spaces|6|
 
-Arrival/check-in is proposed for 09:15–09:30 (15 minutes). If all 180 registered attendees arrive then, throughput must average 12.0 per minute; for all 245 planning people, 16.3 per minute. These are required averages under a stated arrival assumption, not measured desk capacity. Staffing, arrival profile and accessible assistance are unknown. Operations should review a longer/staggered arrival period. A 09:00–09:30 alternative halves those averages but requires readiness by 09:00, which R2 does not confirm; it is not adopted in this draft. The proposed first break now follows the keynote at 11:00–11:15; six demo/changeover pairs then occupy 78 minutes before 12:33 lunch. Programme must review this allocation.
+Arrival/check-in is proposed for 09:15–09:30 (15 minutes). If all 180 registered attendees arrive then, throughput must average 12.0 per minute; for all 245 planning people, 16.3 per minute. These are required averages under a stated arrival assumption, not measured desk capacity. Staffing, arrival profile and accessible assistance are unknown. Operations should review a longer/staggered arrival period. Readiness at 09:15 is also a proposed allocation for operational confirmation; R2 confirms the original arrangement ready by 09:30. A 09:00–09:30 alternative halves those averages but requires readiness by 09:00, which R2 does not confirm; it is not adopted in this draft. The proposed first break now follows the keynote at 11:00–11:15; six demo/changeover pairs then occupy 78 minutes before 12:33 lunch. Programme must review this allocation.
 
 Exercise allocation: 500 audience places, including 6 wheelchair spaces; companions use ordinary seats. Quiet-room capacity is 20. Case routes, captions, hearing loop, quiet staffing, dietary responses and base readiness depend on the fictional coordination brief; unresolved confirmations appear in the option table. Contacts remain with Operations; no personal medical details are published. This is planning evidence, not observed service delivery.
 
@@ -117,6 +117,16 @@ Times and predecessor dependencies are explicit. Allocations are proposed under 
 |Teardown (proposed allocation)|17:00–18:15|closing|VEN-R2|
 |Clearance check (proposed allocation)|18:15–18:30|teardown|CAL-008|
 
+## Preparation milestones in the draft calendar
+
+These are proposed records, not completed prerequisites. The decision deadline is a point milestone with no invented meeting duration.
+
+|Milestone|Start / end (+08:00)|Owner|Condition|
+|---|---|---|---|
+|Plan and budget decision deadline (pending)|2026-09-04T17:00:00+08:00 (point)|Operations|Plan and budget decision; proposed source record, not completed work|
+|Accessibility walkthrough (venue confirmation required)|2026-09-25T14:00:00+08:00 → 2026-09-25T16:00:00+08:00|Learner Experience|Venue confirmation required first; proposed source record, not completed work|
+|Rehearsal window (remote backup acceptable)|2026-10-16T15:00:00+08:00 → 2026-10-16T18:00:00+08:00|Programme|Remote backup acceptable; proposed source record, not completed work|
+
 ## Remaining uncertainties and change impact
 
 |Issue|Owner|Evidence|
@@ -124,13 +134,13 @@ Times and predecessor dependencies are explicit. Allocations are proposed under 
 |Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.|Operations / Programme|src-vendors; src-brief; src-hall|
 |Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.|Operations|src-calendar; src-brief; src-hall|
 
-Both supported base options depend on Q-001/CAL-003 hold and VEN-R2 case readiness; an active hold at the case clock is not a reservation. Venue confirmation before the future walkthrough and all spending/publication decisions remain pending. A real deployment must obtain current operational confirmation. Withdrawal of case evidence, expired/unavailable quotes or changed hard constraints reopen the assessment.
+Base options depend on Q-001/CAL-003 hold and VEN-R2 readiness for its evidenced arrangement. A changed access window needs separate readiness confirmation; an active hold at the case clock is not a reservation. Venue confirmation before the future walkthrough and all spending/publication decisions remain pending. A real deployment must obtain current operational confirmation. Withdrawal of case evidence, expired/unavailable quotes or changed hard constraints reopen the assessment.
 
 Attendance, quote, budget, venue/calendar and accessibility changes trigger a new shared basis, option/decision review and all four drafts. Earlier run bytes and failed attempts are retained; every new run reopens approval requests. No recovery sends a message or establishes prerequisite completion.
 
 ## Evidence and detail for reviewers
 
-Run `run-20261014T215247Z-0376ac6d`; status **complete**. Business clock `2026-08-26T12:00:00+08:00`. Brief versions: EVENT-BRIEF-2026-08-26, VEN-2026-08-26, VEN-2026-08-26-R2, PROG-2026-08-26-R3; clarifications authored 2026-09-12. Local user-provided brief is not fresh Notion retrieval. Actual source reads are recorded separately below.
+Run `run-20261014T225355Z-c5f89bbe`; status **complete**. Business clock `2026-08-26T12:00:00+08:00`. Brief versions: EVENT-BRIEF-2026-08-26, VEN-2026-08-26, VEN-2026-08-26-R2, PROG-2026-08-26-R3; clarifications authored 2026-09-12. Local user-provided brief is not fresh Notion retrieval. Actual source reads are recorded separately below.
 
 [Comparison CSV](vendor-comparison.csv) · [Draft calendar](event-calendar.ics) · [Unsent communications](draft-communications.md) · [Shared basis](snapshots/04-planning-baseline.json) · [Final validation and hashes](snapshots/09-publication-validation.json)
 
@@ -206,11 +216,12 @@ These are constraints and planned work, not completed activities. Rehearsal allo
 |src-calendar|retrieved / 2026-10-14T21:41:29Z|https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s; /home/mike/event-coordination/deliverables/snapshots/evidence/calendar.json|sha256:812514fdfa346528b03ea7e22fc4d0b6bba032ab55be3c8f76d721794c7ada7c|
 |src-hall|retrieved / 2026-10-14T21:46:15.649565+00:00|https://www.ticc.com.tw/wSite/sp?BaseDSD=7&CtUnit=99&ctNode=322&mp=2&roomId=PH&xdUrl=%2FwSite%2Fap%2Fcp_VenueSearch.jsp; /home/mike/event-coordination/deliverables/snapshots/evidence/hall.json|sha256:769fd424ebcee36e5262cf5f27f0b1e4affede51e72008863a5c3b2128dae990|
 |src-accessibility|retrieved / 2026-10-14T21:46:15.650079+00:00|https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6; /home/mike/event-coordination/deliverables/snapshots/evidence/accessibility.json|sha256:ec343848d203f869cf596a9a6f15e6c650f29703f3f39de50dcdedb0b7a2c66f|
-|src-brief|retrieved / 2026-10-14T21:52:47.119604+00:00|/home/mike/event-coordination/inputs/event-brief.md; /home/mike/event-coordination/deliverables/snapshots/evidence/event-brief.md|sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b|
+|src-brief|retrieved / 2026-10-14T22:53:55.533815+00:00|/home/mike/event-coordination/inputs/event-brief.md; /home/mike/event-coordination/deliverables/snapshots/evidence/event-brief.md|sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b|
+|src-interview|retrieved / 2026-10-14T22:53:55.535311+00:00|/home/mike/event-coordination/interviews/interview-C-1.md; /home/mike/event-coordination/deliverables/snapshots/evidence/interview-C-1.md|sha256:5123ce42d2e316e41f3424513e79ca21f7354360e97e7365d2e6f5bf47fcd5f7|
 |src-interpretation|retrieved / 2026-10-14T21:46:15.651343+00:00|/home/mike/event-coordination/.planning-tmp/p2-captures/interpretation.json; /home/mike/event-coordination/deliverables/snapshots/evidence/interpretation.json|sha256:4c3157273d7f58bd02ff24b1ab3fb464cad17a4ccab8acc378e30388ce1c7bcf|
 |src-floor-plan|retrieved / 2026-10-14T21:42:47Z|https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf; /home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan.pdf|sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367|
-|src-floor-plan-meta|retrieved / 2026-10-14T21:52:47.122598+00:00|/home/mike/event-coordination/.planning-tmp/p2-captures/floor-plan-meta.json; /home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan-meta.json|sha256:885637ea69adbbf3321b733e47aa2cb24d66e5213fff2e26f18bea568b41121e|
-|src-attempts|retrieved / 2026-10-14T21:52:47.122825+00:00|/home/mike/event-coordination/.planning-tmp/p2-captures/attempts.json; /home/mike/event-coordination/deliverables/snapshots/evidence/attempts.json|sha256:30bc1dab38fbf4ac3eba5d4596077abf014eafcf83dc8059b56e789250703add|
+|src-floor-plan-meta|retrieved / 2026-10-14T22:53:55.538488+00:00|/home/mike/event-coordination/.planning-tmp/p2-captures/floor-plan-meta.json; /home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan-meta.json|sha256:885637ea69adbbf3321b733e47aa2cb24d66e5213fff2e26f18bea568b41121e|
+|src-attempts|retrieved / 2026-10-14T22:53:55.538733+00:00|/home/mike/event-coordination/.planning-tmp/p2-captures/attempts.json; /home/mike/event-coordination/deliverables/snapshots/evidence/attempts.json|sha256:30bc1dab38fbf4ac3eba5d4596077abf014eafcf83dc8059b56e789250703add|
 
 Hashes bind retained representations; permitted extracts are not full-source hashes. Public reads may be cache-served; origin update time is unknown. Source versions, representations and precise locators are retained in [stage 02](snapshots/02-source-capture.json).
 

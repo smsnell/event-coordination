@@ -1,4 +1,12 @@
-# Event Planning & Coordination — starter
+# Event Planning & Coordination
+
+Project skill: [SKILL.md](event-planning-coordination-brief/SKILL.md). Operator setup, one end-to-end invoking-agent request, result review and recovery are in [HANDOVER.md](docs/HANDOVER.md). The Python runner consumes agent-retrieved captures; it does not fetch sources or call a model itself.
+
+Current review package: [event plan](deliverables/event-plan.md), [comparison](deliverables/vendor-comparison.csv), [calendar](deliverables/event-calendar.ics) and [unsent communications](deliverables/draft-communications.md). Exact bindings are in [stage09](deliverables/snapshots/09-publication-validation.json). Business approvals and human operational confirmation remain pending; all outputs are drafts.
+
+G1/G2/G3 are technically accepted; the user's G3 business-document review and final cleanup are recorded in the tracker. G3 evidence and independent reviews are under `docs/g3/`. Event/spending/publication approvals, the unavailable independent human walkthrough and capture continuity/guide confirmation remain pending. Estimates, actual observations, limitations and decisions are in [PROJECT-TRACKER.md](PROJECT-TRACKER.md).
+
+## Original starter instructions
 
 Build a reusable Skill that compares event options and produces consistent planning drafts.
 

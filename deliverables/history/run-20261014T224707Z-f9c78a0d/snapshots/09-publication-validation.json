@@ -1,0 +1,121 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T224707Z-f9c78a0d-09",
+  "run_id": "run-20261014T224707Z-f9c78a0d",
+  "stage": "publication-validation",
+  "sequence": 9,
+  "created_at": "2026-10-14T22:47:08.056589+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T224707Z-f9c78a0d-08",
+    "path": "/home/mike/event-coordination/deliverables/snapshots/08-draft-propagation.json",
+    "sha256": "sha256:cd868586ecaead3f01930acd3d47cb0cc27d21f5cf9b5d004a81ec1f62c5e2b6"
+  },
+  "consumed_record_ids": [
+    "artifact-1",
+    "artifact-2",
+    "artifact-3",
+    "artifact-4",
+    "boundary-8"
+  ],
+  "produced_record_ids": [
+    "boundary-9",
+    "validation-chain",
+    "validation-drafts",
+    "validation-evidence"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "artifact-1",
+        "path": "/home/mike/event-coordination/deliverables/vendor-comparison.csv",
+        "sha256": "sha256:bd4585267fa1c48cdb55fbf5830d7fa06756ad33a07997262ac17e351b0fd2e4",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-2",
+        "path": "/home/mike/event-coordination/deliverables/event-plan.md",
+        "sha256": "sha256:c5ab045c67cfcb765ceea080add161c9f61ad07665bad7cd1dda176e326a124d",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-3",
+        "path": "/home/mike/event-coordination/deliverables/event-calendar.ics",
+        "sha256": "sha256:0a5f6ceb0b096a1a30c4ca3cde066ca69c211ede9476312c5d38f4498ca031a1",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-4",
+        "path": "/home/mike/event-coordination/deliverables/draft-communications.md",
+        "sha256": "sha256:f4b668bdde09ab647a0e1cd11e4e6db11903d18762fbe5d7897bad29f230b7f5",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "validation-chain",
+        "summary": "Schema, format, sequence, same-run predecessor hashes and references passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-evidence",
+        "summary": "Actual retained source hashes and privacy-pattern checks passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-drafts",
+        "summary": "Four exact artifact hashes, CSV/plan/message bindings and independently parsed ICS intervals passed",
+        "evidence_ids": [],
+        "owner": null
+      }
+    ],
+    "publication_status": "validated",
+    "boundary": {
+      "id": "boundary-9",
+      "summary": "Observed completion of publication-validation",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-recommendation",
+      "summary": "option-green-table",
+      "evidence_ids": [
+        "src-vendors",
+        "src-budget",
+        "src-brief"
+      ],
+      "owner": "Operations",
+      "rationale": "Lowest supported feasible package cost with all base services; alternative buys additional catering capacity",
+      "tradeoffs": [
+        "Catering headroom versus total remaining ceiling",
+        "Hard requirements remain fixed"
+      ]
+    }
+  ]
+}

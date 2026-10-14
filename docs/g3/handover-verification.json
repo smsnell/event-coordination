@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-14T22:50:53.645631+00:00",
+  "checks": [
+    {
+      "check": "Accepted G2 current set retained byte-identically to64a8ab0 and historical bindings validate",
+      "result": "passed"
+    },
+    {
+      "check": "All committed G2 review/corrected synthetic artifacts unchanged",
+      "result": "passed"
+    },
+    {
+      "check": "Schema, authorized brief, authentic interview and personally reviewed BPMN sources unchanged",
+      "result": "passed"
+    },
+    {
+      "check": "as-is BPMN XML/IDs/endpoints/lane references/start-end reachability",
+      "result": "passed",
+      "limits": "No new formal XSD/engine validation or rendering; existing user visual review retained"
+    },
+    {
+      "check": "to-be BPMN XML/IDs/endpoints/lane references/start-end reachability",
+      "result": "passed",
+      "limits": "No new formal XSD/engine validation or rendering; existing user visual review retained"
+    },
+    {
+      "check": "Handover/readme/skill relative links resolve; CLI help and actual local readback work in installed environment",
+      "result": "passed",
+      "limits": "No clean installation, host discovery or human walkthrough performed"
+    },
+    {
+      "check": "Human operator availability",
+      "result": "pending",
+      "evidence": "User explicitly confirmed no independent operator available"
+    }
+  ],
+  "run_id": "run-20261014T224707Z-f9c78a0d",
+  "final_readback": {
+    "observed_at": "2026-10-14T22:55:01.417865+00:00",
+    "run_id": "run-20261014T225355Z-c5f89bbe",
+    "checks": [
+      "Latest final run bindings valid",
+      "Shared programme/calendar/options identical to independently reviewed version after formatting regeneration",
+      "Documented readback supports relocated unchanged artifacts"
+    ],
+    "relocated_path": "/home/mike/event-coordination/.planning-tmp/g3-relocated-readback-n_28ntfg/deliverables",
+    "original_binding_root": "/home/mike/event-coordination/deliverables"
+  }
+}

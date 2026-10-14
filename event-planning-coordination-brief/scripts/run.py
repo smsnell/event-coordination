@@ -188,9 +188,10 @@ def readiness_coverage(model, calendar, brief):
     clear = re.search(r'between the (\d{2}:\d{2}) programme finish and (\d{2}:\d{2})', text)
     holds = [r for r in calendar.values() if r['constraint_type'] == 'venue_hold']
     windows = [r for r in calendar.values() if r['constraint_type'] == 'preferred_event_window']
+    deadlines = [r for r in calendar.values() if r['constraint_type'] == 'teardown_deadline']
     supported = False
     confirmed_window = None
-    if day and setup and clear and len(holds) == len(windows) == 1:
+    if day and setup and clear and len(holds) == len(windows) == len(deadlines) == 1:
         confirmed_day = datetime.strptime(day[1], '%d %B %Y').date().isoformat()
         confirmed_window = dict(setup_access=confirmed_day + 'T' + setup[1] + ':00+08:00',
                                 ready_by=confirmed_day + 'T' + setup[2] + ':00+08:00',
@@ -201,14 +202,34 @@ def readiness_coverage(model, calendar, brief):
                      and timestamp(holds[0]['start_at']) == timestamp(confirmed_window['setup_access'])
                      and timestamp(windows[0]['start_at']) == timestamp(confirmed_window['ready_by'])
                      and timestamp(windows[0]['end_at']) == timestamp(confirmed_window['finish'])
-                     and timestamp(holds[0]['end_at']) == timestamp(confirmed_window['clear_by']))
+                     and timestamp(holds[0]['end_at']) == timestamp(confirmed_window['clear_by'])
+                     and timestamp(deadlines[0]['start_at']) == timestamp(confirmed_window['finish'])
+                     and timestamp(deadlines[0]['end_at']) >= timestamp(confirmed_window['clear_by']))
     summary = ('VEN-R2 supports the original venue access/readiness arrangement; planner allocations are not measured durations'
-               if supported else 'VEN-R2 does not independently confirm readiness for the changed venue access arrangement; '
-               'Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible')
+               if supported else 'VEN-R2 does not independently confirm readiness for the changed venue access arrangement or teardown deadline; '
+               'Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check and teardown/clearance windows as feasible')
     return rec('readiness-coverage', summary, ['src-brief', 'src-calendar'], 'Operations / Programme',
                supported=supported, confirmed_window=confirmed_window,
                current_access=holds[0]['start_at'] if len(holds) == 1 else None,
+               current_clearance=deadlines[0]['end_at'] if len(deadlines) == 1 else None,
                locator='event-brief.md; Exercise readiness confirmation (VEN-2026-08-26-R2)')
+
+
+def calendar_entries(schedule, calendar, blocked):
+    """One shared draft calendar basis; point milestones have no invented duration."""
+    if blocked:
+        return []
+    entries = list(schedule)
+    titles = {'decision_deadline': 'Plan and budget decision deadline (pending)',
+              'accessibility_walkthrough': 'Accessibility walkthrough (venue confirmation required)',
+              'rehearsal_window': 'Rehearsal window (remote backup acceptable)'}
+    for row in calendar.values():
+        if row['constraint_type'] in titles:
+            entries.append(dict(id='calendar-' + row['constraint_id'], title=titles[row['constraint_type']],
+                                start=row['start_at'], end=None if row['start_at'] == row['end_at'] else row['end_at'],
+                                depends_on=[], basis=row['constraint_id'], scope='preparation', owner=row['owner'],
+                                conditions=row['notes'] + '; proposed source record, not completed work'))
+    return entries
 
 
 def make_options(model, quotes, budget, people, needs, supported, readiness=None):
@@ -313,6 +334,7 @@ def operational_review(schedule, people, registered):
             f"{registered/minutes:.1f} per minute; for all {people} planning people, {people/minutes:.1f} per minute. "
             'These are required averages under a stated arrival assumption, not measured desk capacity. '
             'Staffing, arrival profile and accessible assistance are unknown. Operations should review a longer/staggered arrival period. '
+            'Readiness at 09:15 is also a proposed allocation for operational confirmation; R2 confirms the original arrangement ready by 09:30. '
             'A 09:00–09:30 alternative halves those averages but requires readiness by 09:00, which R2 does not confirm; '
             'it is not adopted in this draft. The proposed first break now follows the keynote at 11:00–11:15; '
             'six demo/changeover pairs then occupy 78 minutes before 12:33 lunch. Programme must review this allocation.')
@@ -349,7 +371,7 @@ def render_plan(run, model, options, recommendation, schedule, people, registere
     if len(options) >= 2 and all(o['cost_twd'] is not None for o in options[:2]):
         caps = [min((quotes[q]['capacity'] for q in o['quote_ids'] if q in quotes and quotes[q]['category']=='catering'), default=0) for o in options[:2]]
         plan += f"City Pantry buys {caps[1]-caps[0]} additional catering places for TWD {options[1]['cost_twd']-options[0]['cost_twd']} more. "
-    plan += 'Familiar vendors are a preference. Safety and accessibility requirements remain mandatory. Optional livestream is excluded from the base bundles; its conditions and cost rejection are retained below.\n\n'
+    plan += 'Familiar vendors are a preference [src-interview, supplier-preference response], never a reason to narrow the comparison prematurely. Safety and accessibility requirements remain mandatory. Optional livestream is excluded from the base bundles; its conditions and cost rejection are retained below.\n\n'
     plan += '## Decisions needed\n'
     plan += table(['Review', 'Owner', 'Decision / evidence needed'], [
         ['Plan, date, room and menu', 'Operations', 'Approve, reject, defer or request changes against this exact run; review catering headroom'],
@@ -358,7 +380,9 @@ def render_plan(run, model, options, recommendation, schedule, people, registere
         ['Venue and release prerequisites', 'Operations', 'Confirm venue before walkthrough; arrange technical coordination/safety briefing; approve publication'],
     ])
     deadline = next((r['start_at'] for r in calendar.values() if r['constraint_type']=='decision_deadline'), 'Unresolved')
-    plan += f"Plan/budget decision deadline: **{deadline}** (CAL-005); the hold expires September 5. These are distinct. All requests remain pending.\n\n"
+    holds = [r for r in calendar.values() if r['constraint_type'] == 'venue_hold']
+    expiry = re.search(r'Hold expires (\d{4}-\d{2}-\d{2})', holds[0]['notes']) if len(holds) == 1 else None
+    plan += f"Plan/budget decision deadline: **{deadline}** (CAL-005); the hold expires **{expiry[1] if expiry else 'unresolved'}**. Quote expiry dates are separate. All requests remain pending.\n\n"
     plan += '## Budget and allocation review\n\nAll amounts are integer TWD. Quoted services are packages counted once. Communications and contingency are allowances.\n'
     plan += table(['Category / owner', 'Green Table', 'City Pantry', 'Planned allocation', 'Approval limit', 'Recorded commitments'],
                   [[category+' / '+r['owner'], *[o['category_amounts'].get(category) for o in options[:2]], r['planned_amount_twd'], r['approval_limit_twd'], r['committed_amount_twd']] for category,r in budget.items()])
@@ -377,6 +401,9 @@ def render_plan(run, model, options, recommendation, schedule, people, registere
     plan += table(['Activity', 'Time', 'After', 'Basis'], [[r['title'], time_text(r['start'])+'–'+time_text(r['end']), ', '.join(r['depends_on']) or 'Start', r['basis']] for r in schedule])
     if not schedule:
         plan += 'Programme unsupported; calendar deferred.\n\n'
+    preparations = [r for r in read_json(run.out / 'snapshots/04-planning-baseline.json')['state']['calendar_entries'] if r['scope'] == 'preparation']
+    plan += '## Preparation milestones in the draft calendar\n\nThese are proposed records, not completed prerequisites. The decision deadline is a point milestone with no invented meeting duration.\n'
+    plan += table(['Milestone', 'Start / end (+08:00)', 'Owner', 'Condition'], [[r['title'], r['start'] + (' → ' + r['end'] if r['end'] else ' (point)'), r['owner'], r['conditions']] for r in preparations])
     plan += '## Remaining uncertainties and change impact\n'
     plan += table(['Issue', 'Owner', 'Evidence'], [[r['summary'],r.get('owner'),r['evidence_ids']] for r in run.unresolved])
     plan += 'Base options depend on Q-001/CAL-003 hold and VEN-R2 readiness for its evidenced arrangement. A changed access window needs separate readiness confirmation; an active hold at the case clock is not a reservation. Venue confirmation before the future walkthrough and all spending/publication decisions remain pending. A real deployment must obtain current operational confirmation. Withdrawal of case evidence, expired/unavailable quotes or changed hard constraints reopen the assessment.\n\n'
@@ -487,6 +514,15 @@ class Run:
                                  version_metadata={'versions': model['brief_versions'], 'clarification_authored_at': model['clarification_authored_at'],
                                                    'source_kind': 'user-provided scenario; not Notion retrieval'},
                                  content_hash=digest(brief), local_reference=str(target), observations=[]))
+        interview = ROOT / 'interviews/interview-C-1.md'
+        data = interview.read_bytes()
+        privacy_check(data)
+        target = evidence_dir / interview.name
+        target.write_bytes(data)
+        self.evidence.append(dict(rec('src-interview', 'Authentic supplied interview export; supplier preference response', owner='Operations'),
+                                 source_role='other', locator=str(interview), retrieved_at=now(), retrieval_status='retrieved',
+                                 content_type='text/markdown', version_metadata={'source_kind': 'original supplied export; unchanged'},
+                                 content_hash=digest(data), local_reference=str(target), observations=[]))
         # Keep the judgment and its hash bindings inspectable, without labeling it an official fact source.
         judgement = Path(self.args.interpretation).read_bytes()
         privacy_check(judgement)
@@ -628,7 +664,7 @@ class Run:
                 rec('hard-access', 'Step-free programme/restrooms, wheelchair seating, captions and staffed quiet room', ['src-brief', 'src-attendees'], 'Operations'),
                 rec('hard-demos', 'Each supplied team demo and separate changeover once', ['src-brief'], 'Programme')]
         assumptions = [rec('assumption-allocations', 'Setup, breaks, lunch, partner discussion and teardown intervals are planner allocations, not vendor durations', ['src-brief'], 'Programme')]
-        self.snapshot(3, dict(hard_constraints=hard, preferences=[rec('preference-familiar', 'Familiar vendors preferred, not mandatory', ['src-brief'])],
+        self.snapshot(3, dict(hard_constraints=hard, preferences=[rec('preference-familiar', 'Familiar vendors preferred, not mandatory', ['src-interview'])],
                               assumptions=assumptions, unknowns=self.unresolved, conflicts=[], readiness_coverage=readiness), ['scope'] + [s['id'] for s in self.evidence])
         people = registered = None
         needs = {}
@@ -668,7 +704,8 @@ class Run:
                               accessibility_baseline=[rec('access-basis', 'Exercise routes/allocation from coordination brief; public spatial observations bounded', ['src-brief', 'src-floor-plan'], needs=needs)],
                               records=[basis], planning_people=people, registered_attendees=registered,
                               attendance_components=[r for r in signals.values() if r['signal'] in ['registered_attendees', 'required_on_site', 'expected_attendees']],
-                              checkin_target=math.ceil(registered * .8) if registered is not None else None, calendar_records=list(calendar.values())),
+                              checkin_target=math.ceil(registered * .8) if registered is not None else None, calendar_records=list(calendar.values()),
+                              calendar_entries=calendar_entries(schedule, calendar, self.status == 'blocked')),
                       ['hard-budget', 'hard-window', 'hard-access', 'hard-demos', 'readiness-coverage'] + [s['id'] for s in self.evidence])
         supported = core and bool(schedule) and not any(r['id'] == 'gap-headcount' for r in self.unresolved)
         options = make_options(model, quotes, budget, people, needs, supported, readiness)
@@ -725,16 +762,18 @@ class Run:
         cal.add('version', '2.0')
         cal.add('method', 'PUBLISH')
         readiness_note = '; '.join(r['summary'] + '; owner ' + str(r['owner']) for r in self.unresolved if r['id'] == 'gap-readiness')
-        events = schedule if self.status != 'blocked' else []
+        events = read_json(self.out / 'snapshots/04-planning-baseline.json')['state']['calendar_entries']
         for row in events:
             event = Event()
             event.add('uid', f"fellowship-demo-day-{row['id']}@quillhaven.example")
             event.add('dtstamp', datetime.now(timezone.utc))
             event.add('dtstart', timestamp(row['start']).astimezone(timezone.utc))
-            event.add('dtend', timestamp(row['end']).astimezone(timezone.utc))
+            if row['end'] is not None:
+                event.add('dtend', timestamp(row['end']).astimezone(timezone.utc))
             event.add('status', 'TENTATIVE')
             event.add('summary', row['title'])
-            event.add('description', f"UNSENT DRAFT; run {self.id}; planning people {people}; registered {registered}; {base_summary(options)}; exercise only, not booked; {row['basis']}; dependent on {row['depends_on']}; approvals pending; {readiness_note}")
+            arrival_note = '09:15 readiness is a proposed allocation requiring operational confirmation; R2 confirms ready by 09:30' if row['id'] == 'arrival' else ''
+            event.add('description', f"UNSENT DRAFT; run {self.id}; planning people {people}; registered {registered}; {base_summary(options)}; exercise only, not booked; {row['basis']}; dependent on {row['depends_on']}; {row.get('conditions', '')}; owner {row.get('owner', 'Programme / Operations')}; approvals pending; {readiness_note}; {arrival_note}")
             cal.add_component(event)
         (self.out / FILES[2]).write_bytes(cal.to_ical())
         comm = '# Draft communications\n\n' + basis
@@ -744,10 +783,11 @@ class Run:
         for audience, purpose, owner in [('Operations and category owners', 'Review versioned plan/date/venue, costs and headcount policy', 'Operations and respective category owners'),
                                          ('Attendees', 'Proposed event information; dietary/accessibility response process', 'Operations publication; Marketing drafting'),
                                          ('Vendors', 'Confirm proposed date, quote validity and coordinated services; no commitment', 'Operations; category owners spending')]:
-            comm += f"\n## UNSENT DRAFT — {audience}\n\nAudience: {audience}\nPurpose: {purpose}\nApproval owner: {owner}\nConditions: {self.status}; release requires the stated human approvals. {readiness_note}\n\n"
+            comm += f"\n## UNSENT DRAFT — {audience}\n\nAudience: {audience}\nPurpose: {purpose}\nApproval owner: {owner}\nConditions: {self.status}; release requires the stated human approvals.{(' ' + readiness_note) if readiness_note else ''}\n\n"
             if audience == 'Operations and category owners':
                 comm += f"Please review run {self.id} for the proposed {model['event_date']} event, 09:30–17:00 +08:00, at TICC. Planning people {people}; registered {registered}. Recommendation {recommendation or 'deferred'}. Base options: {base_costs}. Review category allocations, remaining ceiling and the catering headroom shown in the comparison. The programme and each demo/changeover depend on the supported intervals; inspect any deferral before release. Please record approve/reject/defer/change-request with actor, subject, plan revision, timestamp and reasons; no response has yet been received.\n"
                 comm += operational_review(schedule, people, registered) + '\n'
+                comm += 'Preparation milestones: ' + '; '.join(r['title'] + ' at ' + r['start'] + '; owner ' + r['owner'] + '; ' + r['conditions'] for r in events if r['scope'] == 'preparation') + '\n'
                 comm += '\n'.join(r['summary'] + ' — owner ' + str(r.get('owner')) for r in self.unresolved) + '\n'
             elif audience == 'Attendees':
                 comm += f"We are preparing Fellowship Demo Day for {model['event_date']} at TICC, with the proposed main programme from 09:30 to 17:00 +08:00. The proposed brief requires twelve team demonstrations, live captions, wheelchair seating and a staffed quiet space. Release awaits a supported programme and evidence for all required services. Operations will coordinate responses to accessibility and dietary requests before the event through its existing process. This proposed information awaits Operations review; venue booking and invitation release have not occurred.\n"
@@ -807,7 +847,7 @@ def validate(out, allow_eight=False, binding_root=None):
     require(str(cal['VERSION']) == '2.0' and str(cal['METHOD']) == 'PUBLISH', 'Calendar headers invalid')
     require(not cal.errors, 'Calendar parser errors')
     events = cal.walk('VEVENT')
-    intervals = stage4['schedule_dependencies'][0]['intervals']
+    intervals = stage4.get('calendar_entries', stage4['schedule_dependencies'][0]['intervals'])
     blocked = read_json(snapshots[-1])['status'] == 'blocked'
     require(len(events) == (0 if blocked else len(intervals)), 'Calendar/programme count mismatch')
     uids = set()
@@ -815,7 +855,11 @@ def validate(out, allow_eight=False, binding_root=None):
         require(not event.errors and 'ATTENDEE' not in event and str(event['STATUS']) == 'TENTATIVE', 'Calendar draft boundary failed')
         require(str(event['UID']) not in uids, 'Duplicate event UID')
         uids.add(str(event['UID']))
-        require(event.decoded('DTSTART') == timestamp(interval['start']) and event.decoded('DTEND') == timestamp(interval['end']), 'Calendar interval mismatch')
+        require(event.decoded('DTSTART') == timestamp(interval['start']), 'Calendar start mismatch')
+        if interval['end'] is None:
+            require('DTEND' not in event and 'DURATION' not in event, 'Point milestone acquired invented duration')
+        else:
+            require(event.decoded('DTEND') == timestamp(interval['end']), 'Calendar end mismatch')
         require(event.decoded('DTSTAMP').tzinfo is not None, 'Calendar DTSTAMP timezone absent')
     for name in [FILES[1], FILES[3]]:
         text = (out / name).read_text()

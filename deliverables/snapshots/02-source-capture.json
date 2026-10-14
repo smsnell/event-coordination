@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T215247Z-0376ac6d-02",
-  "run_id": "run-20261014T215247Z-0376ac6d",
+  "snapshot_id": "run-20261014T225355Z-c5f89bbe-02",
+  "run_id": "run-20261014T225355Z-c5f89bbe",
   "stage": "source-capture",
   "sequence": 2,
-  "created_at": "2026-10-14T21:52:47.125224+00:00",
+  "created_at": "2026-10-14T22:53:55.541325+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T215247Z-0376ac6d-01",
+    "snapshot_id": "run-20261014T225355Z-c5f89bbe-01",
     "path": "/home/mike/event-coordination/deliverables/snapshots/01-scope-and-approval-gates.json",
-    "sha256": "sha256:4ac511a00f2402e29b556c0f14a67d03b8fbd3be56b7196b4da04aa5fad385a6"
+    "sha256": "sha256:82cf504cc8c8cd0eeaa826e82a2526bc4e02454e388c8f553567d61e2a9b27b8"
   },
   "consumed_record_ids": [
     "scope"
@@ -31,6 +31,7 @@
     "src-floor-plan-meta",
     "src-hall",
     "src-interpretation",
+    "src-interview",
     "src-vendors"
   ],
   "state": {
@@ -258,7 +259,7 @@
         "owner": "Operations",
         "source_role": "event-brief",
         "locator": "/home/mike/event-coordination/inputs/event-brief.md",
-        "retrieved_at": "2026-10-14T21:52:47.119604+00:00",
+        "retrieved_at": "2026-10-14T22:53:55.533815+00:00",
         "retrieval_status": "retrieved",
         "content_type": "text/markdown",
         "version_metadata": {
@@ -273,6 +274,23 @@
         },
         "content_hash": "sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/event-brief.md",
+        "observations": []
+      },
+      {
+        "id": "src-interview",
+        "summary": "Authentic supplied interview export; supplier preference response",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "other",
+        "locator": "/home/mike/event-coordination/interviews/interview-C-1.md",
+        "retrieved_at": "2026-10-14T22:53:55.535311+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "text/markdown",
+        "version_metadata": {
+          "source_kind": "original supplied export; unchanged"
+        },
+        "content_hash": "sha256:5123ce42d2e316e41f3424513e79ca21f7354360e97e7365d2e6f5bf47fcd5f7",
+        "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/interview-C-1.md",
         "observations": []
       },
       {
@@ -346,7 +364,7 @@
         "owner": null,
         "source_role": "other",
         "locator": "/home/mike/event-coordination/.planning-tmp/p2-captures/floor-plan-meta.json",
-        "retrieved_at": "2026-10-14T21:52:47.122598+00:00",
+        "retrieved_at": "2026-10-14T22:53:55.538488+00:00",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": null,
@@ -361,7 +379,7 @@
         "owner": null,
         "source_role": "other",
         "locator": "/home/mike/event-coordination/.planning-tmp/p2-captures/attempts.json",
-        "retrieved_at": "2026-10-14T21:52:47.122825+00:00",
+        "retrieved_at": "2026-10-14T22:53:55.538733+00:00",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": null,

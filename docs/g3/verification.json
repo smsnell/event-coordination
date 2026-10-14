@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-14T22:53:57.468411+00:00",
+  "runtime_seconds": 0.946,
+  "run_id": "run-20261014T225355Z-c5f89bbe",
+  "checks": [
+    {
+      "check": "Actual final bindings, all source/media hashes, point deadline, timed pre-event records, authentic interview preference and 09:15 caveat",
+      "result": "passed",
+      "run_id": "run-20261014T225355Z-c5f89bbe"
+    },
+    {
+      "check": "SYNTHETIC earlier clearance: partial/conditional/deferred, all four drafts retain confirmation owner, proposed compressed programme is not certified",
+      "result": "passed",
+      "run_id": "run-20261014T225356Z-1cb0888f"
+    },
+    {
+      "check": "SYNTHETIC changed hold expiry: decision guidance and source table agree; quote expiries retained separately",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC outside-source instruction remains evidence text; cannot set approvals or create delivery actions in the deterministic runner",
+      "result": "passed"
+    }
+  ],
+  "synthetic_path": "/home/mike/event-coordination/.planning-tmp/g3-focused-cma_9p60",
+  "scope": "G3 final readback and three bounded review/security regressions; not human use or business approval"
+}

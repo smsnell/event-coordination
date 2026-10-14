@@ -1,0 +1,513 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven//Event planning draft//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+SUMMARY:Setup (proposed allocation)
+DTSTART:20261016T233000Z
+DTEND:20261017T004500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-setup@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; VEN-R
+ 2\; dependent on []\; \; owner Programme / Operations\; approvals pending\
+ ; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Base readiness checks (proposed allocation)
+DTSTART:20261017T004500Z
+DTEND:20261017T011500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-readiness@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; VEN-R
+ 2\; dependent on ['setup']\; \; owner Programme / Operations\; approvals p
+ ending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ready / arrival
+DTSTART:20261017T011500Z
+DTEND:20261017T013000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-arrival@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; plann
+ er\; dependent on ['readiness']\; \; owner Programme / Operations\; approv
+ als pending\; \; 09:15 readiness is a proposed allocation requiring operat
+ ional confirmation\; R2 confirms ready by 09:30
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Opening
+DTSTART:20261017T013000Z
+DTEND:20261017T020000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-opening@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; brief
+ /CAL-001\; dependent on ['arrival']\; \; owner Programme / Operations\; ap
+ provals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Keynote
+DTSTART:20261017T020000Z
+DTEND:20261017T030000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-keynote@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; CAL-0
+ 04\; dependent on ['opening']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:First break after keynote (proposed)
+DTSTART:20261017T030000Z
+DTEND:20261017T031500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-break-1@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; plann
+ er\; dependent on ['keynote']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-01 presentation
+DTSTART:20261017T031500Z
+DTEND:20261017T032500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-01@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['break-1']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-01 separate changeover
+DTSTART:20261017T032500Z
+DTEND:20261017T032800Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-01-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-01']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-02 presentation
+DTSTART:20261017T032800Z
+DTEND:20261017T033800Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-02@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-01-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-02 separate changeover
+DTSTART:20261017T033800Z
+DTEND:20261017T034100Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-02-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-02']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-03 presentation
+DTSTART:20261017T034100Z
+DTEND:20261017T035100Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-03@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-02-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-03 separate changeover
+DTSTART:20261017T035100Z
+DTEND:20261017T035400Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-03-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-03']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-04 presentation
+DTSTART:20261017T035400Z
+DTEND:20261017T040400Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-04@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-03-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-04 separate changeover
+DTSTART:20261017T040400Z
+DTEND:20261017T040700Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-04-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-04']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-05 presentation
+DTSTART:20261017T040700Z
+DTEND:20261017T041700Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-05@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-04-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-05 separate changeover
+DTSTART:20261017T041700Z
+DTEND:20261017T042000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-05-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-05']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-06 presentation
+DTSTART:20261017T042000Z
+DTEND:20261017T043000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-06@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-05-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-06 separate changeover
+DTSTART:20261017T043000Z
+DTEND:20261017T043300Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-06-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-06']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lunch (proposed)
+DTSTART:20261017T043300Z
+DTEND:20261017T053300Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-lunch@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; plann
+ er\; dependent on ['DEMO-06-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-07 presentation
+DTSTART:20261017T053300Z
+DTEND:20261017T054300Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-07@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['lunch']\; \; owner Programme / Operations\; approvals 
+ pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-07 separate changeover
+DTSTART:20261017T054300Z
+DTEND:20261017T054600Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-07-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-07']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-08 presentation
+DTSTART:20261017T054600Z
+DTEND:20261017T055600Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-08@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-07-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-08 separate changeover
+DTSTART:20261017T055600Z
+DTEND:20261017T055900Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-08-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-08']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-09 presentation
+DTSTART:20261017T055900Z
+DTEND:20261017T060900Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-09@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-08-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-09 separate changeover
+DTSTART:20261017T060900Z
+DTEND:20261017T061200Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-09-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-09']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-10 presentation
+DTSTART:20261017T061200Z
+DTEND:20261017T062200Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-10@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-09-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-10 separate changeover
+DTSTART:20261017T062200Z
+DTEND:20261017T062500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-10-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-10']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-11 presentation
+DTSTART:20261017T062500Z
+DTEND:20261017T063500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-11@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-10-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-11 separate changeover
+DTSTART:20261017T063500Z
+DTEND:20261017T063800Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-11-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-11']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-12 presentation
+DTSTART:20261017T063800Z
+DTEND:20261017T064800Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-12@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-11-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DEMO-12 separate changeover
+DTSTART:20261017T064800Z
+DTEND:20261017T065100Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-DEMO-12-changeover@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; PROG-
+ R3\; dependent on ['DEMO-12']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Second break (proposed)
+DTSTART:20261017T065100Z
+DTEND:20261017T070600Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-break-2@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; plann
+ er\; dependent on ['DEMO-12-changeover']\; \; owner Programme / Operations
+ \; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Partner overview / discussion (proposed)
+DTSTART:20261017T070600Z
+DTEND:20261017T083000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-partner-overview@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; plann
+ er\; dependent on ['break-2']\; \; owner Programme / Operations\; approval
+ s pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Closing (proposed)
+DTSTART:20261017T083000Z
+DTEND:20261017T090000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-closing@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; brief
+ /planner\; dependent on ['partner-overview']\; \; owner Programme / Operat
+ ions\; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Teardown (proposed allocation)
+DTSTART:20261017T090000Z
+DTEND:20261017T101500Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-teardown@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; VEN-R
+ 2\; dependent on ['closing']\; \; owner Programme / Operations\; approvals
+  pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Clearance check (proposed allocation)
+DTSTART:20261017T101500Z
+DTEND:20261017T103000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-clearance@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; CAL-0
+ 08\; dependent on ['teardown']\; \; owner Programme / Operations\; approva
+ ls pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Plan and budget decision deadline (pending)
+DTSTART:20260904T090000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-calendar-CAL-005@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; CAL-0
+ 05\; dependent on []\; Plan and budget decision\; proposed source record\,
+  not completed work\; owner Operations\; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Accessibility walkthrough (venue confirmation required)
+DTSTART:20260925T060000Z
+DTEND:20260925T080000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-calendar-CAL-006@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; CAL-0
+ 06\; dependent on []\; Venue confirmation required first\; proposed source
+  record\, not completed work\; owner Learner Experience\; approvals pendin
+ g\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Rehearsal window (remote backup acceptable)
+DTSTART:20261016T070000Z
+DTEND:20261016T100000Z
+DTSTAMP:20261014T224707Z
+UID:fellowship-demo-day-calendar-CAL-007@quillhaven.example
+DESCRIPTION:UNSENT DRAFT\; run run-20261014T224707Z-f9c78a0d\; planning pe
+ ople 245\; registered 180\; option-green-table 494000 TWD (feasible)\; opt
+ ion-city-pantry 512000 TWD (feasible)\; exercise only\, not booked\; CAL-0
+ 07\; dependent on []\; Remote backup acceptable\; proposed source record\,
+  not completed work\; owner Programme\; approvals pending\; \; 
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
