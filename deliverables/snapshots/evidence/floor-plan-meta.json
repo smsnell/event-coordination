@@ -1,0 +1,11 @@
+{
+  "source_url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "retrieval_started_at": "2026-10-14T20:49:13.801588+00:00",
+  "retrieved_at": "2026-10-14T20:49:17.936051+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "application/pdf",
+  "version_metadata": null,
+  "transport_result": "200 application/pdf 522512",
+  "error": "",
+  "attempt": "curl with normal TLS verification"
+}

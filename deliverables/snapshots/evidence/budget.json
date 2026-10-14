@@ -1,0 +1,102 @@
+{
+  "id": "budget",
+  "source_url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "retrieval_started_at": "2026-10-14T20:48:13Z",
+  "retrieved_at": "2026-10-14T20:48:16Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json",
+  "representation": "Google Sheets FORMATTED_VALUE",
+  "metadata": {
+    "spreadsheetId": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/edit",
+    "properties": {
+      "title": "Project C — Budget",
+      "locale": "zh_TW",
+      "timeZone": "Asia/Taipei"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Budget",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ]
+  },
+  "capture": {
+    "range": "Budget!A1:P25",
+    "majorDimension": "ROWS",
+    "values": [
+      [
+        "category",
+        "planned_amount_twd",
+        "approval_limit_twd",
+        "committed_amount_twd",
+        "owner",
+        "record_version"
+      ],
+      [
+        "venue",
+        "155000",
+        "180000",
+        "0",
+        "Operations",
+        "budget-2026-08-26"
+      ],
+      [
+        "catering",
+        "115000",
+        "135000",
+        "0",
+        "Operations",
+        "budget-2026-08-26"
+      ],
+      [
+        "accessibility",
+        "65000",
+        "80000",
+        "0",
+        "Learner Experience",
+        "budget-2026-08-26"
+      ],
+      [
+        "production",
+        "85000",
+        "100000",
+        "0",
+        "Programme",
+        "budget-2026-08-26"
+      ],
+      [
+        "communications",
+        "25000",
+        "30000",
+        "0",
+        "Communications",
+        "budget-2026-08-26"
+      ],
+      [
+        "security",
+        "25000",
+        "35000",
+        "0",
+        "Operations",
+        "budget-2026-08-26"
+      ],
+      [
+        "contingency",
+        "40000",
+        "50000",
+        "0",
+        "Operations",
+        "budget-2026-08-26"
+      ]
+    ]
+  }
+}

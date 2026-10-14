@@ -1,0 +1,328 @@
+{
+  "run_id": "run-20261014T205656Z-2a8e6f62",
+  "observed_at": "2026-10-14T20:56:56.955776+00:00",
+  "error": "ValueError: Unresolvable evidence ID",
+  "affected_stage": "draft-propagation",
+  "available_evidence": [
+    {
+      "id": "src-attendees",
+      "summary": "Actual bounded source capture: attendees",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "attendee-signals",
+      "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+      "retrieved_at": "2026-10-14T20:48:15Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": {
+        "representation": "Google Sheets FORMATTED_VALUE",
+        "metadata": {
+          "spreadsheetId": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+          "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU/edit",
+          "properties": {
+            "title": "Project C — Attendee Signals",
+            "locale": "zh_TW",
+            "timeZone": "Asia/Taipei"
+          },
+          "sheets": [
+            {
+              "properties": {
+                "sheetId": 0,
+                "title": "Attendee Signals",
+                "index": 0,
+                "sheetType": "GRID",
+                "gridProperties": {
+                  "rowCount": 1000,
+                  "columnCount": 26
+                }
+              }
+            }
+          ]
+        }
+      },
+      "content_hash": "sha256:7a2b28fc1ad86f3399c18c058c946a79f5ccac9f92835e5dc8bcf224d0e3bb4a",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/attendees.json",
+      "observations": []
+    },
+    {
+      "id": "src-budget",
+      "summary": "Actual bounded source capture: budget",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "budget",
+      "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+      "retrieved_at": "2026-10-14T20:48:16Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": {
+        "representation": "Google Sheets FORMATTED_VALUE",
+        "metadata": {
+          "spreadsheetId": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+          "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/edit",
+          "properties": {
+            "title": "Project C — Budget",
+            "locale": "zh_TW",
+            "timeZone": "Asia/Taipei"
+          },
+          "sheets": [
+            {
+              "properties": {
+                "sheetId": 0,
+                "title": "Budget",
+                "index": 0,
+                "sheetType": "GRID",
+                "gridProperties": {
+                  "rowCount": 1000,
+                  "columnCount": 26
+                }
+              }
+            }
+          ]
+        }
+      },
+      "content_hash": "sha256:7b3d13de33131afbaf89ffa01c20944fd31743d193a8c84bc06f33a3faace438",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/budget.json",
+      "observations": []
+    },
+    {
+      "id": "src-vendors",
+      "summary": "Actual bounded source capture: vendors",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "vendor-record",
+      "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+      "retrieved_at": "2026-10-14T20:48:16Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": {
+        "representation": "Google Sheets FORMATTED_VALUE",
+        "metadata": {
+          "spreadsheetId": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+          "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko/edit",
+          "properties": {
+            "title": "Project C — Vendor Quotes",
+            "locale": "zh_TW",
+            "timeZone": "Asia/Taipei"
+          },
+          "sheets": [
+            {
+              "properties": {
+                "sheetId": 0,
+                "title": "Vendor Quotes",
+                "index": 0,
+                "sheetType": "GRID",
+                "gridProperties": {
+                  "rowCount": 1000,
+                  "columnCount": 26
+                }
+              }
+            }
+          ]
+        }
+      },
+      "content_hash": "sha256:bd807bdf433965a9f0892f4e0644059a2755afd568528654dd618f67842889bb",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/vendors.json",
+      "observations": []
+    },
+    {
+      "id": "src-calendar",
+      "summary": "Actual bounded source capture: calendar",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "calendar",
+      "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+      "retrieved_at": "2026-10-14T20:48:16Z",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": {
+        "representation": "Google Sheets FORMATTED_VALUE",
+        "metadata": {
+          "spreadsheetId": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+          "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s/edit",
+          "properties": {
+            "title": "Project C — Calendar Constraints",
+            "locale": "zh_TW",
+            "timeZone": "Asia/Taipei"
+          },
+          "sheets": [
+            {
+              "properties": {
+                "sheetId": 0,
+                "title": "Calendar Constraints",
+                "index": 0,
+                "sheetType": "GRID",
+                "gridProperties": {
+                  "rowCount": 1000,
+                  "columnCount": 26
+                }
+              }
+            }
+          ]
+        }
+      },
+      "content_hash": "sha256:311a82b249132e58f26500267f171af385a59da169641b3b37bd0de15058ff18",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/calendar.json",
+      "observations": []
+    },
+    {
+      "id": "src-hall",
+      "summary": "Actual bounded source capture: hall",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "venue-page",
+      "locator": "https://www.ticc.com.tw/wSite/sp?BaseDSD=7&CtUnit=99&ctNode=322&mp=2&roomId=PH&xdUrl=%2FwSite%2Fap%2Fcp_VenueSearch.jsp",
+      "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "text/plain",
+      "version_metadata": {
+        "origin_version": null,
+        "web_cache_crawl_report": "last week",
+        "timestamp_basis": "extract recorded after actual web read"
+      },
+      "content_hash": "sha256:07589c87636ea5c6a46acff00baee8d9e58ee75b8fefcf14d3d2f251097a0d5c",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/hall.json",
+      "observations": [
+        {
+          "id": "OBS-HALL-RULES",
+          "summary": "Outside AV/food and livestream provider restrictions; Operations must arrange technical coordination/safety briefing. No booking or attendance at that briefing observed.",
+          "locator": {
+            "kind": "section",
+            "value": "rental rules 1, 5, 9, 10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "src-accessibility",
+      "summary": "Actual bounded source capture: accessibility",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "venue-page",
+      "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+      "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "text/plain",
+      "version_metadata": {
+        "origin_version": null,
+        "web_cache_crawl_report": "4 weeks ago",
+        "timestamp_basis": "extract recorded after actual web read"
+      },
+      "content_hash": "sha256:8295f62a73075e5c8a3687952b40a3714e71edce9cfd3ee172550d6158da845a",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/accessibility.json",
+      "observations": [
+        {
+          "id": "OBS-ACCESS-INDEX",
+          "summary": "Official accessibility index contains the 4F plan entry.",
+          "locator": {
+            "kind": "section",
+            "value": "Accessible Facilities Floor Plan; third listed floor"
+          }
+        }
+      ]
+    },
+    {
+      "id": "src-brief",
+      "summary": "Authorized local Markdown business brief",
+      "evidence_ids": [],
+      "owner": "Operations",
+      "source_role": "event-brief",
+      "locator": "/home/mike/event-coordination/inputs/event-brief.md",
+      "retrieved_at": "2026-10-14T20:56:56.905732+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "text/markdown",
+      "version_metadata": {
+        "versions": [
+          "EVENT-BRIEF-2026-08-26",
+          "VEN-2026-08-26",
+          "VEN-2026-08-26-R2",
+          "PROG-2026-08-26-R3"
+        ],
+        "clarification_authored_at": "2026-09-12",
+        "source_kind": "user-provided scenario; not Notion retrieval"
+      },
+      "content_hash": "sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/event-brief.md",
+      "observations": []
+    },
+    {
+      "id": "src-interpretation",
+      "summary": "Invoking-agent interpretation, not business authority",
+      "evidence_ids": [],
+      "owner": null,
+      "source_role": "other",
+      "locator": "/home/mike/event-coordination/.planning-tmp/p1-capture/interpretation.json",
+      "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": {
+        "author": "Invoking Codex agent; P1 interpretation"
+      },
+      "content_hash": "sha256:92e618f0336cf33534ea162c102f340a3ca59a07e7a3e4526b5040f0e7d8af74",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/interpretation.json",
+      "observations": []
+    },
+    {
+      "id": "src-floor-plan",
+      "summary": "Official 4F PDF; visually inspected",
+      "evidence_ids": [],
+      "owner": null,
+      "source_role": "floor-plan-or-image",
+      "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+      "retrieved_at": "2026-10-14T20:49:17.936051+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/pdf",
+      "version_metadata": null,
+      "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan.pdf",
+      "observations": [
+        {
+          "id": "OBS-4F-VIP",
+          "summary": "V.I.P. ROOM is depicted west/left of the Plenary Hall seating; Meeting Room 401 lies between them. This is a depicted location, not acoustic or usable-route certification.",
+          "locator": {
+            "kind": "page-region",
+            "value": "page 1; normalized top-left rectangle [0.26,0.38,0.57,0.70]; page 3370x2384 PDF units"
+          }
+        },
+        {
+          "id": "OBS-4F-SEATING",
+          "summary": "Wheelchair-area symbols are depicted near upper and lower audience seating rows. Symbol positions alone do not establish the six usable case spaces.",
+          "locator": {
+            "kind": "page-region",
+            "value": "page 1; normalized top-left rectangle [0.59,0.28,0.81,0.60]; page 3370x2384 PDF units"
+          }
+        },
+        {
+          "id": "OBS-4F-FACILITIES",
+          "summary": "Accessible-elevator and accessible-restroom symbols are depicted along the lower circulation area, with the symbol definitions in the left legend. No unobstructed route or lift operation is asserted.",
+          "locator": {
+            "kind": "page-region",
+            "value": "page 1; lower circulation [0.46,0.62,0.84,0.82], legend [0.06,0.13,0.20,0.71]; normalized top-left; page 3370x2384 PDF units"
+          }
+        }
+      ]
+    },
+    {
+      "id": "src-floor-plan-meta",
+      "summary": "Actual media acquisition metadata/attempts",
+      "evidence_ids": [],
+      "owner": null,
+      "source_role": "other",
+      "locator": "/home/mike/event-coordination/.planning-tmp/p1-capture/floor-plan-meta.json",
+      "retrieved_at": "2026-10-14T20:56:56.910556+00:00",
+      "retrieval_status": "retrieved",
+      "content_type": "application/json",
+      "version_metadata": null,
+      "content_hash": "sha256:a5bbc9b6c82437bb22f16f7abe5db5102ace7a89d0d549d32ad197856f7a0095",
+      "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan-meta.json",
+      "observations": []
+    }
+  ],
+  "affected_artifacts": [
+    "/home/mike/event-coordination/deliverables/vendor-comparison.csv",
+    "/home/mike/event-coordination/deliverables/event-plan.md",
+    "/home/mike/event-coordination/deliverables/event-calendar.ics",
+    "/home/mike/event-coordination/deliverables/draft-communications.md"
+  ],
+  "next_owner": "Delivery owner",
+  "recovery_action": "Retain this failed attempt; resolve source/validation issue, then invoke a new run. No approval is granted."
+}

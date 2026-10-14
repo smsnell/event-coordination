@@ -1,0 +1,6 @@
+.runtime-deps/
+.venv/
+.planning-tmp/
+__pycache__/
+*.pyc
+:memory:.ses

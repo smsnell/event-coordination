@@ -1,0 +1,25 @@
+{
+  "id": "hall",
+  "source_url": "https://www.ticc.com.tw/wSite/sp?BaseDSD=7&CtUnit=99&ctNode=322&mp=2&roomId=PH&xdUrl=%2FwSite%2Fap%2Fcp_VenueSearch.jsp",
+  "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "text/plain",
+  "representation": "permitted claim-bearing original values plus paraphrased/translated extract; not raw HTML",
+  "locator": "Space introduction, weekend rent, rental rules 1/5/9/10",
+  "version_metadata": {
+    "origin_version": null,
+    "web_cache_crawl_report": "last week",
+    "timestamp_basis": "extract recorded after actual web read"
+  },
+  "extract": "Official full hall: 3,122 fixed seats; Saturday/Sunday tariff 170000 per published session. Rule 1: 所有視聽設備均不得自備。 Rule 5: 本中心會議茶點及餐盒(含攤位贈送點心)禁止自帶。 Rule 9 restricts livestream service to venue contracted providers; rule 10 requires technical coordination and evacuation/safety briefing before hall use. These public terms are distinct from fictional coordinated quotes.",
+  "observations": [
+    {
+      "id": "OBS-HALL-RULES",
+      "summary": "Outside AV/food and livestream provider restrictions; Operations must arrange technical coordination/safety briefing. No booking or attendance at that briefing observed.",
+      "locator": {
+        "kind": "section",
+        "value": "rental rules 1, 5, 9, 10"
+      }
+    }
+  ]
+}

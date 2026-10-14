@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="to-be_definitions" targetNamespace="https://example.invalid/event-coordination/planning" exporter="Planning source generator">
+  <bpmn:process id="to-be_process" name="TO-BE — proposed local draft workflow, not approved" isExecutable="false">
+    <bpmn:documentation>Proposed non-executable process. Each numbered snapshot is written at its own boundary, even when grouped in a diagram task. Failure at any automated stage follows the failure.json contract; only the main validation route is drawn. Blocked output has empty calendar. Partial may contain supported tentative times. Material changes/repairs start a new run with preserved history. Approval never causes automatic sending, booking or payment. Conditional proposals do not become feasible merely through approval. Revision: explicit authorized Markdown brief is a versioned local source, not Notion retrieval. CAL-005 supplies the deadline. R2 confirms both base bundles; Q-008 remains conditional. PROG-R3 requires twelve distinct presentations and twelve changeovers. Review-ready delivery is the required completion boundary; subsequent human decisions are optional later inputs, not prerequisites to a complete draft run. User personally reports reviewing both diagrams and approves revised design. Updated labels incorporate resolved source meanings; AS-IS task order and unspecified downstream mechanics retained. TO-BE distinguishes confirmed exercise base services from optional conditional livestream and includes visually inspected media evidence before spatial claims.</bpmn:documentation>
+    <bpmn:laneSet id="to-be_lanes">
+      <bpmn:lane id="to-be_lane_operator" name="Human coordinator / invoking operator">
+        <bpmn:flowNodeRef>to-be_start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_invoke</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_deliver</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_needs</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="to-be_lane_auto" name="Coordinator automation: invoking agent + deterministic runner">
+        <bpmn:flowNodeRef>to-be_bootstrap</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_retain</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_failure</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_failend</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_capture</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_basis</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_mode</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_complete</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_partial</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_blocked</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_decide</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_draft</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_validate</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_valid</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="to-be_lane_owners" name="Source owners: Operations / Programme / Learner Experience / category owners">
+        <bpmn:flowNodeRef>to-be_resolve</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_pending</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="to-be_lane_approvers" name="Operations and category approvers">
+        <bpmn:flowNodeRef>to-be_review</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_decision</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_changes</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_accepted</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="to-be_lane_marketing" name="Marketing / Operations publication responsibility">
+        <bpmn:flowNodeRef>to-be_marketing</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>to-be_end</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="to-be_start" name="New planning request or material change">
+      <bpmn:outgoing>to-be_flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="to-be_invoke" name="Invoke with explicit Markdown brief and fixed business clock">
+      <bpmn:incoming>to-be_flow_0</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="to-be_bootstrap" name="Read brief + CAL-005 deadline; check history and safe capture">
+      <bpmn:incoming>to-be_flow_1</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="to-be_retain" name="Can valid scope/evidence be retained?">
+      <bpmn:incoming>to-be_flow_2</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_3</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="to-be_failure" name="Write failure.json and preserve actual attempt">
+      <bpmn:incoming>to-be_flow_3</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_4</bpmn:outgoing>
+      <bpmn:incoming>to-be_flow_18</bpmn:incoming>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="to-be_failend" name="Failed; recovery owner required">
+      <bpmn:incoming>to-be_flow_4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="to-be_capture" name="01 scope → 02 current Sheets / official PDF capture → 03 constraints">
+      <bpmn:incoming>to-be_flow_5</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_6</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="to-be_basis" name="04–06: 245-person basis, two base menus, 12 demos + changeovers">
+      <bpmn:incoming>to-be_flow_6</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_7</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="to-be_mode" name="Evidence-supported outcome?">
+      <bpmn:incoming>to-be_flow_7</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_8</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_9</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_10</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="to-be_complete" name="Supported comparison and justified recommendation">
+      <bpmn:incoming>to-be_flow_8</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_11</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="to-be_partial" name="Preserve independent work and conditional claims">
+      <bpmn:incoming>to-be_flow_9</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_12</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="to-be_blocked" name="Explain blockage; require empty calendar">
+      <bpmn:incoming>to-be_flow_10</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_13</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="to-be_merge" name="One outcome proceeds">
+      <bpmn:incoming>to-be_flow_11</bpmn:incoming>
+      <bpmn:incoming>to-be_flow_12</bpmn:incoming>
+      <bpmn:incoming>to-be_flow_13</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_14</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="to-be_decide" name="07 decision and pending approval requests">
+      <bpmn:incoming>to-be_flow_14</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_15</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="to-be_draft" name="08 write four consistent local drafts">
+      <bpmn:incoming>to-be_flow_15</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_16</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="to-be_validate" name="09 exact file/hash, lineage, programme and privacy validation">
+      <bpmn:incoming>to-be_flow_16</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_17</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="to-be_valid" name="Artifacts and bindings valid?">
+      <bpmn:incoming>to-be_flow_17</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_18</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_19</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="to-be_deliver" name="Review-ready draft package complete; approvals may remain pending">
+      <bpmn:incoming>to-be_flow_19</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_20</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="to-be_needs" name="Evidence clarification needed?">
+      <bpmn:incoming>to-be_flow_20</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_21</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_23</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="to-be_resolve" name="Resolve facts/policies; supply evidence for a new run">
+      <bpmn:incoming>to-be_flow_21</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_22</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="to-be_pending" name="Incomplete handoff; rerun after resolution">
+      <bpmn:incoming>to-be_flow_22</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="to-be_review" name="Optional later human response: plan/date/venue and category spending">
+      <bpmn:incoming>to-be_flow_23</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_24</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="to-be_decision" name="Actual human decision?">
+      <bpmn:incoming>to-be_flow_24</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_25</bpmn:outgoing>
+      <bpmn:outgoing>to-be_flow_26</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="to-be_changes" name="Draft retained; pending/rejected decisions do not imply approval">
+      <bpmn:incoming>to-be_flow_25</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="to-be_accepted" name="Record approval bound to reviewed basis">
+      <bpmn:incoming>to-be_flow_26</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_27</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="to-be_marketing" name="Review UNSENT drafts; Operations authorizes publication separately">
+      <bpmn:incoming>to-be_flow_27</bpmn:incoming>
+      <bpmn:outgoing>to-be_flow_28</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="to-be_end" name="Draft handover only; no sending or booking">
+      <bpmn:incoming>to-be_flow_28</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="to-be_flow_0" sourceRef="to-be_start" targetRef="to-be_invoke" />
+    <bpmn:sequenceFlow id="to-be_flow_1" sourceRef="to-be_invoke" targetRef="to-be_bootstrap" />
+    <bpmn:sequenceFlow id="to-be_flow_2" sourceRef="to-be_bootstrap" targetRef="to-be_retain" />
+    <bpmn:sequenceFlow id="to-be_flow_3" sourceRef="to-be_retain" targetRef="to-be_failure" name="No" />
+    <bpmn:sequenceFlow id="to-be_flow_4" sourceRef="to-be_failure" targetRef="to-be_failend" />
+    <bpmn:sequenceFlow id="to-be_flow_5" sourceRef="to-be_retain" targetRef="to-be_capture" name="Yes" />
+    <bpmn:sequenceFlow id="to-be_flow_6" sourceRef="to-be_capture" targetRef="to-be_basis" />
+    <bpmn:sequenceFlow id="to-be_flow_7" sourceRef="to-be_basis" targetRef="to-be_mode" />
+    <bpmn:sequenceFlow id="to-be_flow_8" sourceRef="to-be_mode" targetRef="to-be_complete" name="Complete" />
+    <bpmn:sequenceFlow id="to-be_flow_9" sourceRef="to-be_mode" targetRef="to-be_partial" name="Partial" />
+    <bpmn:sequenceFlow id="to-be_flow_10" sourceRef="to-be_mode" targetRef="to-be_blocked" name="Blocked" />
+    <bpmn:sequenceFlow id="to-be_flow_11" sourceRef="to-be_complete" targetRef="to-be_merge" />
+    <bpmn:sequenceFlow id="to-be_flow_12" sourceRef="to-be_partial" targetRef="to-be_merge" />
+    <bpmn:sequenceFlow id="to-be_flow_13" sourceRef="to-be_blocked" targetRef="to-be_merge" />
+    <bpmn:sequenceFlow id="to-be_flow_14" sourceRef="to-be_merge" targetRef="to-be_decide" />
+    <bpmn:sequenceFlow id="to-be_flow_15" sourceRef="to-be_decide" targetRef="to-be_draft" />
+    <bpmn:sequenceFlow id="to-be_flow_16" sourceRef="to-be_draft" targetRef="to-be_validate" />
+    <bpmn:sequenceFlow id="to-be_flow_17" sourceRef="to-be_validate" targetRef="to-be_valid" />
+    <bpmn:sequenceFlow id="to-be_flow_18" sourceRef="to-be_valid" targetRef="to-be_failure" name="No" />
+    <bpmn:sequenceFlow id="to-be_flow_19" sourceRef="to-be_valid" targetRef="to-be_deliver" name="Yes" />
+    <bpmn:sequenceFlow id="to-be_flow_20" sourceRef="to-be_deliver" targetRef="to-be_needs" />
+    <bpmn:sequenceFlow id="to-be_flow_21" sourceRef="to-be_needs" targetRef="to-be_resolve" name="Yes" />
+    <bpmn:sequenceFlow id="to-be_flow_22" sourceRef="to-be_resolve" targetRef="to-be_pending" />
+    <bpmn:sequenceFlow id="to-be_flow_23" sourceRef="to-be_needs" targetRef="to-be_review" name="No" />
+    <bpmn:sequenceFlow id="to-be_flow_24" sourceRef="to-be_review" targetRef="to-be_decision" />
+    <bpmn:sequenceFlow id="to-be_flow_25" sourceRef="to-be_decision" targetRef="to-be_changes" name="Pending or rejected" />
+    <bpmn:sequenceFlow id="to-be_flow_26" sourceRef="to-be_decision" targetRef="to-be_accepted" name="Approved for exact basis" />
+    <bpmn:sequenceFlow id="to-be_flow_27" sourceRef="to-be_accepted" targetRef="to-be_marketing" />
+    <bpmn:sequenceFlow id="to-be_flow_28" sourceRef="to-be_marketing" targetRef="to-be_end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="to-be_diagram">
+    <bpmndi:BPMNPlane id="to-be_plane" bpmnElement="to-be_process">
+      <bpmndi:BPMNShape id="to-be_lane_shape_operator" bpmnElement="to-be_lane_operator" isHorizontal="true">
+        <dc:Bounds x="0" y="0.0" width="4500" height="320" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_lane_shape_auto" bpmnElement="to-be_lane_auto" isHorizontal="true">
+        <dc:Bounds x="0" y="320.0" width="4500" height="320" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_lane_shape_owners" bpmnElement="to-be_lane_owners" isHorizontal="true">
+        <dc:Bounds x="0" y="640.0" width="4500" height="320" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_lane_shape_approvers" bpmnElement="to-be_lane_approvers" isHorizontal="true">
+        <dc:Bounds x="0" y="960.0" width="4500" height="320" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_lane_shape_marketing" bpmnElement="to-be_lane_marketing" isHorizontal="true">
+        <dc:Bounds x="0" y="1280.0" width="4500" height="320" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_start" bpmnElement="to-be_start">
+        <dc:Bounds x="80" y="45.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_invoke" bpmnElement="to-be_invoke">
+        <dc:Bounds x="300" y="45.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_bootstrap" bpmnElement="to-be_bootstrap">
+        <dc:Bounds x="520" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_retain" bpmnElement="to-be_retain">
+        <dc:Bounds x="740" y="365.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_failure" bpmnElement="to-be_failure">
+        <dc:Bounds x="2940" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_failend" bpmnElement="to-be_failend">
+        <dc:Bounds x="3160" y="365.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_capture" bpmnElement="to-be_capture">
+        <dc:Bounds x="960" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_basis" bpmnElement="to-be_basis">
+        <dc:Bounds x="1180" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_mode" bpmnElement="to-be_mode">
+        <dc:Bounds x="1400" y="365.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_complete" bpmnElement="to-be_complete">
+        <dc:Bounds x="1620" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_partial" bpmnElement="to-be_partial">
+        <dc:Bounds x="1620" y="445.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_blocked" bpmnElement="to-be_blocked">
+        <dc:Bounds x="1620" y="655.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_merge" bpmnElement="to-be_merge">
+        <dc:Bounds x="1840" y="365.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_decide" bpmnElement="to-be_decide">
+        <dc:Bounds x="2060" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_draft" bpmnElement="to-be_draft">
+        <dc:Bounds x="2280" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_validate" bpmnElement="to-be_validate">
+        <dc:Bounds x="2500" y="365.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_valid" bpmnElement="to-be_valid">
+        <dc:Bounds x="2720" y="365.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_deliver" bpmnElement="to-be_deliver">
+        <dc:Bounds x="2940" y="45.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_needs" bpmnElement="to-be_needs">
+        <dc:Bounds x="3160" y="45.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_resolve" bpmnElement="to-be_resolve">
+        <dc:Bounds x="3380" y="685.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_pending" bpmnElement="to-be_pending">
+        <dc:Bounds x="3600" y="685.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_review" bpmnElement="to-be_review">
+        <dc:Bounds x="3380" y="1005.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_decision" bpmnElement="to-be_decision">
+        <dc:Bounds x="3600" y="1005.0" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_changes" bpmnElement="to-be_changes">
+        <dc:Bounds x="3820" y="1005.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_accepted" bpmnElement="to-be_accepted">
+        <dc:Bounds x="3820" y="1085.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_marketing" bpmnElement="to-be_marketing">
+        <dc:Bounds x="4040" y="1325.0" width="170" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="to-be_shape_end" bpmnElement="to-be_end">
+        <dc:Bounds x="4260" y="1325.0" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="to-be_edge_0" bpmnElement="to-be_flow_0">
+        <di:waypoint x="116.0" y="63.0" />
+        <di:waypoint x="136.0" y="63.0" />
+        <di:waypoint x="136.0" y="80.0" />
+        <di:waypoint x="300.0" y="80.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_1" bpmnElement="to-be_flow_1">
+        <di:waypoint x="470.0" y="80.0" />
+        <di:waypoint x="490.0" y="80.0" />
+        <di:waypoint x="490.0" y="400.0" />
+        <di:waypoint x="520.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_2" bpmnElement="to-be_flow_2">
+        <di:waypoint x="690.0" y="400.0" />
+        <di:waypoint x="710.0" y="400.0" />
+        <di:waypoint x="710.0" y="390.0" />
+        <di:waypoint x="740.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_3" bpmnElement="to-be_flow_3">
+        <di:waypoint x="790.0" y="390.0" />
+        <di:waypoint x="810.0" y="390.0" />
+        <di:waypoint x="810.0" y="400.0" />
+        <di:waypoint x="2940.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_4" bpmnElement="to-be_flow_4">
+        <di:waypoint x="3110.0" y="400.0" />
+        <di:waypoint x="3130.0" y="400.0" />
+        <di:waypoint x="3130.0" y="383.0" />
+        <di:waypoint x="3160.0" y="383.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_5" bpmnElement="to-be_flow_5">
+        <di:waypoint x="790.0" y="390.0" />
+        <di:waypoint x="810.0" y="390.0" />
+        <di:waypoint x="810.0" y="400.0" />
+        <di:waypoint x="960.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_6" bpmnElement="to-be_flow_6">
+        <di:waypoint x="1130.0" y="400.0" />
+        <di:waypoint x="1150.0" y="400.0" />
+        <di:waypoint x="1150.0" y="400.0" />
+        <di:waypoint x="1180.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_7" bpmnElement="to-be_flow_7">
+        <di:waypoint x="1350.0" y="400.0" />
+        <di:waypoint x="1370.0" y="400.0" />
+        <di:waypoint x="1370.0" y="390.0" />
+        <di:waypoint x="1400.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_8" bpmnElement="to-be_flow_8">
+        <di:waypoint x="1450.0" y="390.0" />
+        <di:waypoint x="1470.0" y="390.0" />
+        <di:waypoint x="1470.0" y="400.0" />
+        <di:waypoint x="1620.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_9" bpmnElement="to-be_flow_9">
+        <di:waypoint x="1450.0" y="390.0" />
+        <di:waypoint x="1470.0" y="390.0" />
+        <di:waypoint x="1470.0" y="480.0" />
+        <di:waypoint x="1620.0" y="480.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_10" bpmnElement="to-be_flow_10">
+        <di:waypoint x="1450.0" y="390.0" />
+        <di:waypoint x="1470.0" y="390.0" />
+        <di:waypoint x="1470.0" y="690.0" />
+        <di:waypoint x="1620.0" y="690.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_11" bpmnElement="to-be_flow_11">
+        <di:waypoint x="1790.0" y="400.0" />
+        <di:waypoint x="1810.0" y="400.0" />
+        <di:waypoint x="1810.0" y="390.0" />
+        <di:waypoint x="1840.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_12" bpmnElement="to-be_flow_12">
+        <di:waypoint x="1790.0" y="480.0" />
+        <di:waypoint x="1810.0" y="480.0" />
+        <di:waypoint x="1810.0" y="390.0" />
+        <di:waypoint x="1840.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_13" bpmnElement="to-be_flow_13">
+        <di:waypoint x="1790.0" y="690.0" />
+        <di:waypoint x="1810.0" y="690.0" />
+        <di:waypoint x="1810.0" y="390.0" />
+        <di:waypoint x="1840.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_14" bpmnElement="to-be_flow_14">
+        <di:waypoint x="1890.0" y="390.0" />
+        <di:waypoint x="1910.0" y="390.0" />
+        <di:waypoint x="1910.0" y="400.0" />
+        <di:waypoint x="2060.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_15" bpmnElement="to-be_flow_15">
+        <di:waypoint x="2230.0" y="400.0" />
+        <di:waypoint x="2250.0" y="400.0" />
+        <di:waypoint x="2250.0" y="400.0" />
+        <di:waypoint x="2280.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_16" bpmnElement="to-be_flow_16">
+        <di:waypoint x="2450.0" y="400.0" />
+        <di:waypoint x="2470.0" y="400.0" />
+        <di:waypoint x="2470.0" y="400.0" />
+        <di:waypoint x="2500.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_17" bpmnElement="to-be_flow_17">
+        <di:waypoint x="2670.0" y="400.0" />
+        <di:waypoint x="2690.0" y="400.0" />
+        <di:waypoint x="2690.0" y="390.0" />
+        <di:waypoint x="2720.0" y="390.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_18" bpmnElement="to-be_flow_18">
+        <di:waypoint x="2770.0" y="390.0" />
+        <di:waypoint x="2790.0" y="390.0" />
+        <di:waypoint x="2790.0" y="400.0" />
+        <di:waypoint x="2940.0" y="400.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_19" bpmnElement="to-be_flow_19">
+        <di:waypoint x="2770.0" y="390.0" />
+        <di:waypoint x="2790.0" y="390.0" />
+        <di:waypoint x="2790.0" y="80.0" />
+        <di:waypoint x="2940.0" y="80.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_20" bpmnElement="to-be_flow_20">
+        <di:waypoint x="3110.0" y="80.0" />
+        <di:waypoint x="3130.0" y="80.0" />
+        <di:waypoint x="3130.0" y="70.0" />
+        <di:waypoint x="3160.0" y="70.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_21" bpmnElement="to-be_flow_21">
+        <di:waypoint x="3210.0" y="70.0" />
+        <di:waypoint x="3230.0" y="70.0" />
+        <di:waypoint x="3230.0" y="720.0" />
+        <di:waypoint x="3380.0" y="720.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_22" bpmnElement="to-be_flow_22">
+        <di:waypoint x="3550.0" y="720.0" />
+        <di:waypoint x="3570.0" y="720.0" />
+        <di:waypoint x="3570.0" y="703.0" />
+        <di:waypoint x="3600.0" y="703.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_23" bpmnElement="to-be_flow_23">
+        <di:waypoint x="3210.0" y="70.0" />
+        <di:waypoint x="3230.0" y="70.0" />
+        <di:waypoint x="3230.0" y="1040.0" />
+        <di:waypoint x="3380.0" y="1040.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_24" bpmnElement="to-be_flow_24">
+        <di:waypoint x="3550.0" y="1040.0" />
+        <di:waypoint x="3570.0" y="1040.0" />
+        <di:waypoint x="3570.0" y="1030.0" />
+        <di:waypoint x="3600.0" y="1030.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_25" bpmnElement="to-be_flow_25">
+        <di:waypoint x="3650.0" y="1030.0" />
+        <di:waypoint x="3670.0" y="1030.0" />
+        <di:waypoint x="3670.0" y="1023.0" />
+        <di:waypoint x="3820.0" y="1023.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_26" bpmnElement="to-be_flow_26">
+        <di:waypoint x="3650.0" y="1030.0" />
+        <di:waypoint x="3670.0" y="1030.0" />
+        <di:waypoint x="3670.0" y="1120.0" />
+        <di:waypoint x="3820.0" y="1120.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_27" bpmnElement="to-be_flow_27">
+        <di:waypoint x="3990.0" y="1120.0" />
+        <di:waypoint x="4010.0" y="1120.0" />
+        <di:waypoint x="4010.0" y="1360.0" />
+        <di:waypoint x="4040.0" y="1360.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="to-be_edge_28" bpmnElement="to-be_flow_28">
+        <di:waypoint x="4210.0" y="1360.0" />
+        <di:waypoint x="4230.0" y="1360.0" />
+        <di:waypoint x="4230.0" y="1343.0" />
+        <di:waypoint x="4260.0" y="1343.0" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

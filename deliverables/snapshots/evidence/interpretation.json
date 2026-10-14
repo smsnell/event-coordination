@@ -1,0 +1,126 @@
+{
+  "brief_sha256": "sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b",
+  "capture_hashes": {
+    "attendees": "sha256:7a2b28fc1ad86f3399c18c058c946a79f5ccac9f92835e5dc8bcf224d0e3bb4a",
+    "budget": "sha256:7b3d13de33131afbaf89ffa01c20944fd31743d193a8c84bc06f33a3faace438",
+    "vendors": "sha256:bd807bdf433965a9f0892f4e0644059a2755afd568528654dd618f67842889bb",
+    "calendar": "sha256:311a82b249132e58f26500267f171af385a59da169641b3b37bd0de15058ff18",
+    "hall": "sha256:07589c87636ea5c6a46acff00baee8d9e58ee75b8fefcf14d3d2f251097a0d5c",
+    "accessibility": "sha256:8295f62a73075e5c8a3687952b40a3714e71edce9cfd3ee172550d6158da845a"
+  },
+  "observed_at": "2026-10-14T20:56:56.198582+00:00",
+  "author": "Invoking Codex agent; P1 interpretation",
+  "rationale": "Business facts grounded in supplied Markdown brief, R2/R3 and freshly retrieved Sheets; bounded public-media observations inspected visually on retained bytes. No approval inferred.",
+  "brief_versions": [
+    "EVENT-BRIEF-2026-08-26",
+    "VEN-2026-08-26",
+    "VEN-2026-08-26-R2",
+    "PROG-2026-08-26-R3"
+  ],
+  "clarification_authored_at": "2026-09-12",
+  "objective": "Review-ready Fellowship Demo Day with every scheduled fellow demonstration, at least 80% registered check-in target and documented accessibility responses",
+  "ceiling_twd": 520000,
+  "declared_people": 245,
+  "event_date": "2026-10-17",
+  "venue_capacity": 500,
+  "wheelchair_capacity": 6,
+  "quiet_capacity": 20,
+  "base_readiness_confirmed": true,
+  "base_accessibility_confirmed": true,
+  "dietary_response_confirmed": true,
+  "demos": [
+    "DEMO-01",
+    "DEMO-02",
+    "DEMO-03",
+    "DEMO-04",
+    "DEMO-05",
+    "DEMO-06",
+    "DEMO-07",
+    "DEMO-08",
+    "DEMO-09",
+    "DEMO-10",
+    "DEMO-11",
+    "DEMO-12"
+  ],
+  "demo_minutes": 10,
+  "changeover_minutes": 3,
+  "base_quotes": [
+    {
+      "id": "green-table",
+      "quotes": [
+        "Q-001",
+        "Q-003",
+        "Q-005",
+        "Q-006",
+        "Q-009",
+        "Q-010"
+      ]
+    },
+    {
+      "id": "city-pantry",
+      "quotes": [
+        "Q-001",
+        "Q-004",
+        "Q-005",
+        "Q-006",
+        "Q-009",
+        "Q-010"
+      ]
+    }
+  ],
+  "fallback_quote": "Q-002",
+  "basic_av_quote": "Q-007",
+  "stream_quote": "Q-008",
+  "hearing_loop_quote": "Q-006",
+  "quiet_quote": "Q-010",
+  "media_sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+  "media_visually_inspected_at": "2026-10-14T20:56:56.198582+00:00",
+  "media_observations": [
+    {
+      "id": "OBS-4F-VIP",
+      "summary": "V.I.P. ROOM is depicted west/left of the Plenary Hall seating; Meeting Room 401 lies between them. This is a depicted location, not acoustic or usable-route certification.",
+      "locator": {
+        "kind": "page-region",
+        "value": "page 1; normalized top-left rectangle [0.26,0.38,0.57,0.70]; page 3370x2384 PDF units"
+      }
+    },
+    {
+      "id": "OBS-4F-SEATING",
+      "summary": "Wheelchair-area symbols are depicted near upper and lower audience seating rows. Symbol positions alone do not establish the six usable case spaces.",
+      "locator": {
+        "kind": "page-region",
+        "value": "page 1; normalized top-left rectangle [0.59,0.28,0.81,0.60]; page 3370x2384 PDF units"
+      }
+    },
+    {
+      "id": "OBS-4F-FACILITIES",
+      "summary": "Accessible-elevator and accessible-restroom symbols are depicted along the lower circulation area, with the symbol definitions in the left legend. No unobstructed route or lift operation is asserted.",
+      "locator": {
+        "kind": "page-region",
+        "value": "page 1; lower circulation [0.46,0.62,0.84,0.82], legend [0.06,0.13,0.20,0.71]; normalized top-left; page 3370x2384 PDF units"
+      }
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ]
+}
