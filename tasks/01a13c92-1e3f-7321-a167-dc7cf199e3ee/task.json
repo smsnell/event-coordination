@@ -1,0 +1,17 @@
+{
+  "tool_use_id": "01a13c92-1e3f-7321-a167-dc7cf199e3ee",
+  "agent_id": "01a13c92-1e3f-7321-a167-dc7cf199e3ee",
+  "subagent_type": "default",
+  "files": [
+    "docs/g3/business-judgment-review.md"
+  ],
+  "token_usage": {
+    "input_tokens": 102317,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1282048,
+    "output_tokens": 6883,
+    "api_call_count": 19
+  },
+  "started_at": "2026-10-14T18:39:32.984138133-04:00",
+  "completed_at": "2026-10-14T18:59:27.037661517-04:00"
+}
