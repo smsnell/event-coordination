@@ -1,0 +1,137 @@
+{
+  "id": "calendar",
+  "source_url": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+  "retrieval_started_at": "2026-10-14T21:41:26Z",
+  "retrieved_at": "2026-10-14T21:41:29Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json",
+  "representation": "Google Sheets FORMATTED_VALUE",
+  "metadata": {
+    "spreadsheetId": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s/edit",
+    "properties": {
+      "title": "Project C — Calendar Constraints",
+      "locale": "zh_TW",
+      "timeZone": "Asia/Taipei"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Calendar Constraints",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ]
+  },
+  "capture": {
+    "range": "'Calendar Constraints'!A1:P25",
+    "majorDimension": "ROWS",
+    "values": [
+      [
+        "unrelated_extra",
+        "record_version",
+        "notes",
+        "priority",
+        "end_at",
+        "start_at",
+        "constraint_type",
+        "owner",
+        "constraint_id"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "All vendors clear by 18:30",
+        "hard",
+        "2026-10-17T18:30:00+08:00",
+        "2026-10-17T17:00:00+08:00",
+        "teardown_deadline",
+        "TICC",
+        "CAL-008"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Remote backup acceptable",
+        "soft",
+        "2026-10-16T18:00:00+08:00",
+        "2026-10-16T15:00:00+08:00",
+        "rehearsal_window",
+        "Programme",
+        "CAL-007"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Venue confirmation required first",
+        "hard",
+        "2026-09-25T16:00:00+08:00",
+        "2026-09-25T14:00:00+08:00",
+        "accessibility_walkthrough",
+        "Learner Experience",
+        "CAL-006"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Plan and budget decision",
+        "hard",
+        "2026-09-04T17:00:00+08:00",
+        "2026-09-04T17:00:00+08:00",
+        "decision_deadline",
+        "Operations",
+        "CAL-005"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Keynote unavailable on fallback date",
+        "hard",
+        "2026-10-17T11:00:00+08:00",
+        "2026-10-17T10:00:00+08:00",
+        "keynote_availability",
+        "Programme",
+        "CAL-004"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Hold expires 2026-09-05",
+        "hard",
+        "2026-10-17T18:30:00+08:00",
+        "2026-10-17T08:00:00+08:00",
+        "venue_hold",
+        "TICC",
+        "CAL-003"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Fallback date",
+        "soft",
+        "2026-10-24T17:00:00+08:00",
+        "2026-10-24T09:30:00+08:00",
+        "fallback_event_window",
+        "Operations",
+        "CAL-002"
+      ],
+      [
+        "ignored",
+        "calendar-2026-08-26",
+        "Preferred event date",
+        "hard",
+        "2026-10-17T17:00:00+08:00",
+        "2026-10-17T09:30:00+08:00",
+        "preferred_event_window",
+        "Operations",
+        "CAL-001"
+      ]
+    ]
+  }
+}

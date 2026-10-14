@@ -1,0 +1,194 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T215248Z-d148f12f-07",
+  "run_id": "run-20261014T215248Z-d148f12f",
+  "stage": "decision-and-approval",
+  "sequence": 7,
+  "created_at": "2026-10-14T21:52:48.990537+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T215248Z-d148f12f-06",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/06-feasibility-testing.json",
+    "sha256": "sha256:1ece38a4b4a436522afc278879f7136d9be2779623b8aba290a50c2051735342"
+  },
+  "consumed_record_ids": [
+    "basis",
+    "option-basic-av",
+    "option-city-pantry",
+    "option-fallback",
+    "option-green-table",
+    "option-livestream"
+  ],
+  "produced_record_ids": [
+    "approval-accessibility",
+    "approval-catering",
+    "approval-communications",
+    "approval-contingency",
+    "approval-plan",
+    "approval-production",
+    "approval-security",
+    "approval-venue",
+    "boundary-7",
+    "decision-recommendation",
+    "tradeoff"
+  ],
+  "state": {
+    "recommendation": "option-green-table",
+    "tradeoffs": [
+      {
+        "id": "tradeoff",
+        "summary": "Lowest supported feasible package cost with all base services; alternative buys additional catering capacity",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief"
+        ],
+        "owner": null
+      }
+    ],
+    "learner_decisions": [
+      {
+        "id": "decision-recommendation",
+        "summary": "option-green-table",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief"
+        ],
+        "owner": "Operations",
+        "rationale": "Lowest supported feasible package cost with all base services; alternative buys additional catering capacity",
+        "tradeoffs": [
+          "Catering headroom versus total remaining ceiling",
+          "Hard requirements remain fixed"
+        ]
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "approval-plan",
+        "summary": "Plan/date/venue and publication review",
+        "evidence_ids": [
+          "src-brief"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-accessibility",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Learner Experience",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-catering",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-communications",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Communications",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-contingency",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-production",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Programme",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-security",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      },
+      {
+        "id": "approval-venue",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215248Z-d148f12f"
+      }
+    ],
+    "boundary": {
+      "id": "boundary-7",
+      "summary": "Observed completion of decision-and-approval",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-recommendation",
+      "summary": "option-green-table",
+      "evidence_ids": [
+        "src-vendors",
+        "src-budget",
+        "src-brief"
+      ],
+      "owner": "Operations",
+      "rationale": "Lowest supported feasible package cost with all base services; alternative buys additional catering capacity",
+      "tradeoffs": [
+        "Catering headroom versus total remaining ceiling",
+        "Hard requirements remain fixed"
+      ]
+    }
+  ]
+}

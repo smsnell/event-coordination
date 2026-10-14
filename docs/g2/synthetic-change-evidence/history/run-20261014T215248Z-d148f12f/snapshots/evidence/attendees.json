@@ -1,0 +1,192 @@
+{
+  "id": "attendees",
+  "source_url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+  "retrieval_started_at": "2026-10-14T21:41:27Z",
+  "retrieved_at": "2026-10-14T21:41:29Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json",
+  "representation": "Google Sheets FORMATTED_VALUE",
+  "metadata": {
+    "spreadsheetId": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU/edit",
+    "properties": {
+      "title": "Project C — Attendee Signals",
+      "locale": "zh_TW",
+      "timeZone": "Asia/Taipei"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Attendee Signals",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ]
+  },
+  "capture": {
+    "range": "'Attendee Signals'!A1:P25",
+    "majorDimension": "ROWS",
+    "values": [
+      [
+        "unrelated_extra",
+        "confidence",
+        "observed_at",
+        "unit",
+        "value",
+        "signal",
+        "segment",
+        "source",
+        "signal_id"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "4",
+        "severe_allergy_follow_up",
+        "all",
+        "registration_form",
+        "SIG-013"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "meals",
+        "12",
+        "halal_meals",
+        "all",
+        "registration_form",
+        "SIG-012"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "meals",
+        "28",
+        "vegetarian_meals",
+        "all",
+        "registration_form",
+        "SIG-011"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "9",
+        "quiet_room_requests",
+        "all",
+        "registration_form",
+        "SIG-010"
+      ],
+      [
+        "ignored",
+        "medium",
+        "2026-08-24",
+        "people",
+        "7",
+        "hearing_loop_requests",
+        "all",
+        "registration_form",
+        "SIG-009"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "23",
+        "live_caption_requests",
+        "all",
+        "registration_form",
+        "SIG-008"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "4",
+        "mobility_companions",
+        "all",
+        "registration_form",
+        "SIG-007"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "6",
+        "wheelchair_spaces",
+        "all",
+        "registration_form",
+        "SIG-006"
+      ],
+      [
+        "ignored",
+        "medium",
+        "2026-08-26",
+        "people",
+        "45",
+        "expected_attendees",
+        "walk_ins",
+        "forecast",
+        "SIG-005"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-25",
+        "people",
+        "12",
+        "required_on_site",
+        "speakers",
+        "programme_plan",
+        "SIG-004"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-25",
+        "people",
+        "18",
+        "required_on_site",
+        "staff",
+        "operations_plan",
+        "SIG-003"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "32",
+        "registered_attendees",
+        "partners",
+        "partner_form",
+        "SIG-002"
+      ],
+      [
+        "ignored",
+        "high",
+        "2026-08-24",
+        "people",
+        "148",
+        "registered_attendees",
+        "fellows",
+        "registration_form",
+        "SIG-001"
+      ]
+    ]
+  }
+}

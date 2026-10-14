@@ -1,0 +1,25 @@
+{
+  "id": "accessibility",
+  "source_url": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+  "retrieved_at": "2026-10-14T21:46:15.650079+00:00",
+  "retrieval_status": "retrieved",
+  "content_type": "text/plain",
+  "representation": "permitted claim-bearing extract",
+  "locator": "Accessible Facilities Floor Plan index, 4F item",
+  "version_metadata": {
+    "origin_version": null,
+    "web_cache_crawl_report": "4 weeks ago",
+    "timestamp_basis": "Extract recorded after actual P2 web read; exact tool retrieval instant not supplied"
+  },
+  "extract": "The official Accessible Facilities Floor Plan index includes TICC 4F Accessible Facilities Floor Plan among 8 floor-plan entries. Index identity is not current physical accessibility certification.",
+  "observations": [
+    {
+      "id": "OBS-ACCESS-INDEX",
+      "summary": "Official accessibility index contains the 4F plan entry.",
+      "locator": {
+        "kind": "section",
+        "value": "Accessible Facilities Floor Plan; third listed floor"
+      }
+    }
+  ]
+}

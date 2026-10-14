@@ -1,0 +1,915 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T215248Z-d148f12f-02",
+  "run_id": "run-20261014T215248Z-d148f12f",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-10-14T21:52:48.970601+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T215248Z-d148f12f-01",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/01-scope-and-approval-gates.json",
+    "sha256": "sha256:cac9df3b1f47b3cd0a8f9c38c928050a0c3efa4db7bfa7c5f4b0f2859792a434"
+  },
+  "consumed_record_ids": [
+    "scope"
+  ],
+  "produced_record_ids": [
+    "OBS-4F-FACILITIES",
+    "OBS-4F-SEATING",
+    "OBS-4F-VIP",
+    "OBS-ACCESS-INDEX",
+    "OBS-HALL-RULES",
+    "boundary-2",
+    "src-accessibility",
+    "src-attempts",
+    "src-attendees",
+    "src-brief",
+    "src-budget",
+    "src-calendar",
+    "src-floor-plan",
+    "src-floor-plan-meta",
+    "src-hall",
+    "src-interpretation",
+    "src-vendors"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "src-attendees",
+        "summary": "Actual bounded source capture: attendees",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "attendee-signals",
+        "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+        "retrieved_at": "2026-10-14T21:41:29Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": {
+          "representation": "Google Sheets FORMATTED_VALUE",
+          "metadata": {
+            "spreadsheetId": "1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
+            "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU/edit",
+            "properties": {
+              "title": "Project C — Attendee Signals",
+              "locale": "zh_TW",
+              "timeZone": "Asia/Taipei"
+            },
+            "sheets": [
+              {
+                "properties": {
+                  "sheetId": 0,
+                  "title": "Attendee Signals",
+                  "index": 0,
+                  "sheetType": "GRID",
+                  "gridProperties": {
+                    "rowCount": 1000,
+                    "columnCount": 26
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "content_hash": "sha256:e6e4609930d08c3b7821cef9d080f8ce74e5db25260a8265f93b6410067981a4",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/attendees.json",
+        "observations": []
+      },
+      {
+        "id": "src-budget",
+        "summary": "Actual bounded source capture: budget",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "budget",
+        "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+        "retrieved_at": "2026-10-14T21:41:29Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": {
+          "representation": "Google Sheets FORMATTED_VALUE",
+          "metadata": {
+            "spreadsheetId": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+            "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/edit",
+            "properties": {
+              "title": "Project C — Budget",
+              "locale": "zh_TW",
+              "timeZone": "Asia/Taipei"
+            },
+            "sheets": [
+              {
+                "properties": {
+                  "sheetId": 0,
+                  "title": "Budget",
+                  "index": 0,
+                  "sheetType": "GRID",
+                  "gridProperties": {
+                    "rowCount": 1000,
+                    "columnCount": 26
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "content_hash": "sha256:80f3d7348c8c3c7f8eeec246cad8804a72bb359bcc765b5cbc5ce82d0edac1e3",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/budget.json",
+        "observations": []
+      },
+      {
+        "id": "src-vendors",
+        "summary": "Actual bounded source capture: vendors",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "vendor-record",
+        "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+        "retrieved_at": "2026-10-14T21:41:28Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": {
+          "representation": "Google Sheets FORMATTED_VALUE",
+          "metadata": {
+            "spreadsheetId": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+            "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko/edit",
+            "properties": {
+              "title": "Project C — Vendor Quotes",
+              "locale": "zh_TW",
+              "timeZone": "Asia/Taipei"
+            },
+            "sheets": [
+              {
+                "properties": {
+                  "sheetId": 0,
+                  "title": "Vendor Quotes",
+                  "index": 0,
+                  "sheetType": "GRID",
+                  "gridProperties": {
+                    "rowCount": 1000,
+                    "columnCount": 26
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "content_hash": "sha256:eeea6448afc4254e071d6024a94e22f397c6a4e533543fe1b3104cad3deae032",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/vendors.json",
+        "observations": []
+      },
+      {
+        "id": "src-calendar",
+        "summary": "Actual bounded source capture: calendar",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "calendar",
+        "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+        "retrieved_at": "2026-10-14T21:41:29Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": {
+          "representation": "Google Sheets FORMATTED_VALUE",
+          "metadata": {
+            "spreadsheetId": "1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
+            "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s/edit",
+            "properties": {
+              "title": "Project C — Calendar Constraints",
+              "locale": "zh_TW",
+              "timeZone": "Asia/Taipei"
+            },
+            "sheets": [
+              {
+                "properties": {
+                  "sheetId": 0,
+                  "title": "Calendar Constraints",
+                  "index": 0,
+                  "sheetType": "GRID",
+                  "gridProperties": {
+                    "rowCount": 1000,
+                    "columnCount": 26
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "content_hash": "sha256:5c48c8779ce33535f06840a8a1f8bcbd9a973f97ce042f74fb359a65f22b25e4",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/calendar.json",
+        "observations": []
+      },
+      {
+        "id": "src-hall",
+        "summary": "Actual bounded source capture: hall",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "venue-page",
+        "locator": "https://www.ticc.com.tw/wSite/sp?BaseDSD=7&CtUnit=99&ctNode=322&mp=2&roomId=PH&xdUrl=%2FwSite%2Fap%2Fcp_VenueSearch.jsp",
+        "retrieved_at": "2026-10-14T21:46:15.649565+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "text/plain",
+        "version_metadata": {
+          "origin_version": null,
+          "web_cache_crawl_report": "last week",
+          "timestamp_basis": "Extract recorded after actual P2 web read; exact tool retrieval instant not supplied"
+        },
+        "content_hash": "sha256:769fd424ebcee36e5262cf5f27f0b1e4affede51e72008863a5c3b2128dae990",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/hall.json",
+        "observations": [
+          {
+            "id": "OBS-HALL-RULES",
+            "summary": "Outside AV/food and livestream provider restrictions; Operations must arrange technical coordination/safety briefing. No booking or attendance at that briefing observed.",
+            "locator": {
+              "kind": "section",
+              "value": "rental rules 1, 5, 9, 10"
+            }
+          }
+        ]
+      },
+      {
+        "id": "src-accessibility",
+        "summary": "Actual bounded source capture: accessibility",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "venue-page",
+        "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
+        "retrieved_at": "2026-10-14T21:46:15.650079+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "text/plain",
+        "version_metadata": {
+          "origin_version": null,
+          "web_cache_crawl_report": "4 weeks ago",
+          "timestamp_basis": "Extract recorded after actual P2 web read; exact tool retrieval instant not supplied"
+        },
+        "content_hash": "sha256:ec343848d203f869cf596a9a6f15e6c650f29703f3f39de50dcdedb0b7a2c66f",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/accessibility.json",
+        "observations": [
+          {
+            "id": "OBS-ACCESS-INDEX",
+            "summary": "Official accessibility index contains the 4F plan entry.",
+            "locator": {
+              "kind": "section",
+              "value": "Accessible Facilities Floor Plan; third listed floor"
+            }
+          }
+        ]
+      },
+      {
+        "id": "src-brief",
+        "summary": "Authorized local Markdown business brief",
+        "evidence_ids": [],
+        "owner": "Operations",
+        "source_role": "event-brief",
+        "locator": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/event-brief.md",
+        "retrieved_at": "2026-10-14T21:52:48.964498+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "text/markdown",
+        "version_metadata": {
+          "versions": [
+            "EVENT-BRIEF-2026-08-26",
+            "VEN-2026-08-26",
+            "VEN-2026-08-26-R2",
+            "PROG-2026-08-26-R3"
+          ],
+          "clarification_authored_at": "2026-09-12",
+          "source_kind": "user-provided scenario; not Notion retrieval"
+        },
+        "content_hash": "sha256:2db29d32dbd19741f7b1b3a24d4f0d30202edd72743b44a12cfe0a01855454ff",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/event-brief.md",
+        "observations": []
+      },
+      {
+        "id": "src-interpretation",
+        "summary": "Invoking-agent interpretation, not business authority",
+        "evidence_ids": [],
+        "owner": null,
+        "source_role": "other",
+        "locator": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/captures/interpretation.json",
+        "retrieved_at": "2026-10-14T21:46:15.651343+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": {
+          "author": "SYNTHETIC G2 fixture; not a live retrieval"
+        },
+        "content_hash": "sha256:54fb4caa3cdc9cee673da6cebb0c0644cd9542358ea7ce359f2a5ec62eabd5f7",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/interpretation.json",
+        "observations": []
+      },
+      {
+        "id": "src-floor-plan",
+        "summary": "Official 4F PDF; visually inspected",
+        "evidence_ids": [],
+        "owner": null,
+        "source_role": "floor-plan-or-image",
+        "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+        "retrieved_at": "2026-10-14T21:42:47Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/pdf",
+        "version_metadata": {
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "bytes": 522512,
+          "origin_version": null,
+          "transport": "curl TLS verified; no response headers retained",
+          "timestamp_basis": "End-of-download observation at execution clock; exact start not recorded"
+        },
+        "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/floor-plan.pdf",
+        "observations": [
+          {
+            "id": "OBS-4F-VIP",
+            "summary": "V.I.P. ROOM is depicted west/left of the Plenary Hall seating; Meeting Room 401 lies between them. This is a depicted location, not acoustic or usable-route certification.",
+            "locator": {
+              "kind": "page-region",
+              "value": "page 1; normalized top-left rectangle [0.26,0.38,0.57,0.70]; page 3370x2384 PDF units"
+            }
+          },
+          {
+            "id": "OBS-4F-SEATING",
+            "summary": "Wheelchair-area symbols are depicted near upper and lower audience seating rows. Symbol positions alone do not establish the six usable case spaces.",
+            "locator": {
+              "kind": "page-region",
+              "value": "page 1; normalized top-left rectangle [0.59,0.28,0.81,0.60]; page 3370x2384 PDF units"
+            }
+          },
+          {
+            "id": "OBS-4F-FACILITIES",
+            "summary": "Accessible-elevator and accessible-restroom symbols are depicted along the lower circulation area, with the symbol definitions in the left legend. No unobstructed route or lift operation is asserted.",
+            "locator": {
+              "kind": "page-region",
+              "value": "page 1; lower circulation [0.46,0.62,0.84,0.82], legend [0.06,0.13,0.20,0.71]; normalized top-left; page 3370x2384 PDF units"
+            }
+          }
+        ]
+      },
+      {
+        "id": "src-floor-plan-meta",
+        "summary": "Actual media acquisition metadata/attempts",
+        "evidence_ids": [],
+        "owner": null,
+        "source_role": "other",
+        "locator": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/captures/floor-plan-meta.json",
+        "retrieved_at": "2026-10-14T21:52:48.967687+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": null,
+        "content_hash": "sha256:885637ea69adbbf3321b733e47aa2cb24d66e5213fff2e26f18bea568b41121e",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/floor-plan-meta.json",
+        "observations": []
+      },
+      {
+        "id": "src-attempts",
+        "summary": "Actual media acquisition metadata/attempts",
+        "evidence_ids": [],
+        "owner": null,
+        "source_role": "other",
+        "locator": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/captures/attempts.json",
+        "retrieved_at": "2026-10-14T21:52:48.967937+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": null,
+        "content_hash": "sha256:30bc1dab38fbf4ac3eba5d4596077abf014eafcf83dc8059b56e789250703add",
+        "local_reference": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/evidence/attempts.json",
+        "observations": []
+      }
+    ],
+    "structured_records": {
+      "attendees": {
+        "SIG-001": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 148,
+          "signal": "registered_attendees",
+          "segment": "fellows",
+          "source": "registration_form",
+          "signal_id": "SIG-001",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 14"
+        },
+        "SIG-002": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 32,
+          "signal": "registered_attendees",
+          "segment": "partners",
+          "source": "partner_form",
+          "signal_id": "SIG-002",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 13"
+        },
+        "SIG-003": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-25",
+          "unit": "people",
+          "value": 18,
+          "signal": "required_on_site",
+          "segment": "staff",
+          "source": "operations_plan",
+          "signal_id": "SIG-003",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 12"
+        },
+        "SIG-004": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-25",
+          "unit": "people",
+          "value": 12,
+          "signal": "required_on_site",
+          "segment": "speakers",
+          "source": "programme_plan",
+          "signal_id": "SIG-004",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 11"
+        },
+        "SIG-005": {
+          "unrelated_extra": "ignored",
+          "confidence": "medium",
+          "observed_at": "2026-08-26",
+          "unit": "people",
+          "value": 45,
+          "signal": "expected_attendees",
+          "segment": "walk_ins",
+          "source": "forecast",
+          "signal_id": "SIG-005",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 10"
+        },
+        "SIG-006": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 6,
+          "signal": "wheelchair_spaces",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-006",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 9"
+        },
+        "SIG-007": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 4,
+          "signal": "mobility_companions",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-007",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 8"
+        },
+        "SIG-008": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 23,
+          "signal": "live_caption_requests",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-008",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 7"
+        },
+        "SIG-009": {
+          "unrelated_extra": "ignored",
+          "confidence": "medium",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 7,
+          "signal": "hearing_loop_requests",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-009",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 6"
+        },
+        "SIG-010": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 9,
+          "signal": "quiet_room_requests",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-010",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 5"
+        },
+        "SIG-011": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "meals",
+          "value": 28,
+          "signal": "vegetarian_meals",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-011",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 4"
+        },
+        "SIG-012": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "meals",
+          "value": 12,
+          "signal": "halal_meals",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-012",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 3"
+        },
+        "SIG-013": {
+          "unrelated_extra": "ignored",
+          "confidence": "high",
+          "observed_at": "2026-08-24",
+          "unit": "people",
+          "value": 4,
+          "signal": "severe_allergy_follow_up",
+          "segment": "all",
+          "source": "registration_form",
+          "signal_id": "SIG-013",
+          "evidence_id": "src-attendees",
+          "locator": "'Attendee Signals'!A1:P25; row 2"
+        }
+      },
+      "budget": {
+        "accessibility": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Learner Experience",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 80000,
+          "planned_amount_twd": 65000,
+          "category": "accessibility",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 6"
+        },
+        "catering": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Operations",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 135000,
+          "planned_amount_twd": 115000,
+          "category": "catering",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 7"
+        },
+        "communications": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Communications",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 30000,
+          "planned_amount_twd": 25000,
+          "category": "communications",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 4"
+        },
+        "contingency": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Operations",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 50000,
+          "planned_amount_twd": 40000,
+          "category": "contingency",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 2"
+        },
+        "production": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Programme",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 100000,
+          "planned_amount_twd": 85000,
+          "category": "production",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 5"
+        },
+        "security": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Operations",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 35000,
+          "planned_amount_twd": 25000,
+          "category": "security",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 3"
+        },
+        "venue": {
+          "unrelated_extra": "ignored",
+          "record_version": "budget-2026-08-26",
+          "owner": "Operations",
+          "committed_amount_twd": 0,
+          "approval_limit_twd": 180000,
+          "planned_amount_twd": 155000,
+          "category": "venue",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 8"
+        }
+      },
+      "vendors": {
+        "Q-001": {
+          "unrelated_extra": "ignored",
+          "notes": "Synthetic full-day package; see venue coordination note; no real reservation",
+          "status": "held",
+          "valid_until": "2026-09-05",
+          "available_date": "2026-10-17",
+          "capacity": 500,
+          "quote_amount_twd": 155000,
+          "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+          "category": "venue",
+          "vendor": "TICC",
+          "quote_id": "Q-001",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 11"
+        },
+        "Q-002": {
+          "unrelated_extra": "ignored",
+          "notes": "Keynote is unavailable on this date; Synthetic full-day package; see venue coordination note; no real reservation",
+          "status": "available",
+          "valid_until": "2026-09-05",
+          "available_date": "2026-10-24",
+          "capacity": 500,
+          "quote_amount_twd": 155000,
+          "option": "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+          "category": "venue",
+          "vendor": "TICC",
+          "quote_id": "Q-002",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 10"
+        },
+        "Q-003": {
+          "unrelated_extra": "ignored",
+          "notes": "Supports listed vegetarian and halal meals; supplied through TICC coordination in this synthetic case",
+          "status": "available",
+          "valid_until": "2026-09-07",
+          "available_date": "2026-10-17",
+          "capacity": 260,
+          "quote_amount_twd": 110000,
+          "option": "lunch and two breaks",
+          "category": "catering",
+          "vendor": "Green Table",
+          "quote_id": "Q-003",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 9"
+        },
+        "Q-004": {
+          "unrelated_extra": "ignored",
+          "notes": "Allergy process requires named contacts; supplied through TICC coordination in this synthetic case",
+          "status": "available",
+          "valid_until": "2026-09-12",
+          "available_date": "2026-10-17",
+          "capacity": 300,
+          "quote_amount_twd": 126000,
+          "option": "lunch and two breaks",
+          "category": "catering",
+          "vendor": "City Pantry",
+          "quote_id": "Q-004",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 8"
+        },
+        "Q-005": {
+          "unrelated_extra": "ignored",
+          "notes": "Two captioners included",
+          "status": "available",
+          "valid_until": "2026-09-10",
+          "available_date": "2026-10-17",
+          "capacity": 500,
+          "quote_amount_twd": 42000,
+          "option": "live captions and transcript",
+          "category": "accessibility",
+          "vendor": "ClearText",
+          "quote_id": "Q-005",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 7"
+        },
+        "Q-006": {
+          "unrelated_extra": "ignored",
+          "notes": "Setup starts at 07:30; supplied through TICC coordination in this synthetic case",
+          "status": "available",
+          "valid_until": "2026-09-08",
+          "available_date": "2026-10-17",
+          "capacity": 500,
+          "quote_amount_twd": 78000,
+          "option": "AV package with hearing loop",
+          "category": "production",
+          "vendor": "SoundArc",
+          "quote_id": "Q-006",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 6"
+        },
+        "Q-007": {
+          "unrelated_extra": "ignored",
+          "notes": "No hearing loop included; supplied through TICC coordination in this synthetic case",
+          "status": "available",
+          "valid_until": "2026-09-08",
+          "available_date": "2026-10-17",
+          "capacity": 500,
+          "quote_amount_twd": 52000,
+          "option": "basic AV package",
+          "category": "production",
+          "vendor": "LiteStage",
+          "quote_id": "Q-007",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 5"
+        },
+        "Q-008": {
+          "unrelated_extra": "ignored",
+          "notes": "Network test required; supplied through TICC coordination in this synthetic case",
+          "status": "conditional",
+          "valid_until": "2026-09-11",
+          "available_date": "2026-10-17",
+          "capacity": 1000,
+          "quote_amount_twd": 55000,
+          "option": "livestream add-on",
+          "category": "production",
+          "vendor": "StreamNorth",
+          "quote_id": "Q-008",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 4"
+        },
+        "Q-009": {
+          "unrelated_extra": "ignored",
+          "notes": "Includes first aid lead",
+          "status": "available",
+          "valid_until": "2026-09-15",
+          "available_date": "2026-10-17",
+          "capacity": 500,
+          "quote_amount_twd": 28000,
+          "option": "four staff",
+          "category": "security",
+          "vendor": "SafeVenue",
+          "quote_id": "Q-009",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 3"
+        },
+        "Q-010": {
+          "unrelated_extra": "ignored",
+          "notes": "Room itself supplied by venue",
+          "status": "available",
+          "valid_until": "2026-09-10",
+          "available_date": "2026-10-17",
+          "capacity": 20,
+          "quote_amount_twd": 18000,
+          "option": "quiet room staffing",
+          "category": "accessibility",
+          "vendor": "QuietWorks",
+          "quote_id": "Q-010",
+          "evidence_id": "src-vendors",
+          "locator": "'Vendor Quotes'!A1:P25; row 2"
+        }
+      },
+      "calendar": {
+        "CAL-001": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Preferred event date",
+          "priority": "hard",
+          "end_at": "2026-10-17T17:00:00+08:00",
+          "start_at": "2026-10-17T09:30:00+08:00",
+          "constraint_type": "preferred_event_window",
+          "owner": "Operations",
+          "constraint_id": "CAL-001",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 9"
+        },
+        "CAL-002": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Fallback date",
+          "priority": "soft",
+          "end_at": "2026-10-24T17:00:00+08:00",
+          "start_at": "2026-10-24T09:30:00+08:00",
+          "constraint_type": "fallback_event_window",
+          "owner": "Operations",
+          "constraint_id": "CAL-002",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 8"
+        },
+        "CAL-003": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Hold expires 2026-09-05",
+          "priority": "hard",
+          "end_at": "2026-10-17T18:30:00+08:00",
+          "start_at": "2026-10-17T08:00:00+08:00",
+          "constraint_type": "venue_hold",
+          "owner": "TICC",
+          "constraint_id": "CAL-003",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 7"
+        },
+        "CAL-004": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Keynote unavailable on fallback date",
+          "priority": "hard",
+          "end_at": "2026-10-17T11:00:00+08:00",
+          "start_at": "2026-10-17T10:00:00+08:00",
+          "constraint_type": "keynote_availability",
+          "owner": "Programme",
+          "constraint_id": "CAL-004",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 6"
+        },
+        "CAL-005": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Plan and budget decision",
+          "priority": "hard",
+          "end_at": "2026-09-04T17:00:00+08:00",
+          "start_at": "2026-09-04T17:00:00+08:00",
+          "constraint_type": "decision_deadline",
+          "owner": "Operations",
+          "constraint_id": "CAL-005",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 5"
+        },
+        "CAL-006": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Venue confirmation required first",
+          "priority": "hard",
+          "end_at": "2026-09-25T16:00:00+08:00",
+          "start_at": "2026-09-25T14:00:00+08:00",
+          "constraint_type": "accessibility_walkthrough",
+          "owner": "Learner Experience",
+          "constraint_id": "CAL-006",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 4"
+        },
+        "CAL-007": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "Remote backup acceptable",
+          "priority": "soft",
+          "end_at": "2026-10-16T18:00:00+08:00",
+          "start_at": "2026-10-16T15:00:00+08:00",
+          "constraint_type": "rehearsal_window",
+          "owner": "Programme",
+          "constraint_id": "CAL-007",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 3"
+        },
+        "CAL-008": {
+          "unrelated_extra": "ignored",
+          "record_version": "calendar-2026-08-26",
+          "notes": "All vendors clear by 18:30",
+          "priority": "hard",
+          "end_at": "2026-10-17T18:30:00+08:00",
+          "start_at": "2026-10-17T17:00:00+08:00",
+          "constraint_type": "teardown_deadline",
+          "owner": "TICC",
+          "constraint_id": "CAL-008",
+          "evidence_id": "src-calendar",
+          "locator": "'Calendar Constraints'!A1:P25; row 2"
+        }
+      },
+      "hall": {},
+      "accessibility": {}
+    },
+    "boundary": {
+      "id": "boundary-2",
+      "summary": "Observed completion of source-capture",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": []
+}

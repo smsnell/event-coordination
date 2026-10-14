@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T210204Z-5a3561fa-07",
-  "run_id": "run-20261014T210204Z-5a3561fa",
+  "snapshot_id": "run-20261014T215247Z-0376ac6d-07",
+  "run_id": "run-20261014T215247Z-0376ac6d",
   "stage": "decision-and-approval",
   "sequence": 7,
-  "created_at": "2026-10-14T21:02:04.935281+00:00",
+  "created_at": "2026-10-14T21:52:47.157633+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T210204Z-5a3561fa-06",
+    "snapshot_id": "run-20261014T215247Z-0376ac6d-06",
     "path": "/home/mike/event-coordination/deliverables/snapshots/06-feasibility-testing.json",
-    "sha256": "sha256:03f19161ce455d2af070b55f403d3638fddc6f41deb849c33cda9c18894444a7"
+    "sha256": "sha256:278dcfc04e82b13aff728b6f80cc4cabfe02083e87bd7a84c04856a0364b22d8"
   },
   "consumed_record_ids": [
     "basis",
@@ -71,25 +71,8 @@
           "src-brief"
         ],
         "owner": "Operations",
-        "status": "pending"
-      },
-      {
-        "id": "approval-venue",
-        "summary": "Authorize category spending against this exact run",
-        "evidence_ids": [
-          "src-budget"
-        ],
-        "owner": "Operations",
-        "status": "pending"
-      },
-      {
-        "id": "approval-catering",
-        "summary": "Authorize category spending against this exact run",
-        "evidence_ids": [
-          "src-budget"
-        ],
-        "owner": "Operations",
-        "status": "pending"
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
       },
       {
         "id": "approval-accessibility",
@@ -98,16 +81,18 @@
           "src-budget"
         ],
         "owner": "Learner Experience",
-        "status": "pending"
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
       },
       {
-        "id": "approval-production",
+        "id": "approval-catering",
         "summary": "Authorize category spending against this exact run",
         "evidence_ids": [
           "src-budget"
         ],
-        "owner": "Programme",
-        "status": "pending"
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
       },
       {
         "id": "approval-communications",
@@ -116,16 +101,8 @@
           "src-budget"
         ],
         "owner": "Communications",
-        "status": "pending"
-      },
-      {
-        "id": "approval-security",
-        "summary": "Authorize category spending against this exact run",
-        "evidence_ids": [
-          "src-budget"
-        ],
-        "owner": "Operations",
-        "status": "pending"
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
       },
       {
         "id": "approval-contingency",
@@ -134,7 +111,38 @@
           "src-budget"
         ],
         "owner": "Operations",
-        "status": "pending"
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+      },
+      {
+        "id": "approval-production",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Programme",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+      },
+      {
+        "id": "approval-security",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
+      },
+      {
+        "id": "approval-venue",
+        "summary": "Authorize category spending against this exact run",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": "Operations",
+        "status": "pending",
+        "basis_run_id": "run-20261014T215247Z-0376ac6d"
       }
     ],
     "boundary": {

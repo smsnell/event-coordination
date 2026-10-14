@@ -1,0 +1,291 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T215215Z-a324e22c-06",
+  "run_id": "run-20261014T215215Z-a324e22c",
+  "stage": "feasibility-testing",
+  "sequence": 6,
+  "created_at": "2026-10-14T21:52:15.295835+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T215215Z-a324e22c-05",
+    "path": "/home/mike/event-coordination/deliverables/snapshots/05-option-generation.json",
+    "sha256": "sha256:358e20ba795beb5ea41939995fd2fc4e7b90929826ea7c8756173ea16bbcd766"
+  },
+  "consumed_record_ids": [
+    "hard-access",
+    "hard-budget",
+    "hard-window",
+    "option-basic-av",
+    "option-city-pantry",
+    "option-fallback",
+    "option-green-table",
+    "option-livestream"
+  ],
+  "produced_record_ids": [
+    "boundary-6",
+    "conditions-option-livestream"
+  ],
+  "state": {
+    "option_results": [
+      {
+        "id": "option-green-table",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 245,
+        "cost_twd": 494000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 108000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "feasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 494000 TWD",
+          "Catering capacity 260; service headroom 15; ceiling headroom 26000 TWD"
+        ],
+        "unresolved": [],
+        "rejected_reasons": [],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-city-pantry",
+        "summary": "Q-001 / Q-004 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-004",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 245,
+        "cost_twd": 512000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 126000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "feasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 512000 TWD",
+          "Catering capacity 300; service headroom 55; ceiling headroom 8000 TWD"
+        ],
+        "unresolved": [],
+        "rejected_reasons": [],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-fallback",
+        "summary": "Q-002 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-002",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 245,
+        "cost_twd": 494000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 108000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 494000 TWD",
+          "Catering capacity 260; service headroom 15; ceiling headroom 26000 TWD"
+        ],
+        "unresolved": [],
+        "rejected_reasons": [
+          "Keynote unavailable on fallback date; hard preferred event window retained",
+          "Q-002 date mismatch"
+        ],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-basic-av",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-007 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-007",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 245,
+        "cost_twd": 468000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 108000,
+          "accessibility": 60000,
+          "production": 52000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 468000 TWD",
+          "Catering capacity 260; service headroom 15; ceiling headroom 52000 TWD"
+        ],
+        "unresolved": [],
+        "rejected_reasons": [
+          "No hearing loop for required requests"
+        ],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-livestream",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010 / Q-008",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010",
+          "Q-008"
+        ],
+        "planning_people": 245,
+        "cost_twd": 549000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 108000,
+          "accessibility": 60000,
+          "production": 133000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 549000 TWD",
+          "Catering capacity 260; service headroom 15; ceiling headroom -29000 TWD"
+        ],
+        "unresolved": [
+          "Q-008: network test and venue confirmation unresolved"
+        ],
+        "rejected_reasons": [
+          "production approval limit exceeded",
+          "Total planning ceiling exceeded"
+        ],
+        "approval_status": "pending"
+      }
+    ],
+    "unresolved_conditions": [
+      {
+        "id": "conditions-option-livestream",
+        "summary": "Q-008: network test and venue confirmation unresolved",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      }
+    ],
+    "boundary": {
+      "id": "boundary-6",
+      "summary": "Observed completion of feasibility-testing",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": []
+}

@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-14T22:13:15.626262+00:00",
+  "runtime_seconds": 1.103,
+  "checks": [
+    {
+      "check": "SYNTHETIC original access supported; changed access conditional in all four drafts, recommendation deferred, owner preserved, prices propagated and history exact",
+      "result": "passed",
+      "run_id": "run-20261014T221314Z-fb64008f"
+    },
+    {
+      "check": "SYNTHETIC combined header/row reordering plus harmless extra columns in every structured source preserves normalized meaning and captured representation",
+      "result": "passed"
+    }
+  ],
+  "synthetic_path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-_qmhel_u",
+  "current_synthetic_run_id": "run-20261014T221315Z-7a43d0c9",
+  "scope": "Targeted G2 changed-access correction only; full suite not rerun; prior live drafts untouched"
+}

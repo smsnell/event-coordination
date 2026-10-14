@@ -1,8 +1,8 @@
 {
   "id": "attendees",
   "source_url": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
-  "retrieval_started_at": "2026-10-14T20:48:12Z",
-  "retrieved_at": "2026-10-14T20:48:15Z",
+  "retrieval_started_at": "2026-10-14T21:41:27Z",
+  "retrieved_at": "2026-10-14T21:41:29Z",
   "retrieval_status": "retrieved",
   "content_type": "application/json",
   "representation": "Google Sheets FORMATTED_VALUE",

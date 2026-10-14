@@ -1,0 +1,121 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T215248Z-ebb4aade-09",
+  "run_id": "run-20261014T215248Z-ebb4aade",
+  "stage": "publication-validation",
+  "sequence": 9,
+  "created_at": "2026-10-14T21:52:48.226014+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T215248Z-ebb4aade-08",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/08-draft-propagation.json",
+    "sha256": "sha256:7e3a453c7a4427457922ec4669b373a6769009364b4c4bd69bfcd087c1f32cd4"
+  },
+  "consumed_record_ids": [
+    "artifact-1",
+    "artifact-2",
+    "artifact-3",
+    "artifact-4",
+    "boundary-8"
+  ],
+  "produced_record_ids": [
+    "boundary-9",
+    "validation-chain",
+    "validation-drafts",
+    "validation-evidence"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "artifact-1",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/vendor-comparison.csv",
+        "sha256": "sha256:bd4585267fa1c48cdb55fbf5830d7fa06756ad33a07997262ac17e351b0fd2e4",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-2",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-plan.md",
+        "sha256": "sha256:3f3149188314ef6bb3926074b454e288fb56f781582582bc9a4f423749813434",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-3",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-calendar.ics",
+        "sha256": "sha256:e77b80507deb46013fbd9929d23b00bd5905975b1f71911a286149f4d869f339",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-4",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/draft-communications.md",
+        "sha256": "sha256:2dde636d2ee4e0f0163a3dd54659dd3fe34413b7d07412d11404019daf8bf47f",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "validation-chain",
+        "summary": "Schema, format, sequence, same-run predecessor hashes and references passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-evidence",
+        "summary": "Actual retained source hashes and privacy-pattern checks passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-drafts",
+        "summary": "Four exact artifact hashes, CSV/plan/message bindings and independently parsed ICS intervals passed",
+        "evidence_ids": [],
+        "owner": null
+      }
+    ],
+    "publication_status": "validated",
+    "boundary": {
+      "id": "boundary-9",
+      "summary": "Observed completion of publication-validation",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-recommendation",
+      "summary": "option-green-table",
+      "evidence_ids": [
+        "src-vendors",
+        "src-budget",
+        "src-brief"
+      ],
+      "owner": "Operations",
+      "rationale": "Lowest supported feasible package cost with all base services; alternative buys additional catering capacity",
+      "tradeoffs": [
+        "Catering headroom versus total remaining ceiling",
+        "Hard requirements remain fixed"
+      ]
+    }
+  ]
+}

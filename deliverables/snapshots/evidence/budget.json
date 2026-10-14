@@ -1,8 +1,8 @@
 {
   "id": "budget",
   "source_url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
-  "retrieval_started_at": "2026-10-14T20:48:13Z",
-  "retrieved_at": "2026-10-14T20:48:16Z",
+  "retrieval_started_at": "2026-10-14T21:41:25Z",
+  "retrieved_at": "2026-10-14T21:41:29Z",
   "retrieval_status": "retrieved",
   "content_type": "application/json",
   "representation": "Google Sheets FORMATTED_VALUE",

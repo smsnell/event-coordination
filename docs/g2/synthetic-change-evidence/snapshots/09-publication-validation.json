@@ -1,0 +1,130 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T221400Z-9e0c2590-09",
+  "run_id": "run-20261014T221400Z-9e0c2590",
+  "stage": "publication-validation",
+  "sequence": 9,
+  "created_at": "2026-10-14T22:14:00.293026+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261014T221400Z-9e0c2590-08",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/08-draft-propagation.json",
+    "sha256": "sha256:691cc6444eaad4799365dbf8c5ac631066792cc8cdd1757559fe549c664c16b9"
+  },
+  "consumed_record_ids": [
+    "artifact-1",
+    "artifact-2",
+    "artifact-3",
+    "artifact-4",
+    "boundary-8"
+  ],
+  "produced_record_ids": [
+    "boundary-9",
+    "validation-chain",
+    "validation-drafts",
+    "validation-evidence"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "artifact-1",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/vendor-comparison.csv",
+        "sha256": "sha256:0b832f992b6fb3b845dadf8b090cd667c8c27e58909ac7495e8a4411ea72203d",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-2",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-plan.md",
+        "sha256": "sha256:b6b3fd397dcc2ccace8574559f659a917d0411934803f33fcf560deeda8bb6e7",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-3",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-calendar.ics",
+        "sha256": "sha256:760812d193d78c918b4900a7db25c1fc2d0d17363aad2b2176a67aa55588cd9f",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-4",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/draft-communications.md",
+        "sha256": "sha256:11ca787f153761fc9133c1fdd867367e4a521ee55e4bed590e031549f3cda889",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "validation-chain",
+        "summary": "Schema, format, sequence, same-run predecessor hashes and references passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-evidence",
+        "summary": "Actual retained source hashes and privacy-pattern checks passed",
+        "evidence_ids": [],
+        "owner": null
+      },
+      {
+        "id": "validation-drafts",
+        "summary": "Four exact artifact hashes, CSV/plan/message bindings and independently parsed ICS intervals passed",
+        "evidence_ids": [],
+        "owner": null
+      }
+    ],
+    "publication_status": "validated",
+    "boundary": {
+      "id": "boundary-9",
+      "summary": "Observed completion of publication-validation",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "gap-readiness",
+      "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+      "evidence_ids": [
+        "src-brief",
+        "src-calendar"
+      ],
+      "owner": "Operations / Programme"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-recommendation",
+      "summary": "Defer recommendation",
+      "evidence_ids": [
+        "src-vendors",
+        "src-budget",
+        "src-brief"
+      ],
+      "owner": "Operations",
+      "rationale": "Required evidence/constraints unresolved",
+      "tradeoffs": [
+        "Catering headroom versus total remaining ceiling",
+        "Hard requirements remain fixed"
+      ]
+    }
+  ]
+}

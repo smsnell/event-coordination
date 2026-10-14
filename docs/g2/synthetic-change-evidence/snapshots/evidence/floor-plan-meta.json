@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
+  "retrieved_at": "2026-10-14T21:42:47Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/pdf",
+  "version_metadata": {
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 522512,
+    "origin_version": null,
+    "transport": "curl TLS verified; no response headers retained",
+    "timestamp_basis": "End-of-download observation at execution clock; exact start not recorded"
+  },
+  "transport_result": "200 application/pdf 522512",
+  "error": "",
+  "attempt": "curl with normal TLS verification"
+}

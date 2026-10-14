@@ -1,0 +1,361 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T221400Z-9e0c2590-06",
+  "run_id": "run-20261014T221400Z-9e0c2590",
+  "stage": "feasibility-testing",
+  "sequence": 6,
+  "created_at": "2026-10-14T22:14:00.221721+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261014T221400Z-9e0c2590-05",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/05-option-generation.json",
+    "sha256": "sha256:2c21b0d978b68653ccada28591144e7d8bc8be418b372977a1fe1b8f25962d15"
+  },
+  "consumed_record_ids": [
+    "hard-access",
+    "hard-budget",
+    "hard-window",
+    "option-basic-av",
+    "option-city-pantry",
+    "option-fallback",
+    "option-green-table",
+    "option-livestream"
+  ],
+  "produced_record_ids": [
+    "boundary-6",
+    "conditions-option-basic-av",
+    "conditions-option-city-pantry",
+    "conditions-option-fallback",
+    "conditions-option-green-table",
+    "conditions-option-livestream"
+  ],
+  "state": {
+    "option_results": [
+      {
+        "id": "option-green-table",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 255,
+        "cost_twd": 496000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 110000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "conditional",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 496000 TWD",
+          "Catering capacity 260; service headroom 5; ceiling headroom 24000 TWD"
+        ],
+        "unresolved": [
+          "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme"
+        ],
+        "rejected_reasons": [],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-city-pantry",
+        "summary": "Q-001 / Q-004 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-004",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 255,
+        "cost_twd": 512000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 126000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "conditional",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 512000 TWD",
+          "Catering capacity 300; service headroom 45; ceiling headroom 8000 TWD"
+        ],
+        "unresolved": [
+          "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme"
+        ],
+        "rejected_reasons": [],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-fallback",
+        "summary": "Q-002 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-002",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 255,
+        "cost_twd": 496000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 110000,
+          "accessibility": 60000,
+          "production": 78000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 496000 TWD",
+          "Catering capacity 260; service headroom 5; ceiling headroom 24000 TWD"
+        ],
+        "unresolved": [
+          "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme"
+        ],
+        "rejected_reasons": [
+          "Keynote unavailable on fallback date; hard preferred event window retained",
+          "Q-002 date mismatch"
+        ],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-basic-av",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-007 / Q-009 / Q-010",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-007",
+          "Q-009",
+          "Q-010"
+        ],
+        "planning_people": 255,
+        "cost_twd": 470000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 110000,
+          "accessibility": 60000,
+          "production": 52000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 470000 TWD",
+          "Catering capacity 260; service headroom 5; ceiling headroom 50000 TWD"
+        ],
+        "unresolved": [
+          "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme"
+        ],
+        "rejected_reasons": [
+          "No hearing loop for required requests"
+        ],
+        "approval_status": "pending"
+      },
+      {
+        "id": "option-livestream",
+        "summary": "Q-001 / Q-003 / Q-005 / Q-006 / Q-009 / Q-010 / Q-008",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations",
+        "quote_ids": [
+          "Q-001",
+          "Q-003",
+          "Q-005",
+          "Q-006",
+          "Q-009",
+          "Q-010",
+          "Q-008"
+        ],
+        "planning_people": 255,
+        "cost_twd": 551000,
+        "currency": "TWD",
+        "category_amounts": {
+          "venue": 155000,
+          "catering": 110000,
+          "accessibility": 60000,
+          "production": 133000,
+          "security": 28000,
+          "communications": 25000,
+          "contingency": 40000
+        },
+        "feasibility": "infeasible",
+        "availability_status": "exercise planning states; not booked",
+        "tradeoffs": [
+          "Quoted services plus communications/contingency allowances; cost 551000 TWD",
+          "Catering capacity 260; service headroom 5; ceiling headroom -31000 TWD"
+        ],
+        "unresolved": [
+          "Q-008: Network test required; supplied through TICC coordination in this synthetic case; network test and venue confirmation unresolved",
+          "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme"
+        ],
+        "rejected_reasons": [
+          "production approval limit exceeded",
+          "Total planning ceiling exceeded"
+        ],
+        "approval_status": "pending"
+      }
+    ],
+    "unresolved_conditions": [
+      {
+        "id": "conditions-option-green-table",
+        "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "conditions-option-city-pantry",
+        "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "conditions-option-fallback",
+        "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "conditions-option-basic-av",
+        "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "conditions-option-livestream",
+        "summary": "Q-008: Network test required; supplied through TICC coordination in this synthetic case; network test and venue confirmation unresolved; VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible; confirmation owner: Operations / Programme",
+        "evidence_ids": [
+          "src-vendors",
+          "src-budget",
+          "src-brief",
+          "src-attendees",
+          "src-calendar"
+        ],
+        "owner": "Operations"
+      }
+    ],
+    "boundary": {
+      "id": "boundary-6",
+      "summary": "Observed completion of feasibility-testing",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "gap-readiness",
+      "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+      "evidence_ids": [
+        "src-brief",
+        "src-calendar"
+      ],
+      "owner": "Operations / Programme"
+    }
+  ],
+  "decisions": []
+}

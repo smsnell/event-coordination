@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T210204Z-5a3561fa-02",
-  "run_id": "run-20261014T210204Z-5a3561fa",
+  "snapshot_id": "run-20261014T215247Z-0376ac6d-02",
+  "run_id": "run-20261014T215247Z-0376ac6d",
   "stage": "source-capture",
   "sequence": 2,
-  "created_at": "2026-10-14T21:02:04.910560+00:00",
+  "created_at": "2026-10-14T21:52:47.125224+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T210204Z-5a3561fa-01",
+    "snapshot_id": "run-20261014T215247Z-0376ac6d-01",
     "path": "/home/mike/event-coordination/deliverables/snapshots/01-scope-and-approval-gates.json",
-    "sha256": "sha256:85581b32f14328c1e617a55e61a7b85d77c2bad1e75d1825f5de8c5224216b0a"
+    "sha256": "sha256:4ac511a00f2402e29b556c0f14a67d03b8fbd3be56b7196b4da04aa5fad385a6"
   },
   "consumed_record_ids": [
     "scope"
@@ -22,6 +22,7 @@
     "OBS-HALL-RULES",
     "boundary-2",
     "src-accessibility",
+    "src-attempts",
     "src-attendees",
     "src-brief",
     "src-budget",
@@ -41,7 +42,7 @@
         "owner": "Operations",
         "source_role": "attendee-signals",
         "locator": "https://docs.google.com/spreadsheets/d/1IXAEAFsZM6Q9IZZ_9pGqbFQ7l2ikr-oThqrEKudHwIU",
-        "retrieved_at": "2026-10-14T20:48:15Z",
+        "retrieved_at": "2026-10-14T21:41:29Z",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": {
@@ -70,7 +71,7 @@
             ]
           }
         },
-        "content_hash": "sha256:7a2b28fc1ad86f3399c18c058c946a79f5ccac9f92835e5dc8bcf224d0e3bb4a",
+        "content_hash": "sha256:724003cf43bc32c6f7a4f78d377d84f52f61637ece23ee6d7d86d7a34ec78842",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/attendees.json",
         "observations": []
       },
@@ -81,7 +82,7 @@
         "owner": "Operations",
         "source_role": "budget",
         "locator": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
-        "retrieved_at": "2026-10-14T20:48:16Z",
+        "retrieved_at": "2026-10-14T21:41:29Z",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": {
@@ -110,7 +111,7 @@
             ]
           }
         },
-        "content_hash": "sha256:7b3d13de33131afbaf89ffa01c20944fd31743d193a8c84bc06f33a3faace438",
+        "content_hash": "sha256:d4577d93a98b101cecd4c0c017f3792d8c17b37c6fb2b213e9a35b03d9bdf49f",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/budget.json",
         "observations": []
       },
@@ -121,7 +122,7 @@
         "owner": "Operations",
         "source_role": "vendor-record",
         "locator": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
-        "retrieved_at": "2026-10-14T20:48:16Z",
+        "retrieved_at": "2026-10-14T21:41:28Z",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": {
@@ -150,7 +151,7 @@
             ]
           }
         },
-        "content_hash": "sha256:bd807bdf433965a9f0892f4e0644059a2755afd568528654dd618f67842889bb",
+        "content_hash": "sha256:d343da3380a08ad76f462200d4746fa871a3b0aafc6d78972d925159db738659",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/vendors.json",
         "observations": []
       },
@@ -161,7 +162,7 @@
         "owner": "Operations",
         "source_role": "calendar",
         "locator": "https://docs.google.com/spreadsheets/d/1f_i6tUCHbJV-Ug_j6U3T4LEZ3yAr2ucdBnID-4C_-8s",
-        "retrieved_at": "2026-10-14T20:48:16Z",
+        "retrieved_at": "2026-10-14T21:41:29Z",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": {
@@ -190,7 +191,7 @@
             ]
           }
         },
-        "content_hash": "sha256:311a82b249132e58f26500267f171af385a59da169641b3b37bd0de15058ff18",
+        "content_hash": "sha256:812514fdfa346528b03ea7e22fc4d0b6bba032ab55be3c8f76d721794c7ada7c",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/calendar.json",
         "observations": []
       },
@@ -201,15 +202,15 @@
         "owner": "Operations",
         "source_role": "venue-page",
         "locator": "https://www.ticc.com.tw/wSite/sp?BaseDSD=7&CtUnit=99&ctNode=322&mp=2&roomId=PH&xdUrl=%2FwSite%2Fap%2Fcp_VenueSearch.jsp",
-        "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+        "retrieved_at": "2026-10-14T21:46:15.649565+00:00",
         "retrieval_status": "retrieved",
         "content_type": "text/plain",
         "version_metadata": {
           "origin_version": null,
           "web_cache_crawl_report": "last week",
-          "timestamp_basis": "extract recorded after actual web read"
+          "timestamp_basis": "Extract recorded after actual P2 web read; exact tool retrieval instant not supplied"
         },
-        "content_hash": "sha256:07589c87636ea5c6a46acff00baee8d9e58ee75b8fefcf14d3d2f251097a0d5c",
+        "content_hash": "sha256:769fd424ebcee36e5262cf5f27f0b1e4affede51e72008863a5c3b2128dae990",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/hall.json",
         "observations": [
           {
@@ -229,15 +230,15 @@
         "owner": "Operations",
         "source_role": "venue-page",
         "locator": "https://www.ticc.com.tw/wSite/lp?ctNode=398&mp=2&xq_xCat=6",
-        "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+        "retrieved_at": "2026-10-14T21:46:15.650079+00:00",
         "retrieval_status": "retrieved",
         "content_type": "text/plain",
         "version_metadata": {
           "origin_version": null,
           "web_cache_crawl_report": "4 weeks ago",
-          "timestamp_basis": "extract recorded after actual web read"
+          "timestamp_basis": "Extract recorded after actual P2 web read; exact tool retrieval instant not supplied"
         },
-        "content_hash": "sha256:8295f62a73075e5c8a3687952b40a3714e71edce9cfd3ee172550d6158da845a",
+        "content_hash": "sha256:ec343848d203f869cf596a9a6f15e6c650f29703f3f39de50dcdedb0b7a2c66f",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/accessibility.json",
         "observations": [
           {
@@ -257,7 +258,7 @@
         "owner": "Operations",
         "source_role": "event-brief",
         "locator": "/home/mike/event-coordination/inputs/event-brief.md",
-        "retrieved_at": "2026-10-14T21:02:04.903846+00:00",
+        "retrieved_at": "2026-10-14T21:52:47.119604+00:00",
         "retrieval_status": "retrieved",
         "content_type": "text/markdown",
         "version_metadata": {
@@ -280,14 +281,14 @@
         "evidence_ids": [],
         "owner": null,
         "source_role": "other",
-        "locator": "/home/mike/event-coordination/.planning-tmp/p1-capture/interpretation.json",
-        "retrieved_at": "2026-10-14T20:56:56.198582+00:00",
+        "locator": "/home/mike/event-coordination/.planning-tmp/p2-captures/interpretation.json",
+        "retrieved_at": "2026-10-14T21:46:15.651343+00:00",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": {
-          "author": "Invoking Codex agent; P1 interpretation"
+          "author": "Invoking Codex agent; P2 interpretation"
         },
-        "content_hash": "sha256:92e618f0336cf33534ea162c102f340a3ca59a07e7a3e4526b5040f0e7d8af74",
+        "content_hash": "sha256:4c3157273d7f58bd02ff24b1ab3fb464cad17a4ccab8acc378e30388ce1c7bcf",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/interpretation.json",
         "observations": []
       },
@@ -298,10 +299,17 @@
         "owner": null,
         "source_role": "floor-plan-or-image",
         "locator": "https://www.ticc.com.tw/wSite/public/Attachment/f1710485827023.pdf",
-        "retrieved_at": "2026-10-14T20:49:17.936051+00:00",
+        "retrieved_at": "2026-10-14T21:42:47Z",
         "retrieval_status": "retrieved",
         "content_type": "application/pdf",
-        "version_metadata": null,
+        "version_metadata": {
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "bytes": 522512,
+          "origin_version": null,
+          "transport": "curl TLS verified; no response headers retained",
+          "timestamp_basis": "End-of-download observation at execution clock; exact start not recorded"
+        },
         "content_hash": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan.pdf",
         "observations": [
@@ -337,13 +345,28 @@
         "evidence_ids": [],
         "owner": null,
         "source_role": "other",
-        "locator": "/home/mike/event-coordination/.planning-tmp/p1-capture/floor-plan-meta.json",
-        "retrieved_at": "2026-10-14T21:02:04.907720+00:00",
+        "locator": "/home/mike/event-coordination/.planning-tmp/p2-captures/floor-plan-meta.json",
+        "retrieved_at": "2026-10-14T21:52:47.122598+00:00",
         "retrieval_status": "retrieved",
         "content_type": "application/json",
         "version_metadata": null,
-        "content_hash": "sha256:a5bbc9b6c82437bb22f16f7abe5db5102ace7a89d0d549d32ad197856f7a0095",
+        "content_hash": "sha256:885637ea69adbbf3321b733e47aa2cb24d66e5213fff2e26f18bea568b41121e",
         "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/floor-plan-meta.json",
+        "observations": []
+      },
+      {
+        "id": "src-attempts",
+        "summary": "Actual media acquisition metadata/attempts",
+        "evidence_ids": [],
+        "owner": null,
+        "source_role": "other",
+        "locator": "/home/mike/event-coordination/.planning-tmp/p2-captures/attempts.json",
+        "retrieved_at": "2026-10-14T21:52:47.122825+00:00",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json",
+        "version_metadata": null,
+        "content_hash": "sha256:30bc1dab38fbf4ac3eba5d4596077abf014eafcf83dc8059b56e789250703add",
+        "local_reference": "/home/mike/event-coordination/deliverables/snapshots/evidence/attempts.json",
         "observations": []
       }
     ],
@@ -507,15 +530,15 @@
         }
       },
       "budget": {
-        "venue": {
-          "category": "venue",
-          "planned_amount_twd": 155000,
-          "approval_limit_twd": 180000,
+        "accessibility": {
+          "category": "accessibility",
+          "planned_amount_twd": 65000,
+          "approval_limit_twd": 80000,
           "committed_amount_twd": 0,
-          "owner": "Operations",
+          "owner": "Learner Experience",
           "record_version": "budget-2026-08-26",
           "evidence_id": "src-budget",
-          "locator": "Budget!A1:P25; row 2"
+          "locator": "Budget!A1:P25; row 4"
         },
         "catering": {
           "category": "catering",
@@ -527,15 +550,25 @@
           "evidence_id": "src-budget",
           "locator": "Budget!A1:P25; row 3"
         },
-        "accessibility": {
-          "category": "accessibility",
-          "planned_amount_twd": 65000,
-          "approval_limit_twd": 80000,
+        "communications": {
+          "category": "communications",
+          "planned_amount_twd": 25000,
+          "approval_limit_twd": 30000,
           "committed_amount_twd": 0,
-          "owner": "Learner Experience",
+          "owner": "Communications",
           "record_version": "budget-2026-08-26",
           "evidence_id": "src-budget",
-          "locator": "Budget!A1:P25; row 4"
+          "locator": "Budget!A1:P25; row 6"
+        },
+        "contingency": {
+          "category": "contingency",
+          "planned_amount_twd": 40000,
+          "approval_limit_twd": 50000,
+          "committed_amount_twd": 0,
+          "owner": "Operations",
+          "record_version": "budget-2026-08-26",
+          "evidence_id": "src-budget",
+          "locator": "Budget!A1:P25; row 8"
         },
         "production": {
           "category": "production",
@@ -547,16 +580,6 @@
           "evidence_id": "src-budget",
           "locator": "Budget!A1:P25; row 5"
         },
-        "communications": {
-          "category": "communications",
-          "planned_amount_twd": 25000,
-          "approval_limit_twd": 30000,
-          "committed_amount_twd": 0,
-          "owner": "Communications",
-          "record_version": "budget-2026-08-26",
-          "evidence_id": "src-budget",
-          "locator": "Budget!A1:P25; row 6"
-        },
         "security": {
           "category": "security",
           "planned_amount_twd": 25000,
@@ -567,15 +590,15 @@
           "evidence_id": "src-budget",
           "locator": "Budget!A1:P25; row 7"
         },
-        "contingency": {
-          "category": "contingency",
-          "planned_amount_twd": 40000,
-          "approval_limit_twd": 50000,
+        "venue": {
+          "category": "venue",
+          "planned_amount_twd": 155000,
+          "approval_limit_twd": 180000,
           "committed_amount_twd": 0,
           "owner": "Operations",
           "record_version": "budget-2026-08-26",
           "evidence_id": "src-budget",
-          "locator": "Budget!A1:P25; row 8"
+          "locator": "Budget!A1:P25; row 2"
         }
       },
       "vendors": {

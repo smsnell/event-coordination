@@ -1,0 +1,16 @@
+[
+  {
+    "source_id": "src-floor-plan",
+    "observed_at": "2026-10-14T21:46:15.650694+00:00",
+    "retrieval_status": "unavailable",
+    "error": "Sandbox curl exit 6: DNS host resolution failed; no bytes retained",
+    "timestamp_basis": "Failure recorded after actual command; exact failure instant not recorded"
+  },
+  {
+    "source_id": "src-floor-plan",
+    "observed_at": "2026-10-14T21:42:47Z",
+    "retrieval_status": "retrieved",
+    "http_status": 200,
+    "bytes": 522512
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T221400Z-9e0c2590-08",
+  "run_id": "run-20261014T221400Z-9e0c2590",
+  "stage": "draft-propagation",
+  "sequence": 8,
+  "created_at": "2026-10-14T22:14:00.240471+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261014T221400Z-9e0c2590-07",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/07-decision-and-approval.json",
+    "sha256": "sha256:c4330ce47167c5c7fd6cd35811011de70ae2440f42adc32339f82e6a4daf27cc"
+  },
+  "consumed_record_ids": [
+    "basis",
+    "decision-recommendation",
+    "option-basic-av",
+    "option-city-pantry",
+    "option-fallback",
+    "option-green-table",
+    "option-livestream"
+  ],
+  "produced_record_ids": [
+    "artifact-1",
+    "artifact-2",
+    "artifact-3",
+    "artifact-4",
+    "boundary-8",
+    "propagation"
+  ],
+  "state": {
+    "artifact_drafts": [
+      {
+        "id": "artifact-1",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/vendor-comparison.csv",
+        "sha256": "sha256:0b832f992b6fb3b845dadf8b090cd667c8c27e58909ac7495e8a4411ea72203d",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-2",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-plan.md",
+        "sha256": "sha256:b6b3fd397dcc2ccace8574559f659a917d0411934803f33fcf560deeda8bb6e7",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-3",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/event-calendar.ics",
+        "sha256": "sha256:760812d193d78c918b4900a7db25c1fc2d0d17363aad2b2176a67aa55588cd9f",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-4",
+        "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/draft-communications.md",
+        "sha256": "sha256:11ca787f153761fc9133c1fdd867367e4a521ee55e4bed590e031549f3cda889",
+        "validation_status": "valid"
+      }
+    ],
+    "affected_dependencies": [
+      {
+        "id": "propagation",
+        "summary": "All four drafts rendered from this run basis",
+        "evidence_ids": [
+          "src-brief",
+          "src-vendors",
+          "src-calendar"
+        ],
+        "owner": null
+      }
+    ],
+    "unresolved_items": [
+      {
+        "id": "pending-stream",
+        "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+        "evidence_ids": [
+          "src-vendors",
+          "src-brief",
+          "src-hall"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "pending-operations",
+        "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+        "evidence_ids": [
+          "src-calendar",
+          "src-brief",
+          "src-hall"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "gap-readiness",
+        "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+        "evidence_ids": [
+          "src-brief",
+          "src-calendar"
+        ],
+        "owner": "Operations / Programme"
+      }
+    ],
+    "boundary": {
+      "id": "boundary-8",
+      "summary": "Observed completion of draft-propagation",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "gap-readiness",
+      "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+      "evidence_ids": [
+        "src-brief",
+        "src-calendar"
+      ],
+      "owner": "Operations / Programme"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-recommendation",
+      "summary": "Defer recommendation",
+      "evidence_ids": [
+        "src-vendors",
+        "src-budget",
+        "src-brief"
+      ],
+      "owner": "Operations",
+      "rationale": "Required evidence/constraints unresolved",
+      "tradeoffs": [
+        "Catering headroom versus total remaining ceiling",
+        "Hard requirements remain fixed"
+      ]
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T210204Z-5a3561fa-06",
-  "run_id": "run-20261014T210204Z-5a3561fa",
+  "snapshot_id": "run-20261014T215247Z-0376ac6d-06",
+  "run_id": "run-20261014T215247Z-0376ac6d",
   "stage": "feasibility-testing",
   "sequence": 6,
-  "created_at": "2026-10-14T21:02:04.930662+00:00",
+  "created_at": "2026-10-14T21:52:47.140674+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T210204Z-5a3561fa-05",
+    "snapshot_id": "run-20261014T215247Z-0376ac6d-05",
     "path": "/home/mike/event-coordination/deliverables/snapshots/05-option-generation.json",
-    "sha256": "sha256:3be6a7f781c278d68d6c1de9c436b64881c1e44c5682dfac40fcaec68c1aeba4"
+    "sha256": "sha256:2a0669a7d6c7a769e5437935a14b777436f0bdf645a7a5f2c081b2d3b873ce26"
   },
   "consumed_record_ids": [
     "hard-access",
@@ -235,7 +235,7 @@
           "Catering capacity 260; service headroom 15; ceiling headroom -29000 TWD"
         ],
         "unresolved": [
-          "Q-008: network test and venue confirmation unresolved"
+          "Q-008: Network test required; supplied through TICC coordination in this synthetic case; network test and venue confirmation unresolved"
         ],
         "rejected_reasons": [
           "production approval limit exceeded",
@@ -247,7 +247,7 @@
     "unresolved_conditions": [
       {
         "id": "conditions-option-livestream",
-        "summary": "Q-008: network test and venue confirmation unresolved",
+        "summary": "Q-008: Network test required; supplied through TICC coordination in this synthetic case; network test and venue confirmation unresolved",
         "evidence_ids": [
           "src-vendors",
           "src-budget",

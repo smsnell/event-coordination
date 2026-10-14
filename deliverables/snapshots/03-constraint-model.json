@@ -1,19 +1,20 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T210204Z-5a3561fa-03",
-  "run_id": "run-20261014T210204Z-5a3561fa",
+  "snapshot_id": "run-20261014T215247Z-0376ac6d-03",
+  "run_id": "run-20261014T215247Z-0376ac6d",
   "stage": "constraint-model",
   "sequence": 3,
-  "created_at": "2026-10-14T21:02:04.917451+00:00",
+  "created_at": "2026-10-14T21:52:47.130541+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T210204Z-5a3561fa-02",
+    "snapshot_id": "run-20261014T215247Z-0376ac6d-02",
     "path": "/home/mike/event-coordination/deliverables/snapshots/02-source-capture.json",
-    "sha256": "sha256:baa4763ccb28b33ff8a5f9de3c243ee6ccde5648a916124b6b17738cb7d0ab64"
+    "sha256": "sha256:e0549c54d9d06e3323c0744cfc3c2fde5a585c67716df4535192e933efbec86e"
   },
   "consumed_record_ids": [
     "scope",
     "src-accessibility",
+    "src-attempts",
     "src-attendees",
     "src-brief",
     "src-budget",

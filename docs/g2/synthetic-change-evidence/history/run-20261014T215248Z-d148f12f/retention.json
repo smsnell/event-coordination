@@ -1,0 +1,32 @@
+{
+  "run_id": "run-20261014T215248Z-d148f12f",
+  "observed_at": "2026-10-14T22:14:00.078850+00:00",
+  "validation": "passed",
+  "error": null,
+  "retained_hashes": {
+    "snapshots/01-scope-and-approval-gates.json": "sha256:cac9df3b1f47b3cd0a8f9c38c928050a0c3efa4db7bfa7c5f4b0f2859792a434",
+    "snapshots/02-source-capture.json": "sha256:7c66db4ebfaa221c1d78e76eac2f7b06e8f7bdc4a6563abd4742e2754b08f393",
+    "snapshots/03-constraint-model.json": "sha256:2da6c8bdf81c99fd5a6567e7936596638e7f182362193e33d8e048c347dbb954",
+    "snapshots/04-planning-baseline.json": "sha256:14747a41c97618d7894fc645665017d487d6216aee7fc523526d2c2a97c5a181",
+    "snapshots/05-option-generation.json": "sha256:f8edf942ba40ba32f9373f6ab83ab2a5aadf6b6333410b13747f8fc85e450c18",
+    "snapshots/06-feasibility-testing.json": "sha256:1ece38a4b4a436522afc278879f7136d9be2779623b8aba290a50c2051735342",
+    "snapshots/07-decision-and-approval.json": "sha256:a133446269637fa4e7097dec78bb54e55117337614b1a183d5d17fdc443707fb",
+    "snapshots/08-draft-propagation.json": "sha256:3a38006fa87289491027d97f763bc81f491857ed7e8931dcd754c67fce5dda8f",
+    "snapshots/09-publication-validation.json": "sha256:41b7cb5b17690b71368f1708466e8607f808015d1b1a331f689bf76fbaf1641a",
+    "snapshots/evidence/accessibility.json": "sha256:ec343848d203f869cf596a9a6f15e6c650f29703f3f39de50dcdedb0b7a2c66f",
+    "snapshots/evidence/attempts.json": "sha256:30bc1dab38fbf4ac3eba5d4596077abf014eafcf83dc8059b56e789250703add",
+    "snapshots/evidence/attendees.json": "sha256:e6e4609930d08c3b7821cef9d080f8ce74e5db25260a8265f93b6410067981a4",
+    "snapshots/evidence/budget.json": "sha256:80f3d7348c8c3c7f8eeec246cad8804a72bb359bcc765b5cbc5ce82d0edac1e3",
+    "snapshots/evidence/calendar.json": "sha256:5c48c8779ce33535f06840a8a1f8bcbd9a973f97ce042f74fb359a65f22b25e4",
+    "snapshots/evidence/event-brief.md": "sha256:2db29d32dbd19741f7b1b3a24d4f0d30202edd72743b44a12cfe0a01855454ff",
+    "snapshots/evidence/floor-plan-meta.json": "sha256:885637ea69adbbf3321b733e47aa2cb24d66e5213fff2e26f18bea568b41121e",
+    "snapshots/evidence/floor-plan.pdf": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367",
+    "snapshots/evidence/hall.json": "sha256:769fd424ebcee36e5262cf5f27f0b1e4affede51e72008863a5c3b2128dae990",
+    "snapshots/evidence/interpretation.json": "sha256:54fb4caa3cdc9cee673da6cebb0c0644cd9542358ea7ce359f2a5ec62eabd5f7",
+    "snapshots/evidence/vendors.json": "sha256:eeea6448afc4254e071d6024a94e22f397c6a4e533543fe1b3104cad3deae032",
+    "vendor-comparison.csv": "sha256:1b2720de6064f904c430a19245fcc088fec8ec2f51f1f600158b0834b7bc8467",
+    "event-plan.md": "sha256:cc2dc8c2e0ec44d7e6daf8750037d6e83ab90e8fb81020496b1a66e90f7cb7a9",
+    "event-calendar.ics": "sha256:d0662114dd9e8973a7d39a1e0118ea47ed0d57242d6ada06bd70df1c190a82fe",
+    "draft-communications.md": "sha256:90f81dc512c559729e96509bf11053a5aea31dfce427e0eaae43bb358b11dcac"
+  }
+}

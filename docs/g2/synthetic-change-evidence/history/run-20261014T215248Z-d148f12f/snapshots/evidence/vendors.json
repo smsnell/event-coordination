@@ -1,0 +1,181 @@
+{
+  "id": "vendors",
+  "source_url": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+  "retrieval_started_at": "2026-10-14T21:41:26Z",
+  "retrieved_at": "2026-10-14T21:41:28Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json",
+  "representation": "Google Sheets FORMATTED_VALUE",
+  "metadata": {
+    "spreadsheetId": "1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1cULbGrOQS-vuj862nV2EWND4oe0H5kf-smJ85VZegko/edit",
+    "properties": {
+      "title": "Project C — Vendor Quotes",
+      "locale": "zh_TW",
+      "timeZone": "Asia/Taipei"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Vendor Quotes",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ]
+  },
+  "capture": {
+    "range": "'Vendor Quotes'!A1:P25",
+    "majorDimension": "ROWS",
+    "values": [
+      [
+        "unrelated_extra",
+        "notes",
+        "status",
+        "valid_until",
+        "available_date",
+        "capacity",
+        "quote_amount_twd",
+        "option",
+        "category",
+        "vendor",
+        "quote_id"
+      ],
+      [
+        "ignored",
+        "Room itself supplied by venue",
+        "available",
+        "2026-09-10",
+        "2026-10-17",
+        "20",
+        "18000",
+        "quiet room staffing",
+        "accessibility",
+        "QuietWorks",
+        "Q-010"
+      ],
+      [
+        "ignored",
+        "Includes first aid lead",
+        "available",
+        "2026-09-15",
+        "2026-10-17",
+        "500",
+        "28000",
+        "four staff",
+        "security",
+        "SafeVenue",
+        "Q-009"
+      ],
+      [
+        "ignored",
+        "Network test required; supplied through TICC coordination in this synthetic case",
+        "conditional",
+        "2026-09-11",
+        "2026-10-17",
+        "1000",
+        "55000",
+        "livestream add-on",
+        "production",
+        "StreamNorth",
+        "Q-008"
+      ],
+      [
+        "ignored",
+        "No hearing loop included; supplied through TICC coordination in this synthetic case",
+        "available",
+        "2026-09-08",
+        "2026-10-17",
+        "500",
+        "52000",
+        "basic AV package",
+        "production",
+        "LiteStage",
+        "Q-007"
+      ],
+      [
+        "ignored",
+        "Setup starts at 07:30; supplied through TICC coordination in this synthetic case",
+        "available",
+        "2026-09-08",
+        "2026-10-17",
+        "500",
+        "78000",
+        "AV package with hearing loop",
+        "production",
+        "SoundArc",
+        "Q-006"
+      ],
+      [
+        "ignored",
+        "Two captioners included",
+        "available",
+        "2026-09-10",
+        "2026-10-17",
+        "500",
+        "42000",
+        "live captions and transcript",
+        "accessibility",
+        "ClearText",
+        "Q-005"
+      ],
+      [
+        "ignored",
+        "Allergy process requires named contacts; supplied through TICC coordination in this synthetic case",
+        "available",
+        "2026-09-12",
+        "2026-10-17",
+        "300",
+        "126000",
+        "lunch and two breaks",
+        "catering",
+        "City Pantry",
+        "Q-004"
+      ],
+      [
+        "ignored",
+        "Supports listed vegetarian and halal meals; supplied through TICC coordination in this synthetic case",
+        "available",
+        "2026-09-07",
+        "2026-10-17",
+        "260",
+        "110000",
+        "lunch and two breaks",
+        "catering",
+        "Green Table",
+        "Q-003"
+      ],
+      [
+        "ignored",
+        "Keynote is unavailable on this date; Synthetic full-day package; see venue coordination note; no real reservation",
+        "available",
+        "2026-09-05",
+        "2026-10-24",
+        "500",
+        "155000",
+        "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+        "venue",
+        "TICC",
+        "Q-002"
+      ],
+      [
+        "ignored",
+        "Synthetic full-day package; see venue coordination note; no real reservation",
+        "held",
+        "2026-09-05",
+        "2026-10-17",
+        "500",
+        "155000",
+        "4F Plenary Hall front-500 allocation plus V.I.P. Room",
+        "venue",
+        "TICC",
+        "Q-001"
+      ]
+    ]
+  }
+}

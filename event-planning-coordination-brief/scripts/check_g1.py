@@ -3,6 +3,7 @@
 import argparse
 import copy
 import json
+import os
 import tempfile
 from pathlib import Path
 from types import SimpleNamespace
@@ -97,7 +98,7 @@ def main():
     run_id = check_live(args.out)
     results = [{'check': 'live shared basis / lineage / drafts / programme / inspected media', 'result': 'passed', 'run_id': run_id}]
     # Retain designated test attempts; synthetic evidence cannot enter live deliverables.
-    work = Path(tempfile.mkdtemp(prefix='g1-synthetic-', dir=str(args.report.parent)))
+    work = Path(tempfile.mkdtemp(prefix='g1-synthetic-', dir=os.environ.get('TMPDIR', '.planning-tmp')))
     brief = Path('inputs/event-brief.md').resolve()
     def media_unavailable(path, model):
         (path / 'floor-plan.pdf').unlink()
@@ -133,7 +134,7 @@ def main():
     synthetic_case(work / 'missing-deadline', args.captures, brief, no_deadline, 'failed')
     results.append({'check': 'SYNTHETIC missing supported deadline: failure.json, no invented stage/draft success', 'result': 'passed'})
     report = {'observed_at': __import__('run').now(), 'run_id': run_id, 'checks': results, 'synthetic_path': str(work),
-              'scope': 'G1 only; G2 history/change/recovery acceptance and G3 independent review/operator feedback unexecuted'}
+              'scope': 'G1 checks only; this report does not establish G2 acceptance or G3 independent review/operator feedback'}
     write_json(args.report, report)
     print(json.dumps(report, indent=2))
 

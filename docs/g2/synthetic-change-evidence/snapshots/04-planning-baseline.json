@@ -1,0 +1,834 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T221400Z-9e0c2590-04",
+  "run_id": "run-20261014T221400Z-9e0c2590",
+  "stage": "planning-baseline",
+  "sequence": 4,
+  "created_at": "2026-10-14T22:14:00.213304+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "run-20261014T221400Z-9e0c2590-03",
+    "path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result/snapshots/03-constraint-model.json",
+    "sha256": "sha256:1ac999f03dde354ce4a4593a12ea5f7343ca8075b525096551b39cfd15f780ee"
+  },
+  "consumed_record_ids": [
+    "hard-access",
+    "hard-budget",
+    "hard-demos",
+    "hard-window",
+    "readiness-coverage",
+    "src-accessibility",
+    "src-attempts",
+    "src-attendees",
+    "src-brief",
+    "src-budget",
+    "src-calendar",
+    "src-floor-plan",
+    "src-floor-plan-meta",
+    "src-hall",
+    "src-interpretation",
+    "src-vendors"
+  ],
+  "produced_record_ids": [
+    "DEMO-01",
+    "DEMO-01-changeover",
+    "DEMO-02",
+    "DEMO-02-changeover",
+    "DEMO-03",
+    "DEMO-03-changeover",
+    "DEMO-04",
+    "DEMO-04-changeover",
+    "DEMO-05",
+    "DEMO-05-changeover",
+    "DEMO-06",
+    "DEMO-06-changeover",
+    "DEMO-07",
+    "DEMO-07-changeover",
+    "DEMO-08",
+    "DEMO-08-changeover",
+    "DEMO-09",
+    "DEMO-09-changeover",
+    "DEMO-10",
+    "DEMO-10-changeover",
+    "DEMO-11",
+    "DEMO-11-changeover",
+    "DEMO-12",
+    "DEMO-12-changeover",
+    "access-basis",
+    "arrival",
+    "basis",
+    "boundary-4",
+    "break-1",
+    "break-2",
+    "budget-basis",
+    "clearance",
+    "closing",
+    "headcount",
+    "keynote",
+    "lunch",
+    "opening",
+    "partner-overview",
+    "readiness",
+    "schedule",
+    "setup",
+    "teardown"
+  ],
+  "state": {
+    "headcount_basis": [
+      {
+        "id": "headcount",
+        "summary": "Planning 255; registered 180; needs overlap",
+        "evidence_ids": [
+          "src-attendees",
+          "src-brief"
+        ],
+        "owner": null
+      }
+    ],
+    "schedule_dependencies": [
+      {
+        "id": "schedule",
+        "summary": "Non-overlapping timed programme with predecessor dependencies",
+        "evidence_ids": [
+          "src-calendar",
+          "src-brief"
+        ],
+        "owner": null,
+        "intervals": [
+          {
+            "id": "setup",
+            "title": "Setup (proposed allocation)",
+            "start": "2026-10-17T08:00:00+08:00",
+            "end": "2026-10-17T08:45:00+08:00",
+            "depends_on": [],
+            "basis": "Proposed; changed-arrangement readiness confirmation required (Operations / Programme)",
+            "scope": "operations"
+          },
+          {
+            "id": "readiness",
+            "title": "Base readiness checks (proposed allocation)",
+            "start": "2026-10-17T08:45:00+08:00",
+            "end": "2026-10-17T09:15:00+08:00",
+            "depends_on": [
+              "setup"
+            ],
+            "basis": "Proposed; changed-arrangement readiness confirmation required (Operations / Programme)",
+            "scope": "operations"
+          },
+          {
+            "id": "arrival",
+            "title": "Ready / arrival",
+            "start": "2026-10-17T09:15:00+08:00",
+            "end": "2026-10-17T09:30:00+08:00",
+            "depends_on": [
+              "readiness"
+            ],
+            "basis": "planner",
+            "scope": "operations"
+          },
+          {
+            "id": "opening",
+            "title": "Opening",
+            "start": "2026-10-17T09:30:00+08:00",
+            "end": "2026-10-17T10:00:00+08:00",
+            "depends_on": [
+              "arrival"
+            ],
+            "basis": "brief/CAL-001",
+            "scope": "programme"
+          },
+          {
+            "id": "keynote",
+            "title": "Keynote",
+            "start": "2026-10-17T10:00:00+08:00",
+            "end": "2026-10-17T11:00:00+08:00",
+            "depends_on": [
+              "opening"
+            ],
+            "basis": "CAL-004",
+            "scope": "programme"
+          },
+          {
+            "id": "break-1",
+            "title": "First break after keynote (proposed)",
+            "start": "2026-10-17T11:00:00+08:00",
+            "end": "2026-10-17T11:15:00+08:00",
+            "depends_on": [
+              "keynote"
+            ],
+            "basis": "planner",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-01",
+            "title": "DEMO-01 presentation",
+            "start": "2026-10-17T11:15:00+08:00",
+            "end": "2026-10-17T11:25:00+08:00",
+            "depends_on": [
+              "break-1"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-01-changeover",
+            "title": "DEMO-01 separate changeover",
+            "start": "2026-10-17T11:25:00+08:00",
+            "end": "2026-10-17T11:28:00+08:00",
+            "depends_on": [
+              "DEMO-01"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-02",
+            "title": "DEMO-02 presentation",
+            "start": "2026-10-17T11:28:00+08:00",
+            "end": "2026-10-17T11:38:00+08:00",
+            "depends_on": [
+              "DEMO-01-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-02-changeover",
+            "title": "DEMO-02 separate changeover",
+            "start": "2026-10-17T11:38:00+08:00",
+            "end": "2026-10-17T11:41:00+08:00",
+            "depends_on": [
+              "DEMO-02"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-03",
+            "title": "DEMO-03 presentation",
+            "start": "2026-10-17T11:41:00+08:00",
+            "end": "2026-10-17T11:51:00+08:00",
+            "depends_on": [
+              "DEMO-02-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-03-changeover",
+            "title": "DEMO-03 separate changeover",
+            "start": "2026-10-17T11:51:00+08:00",
+            "end": "2026-10-17T11:54:00+08:00",
+            "depends_on": [
+              "DEMO-03"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-04",
+            "title": "DEMO-04 presentation",
+            "start": "2026-10-17T11:54:00+08:00",
+            "end": "2026-10-17T12:04:00+08:00",
+            "depends_on": [
+              "DEMO-03-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-04-changeover",
+            "title": "DEMO-04 separate changeover",
+            "start": "2026-10-17T12:04:00+08:00",
+            "end": "2026-10-17T12:07:00+08:00",
+            "depends_on": [
+              "DEMO-04"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-05",
+            "title": "DEMO-05 presentation",
+            "start": "2026-10-17T12:07:00+08:00",
+            "end": "2026-10-17T12:17:00+08:00",
+            "depends_on": [
+              "DEMO-04-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-05-changeover",
+            "title": "DEMO-05 separate changeover",
+            "start": "2026-10-17T12:17:00+08:00",
+            "end": "2026-10-17T12:20:00+08:00",
+            "depends_on": [
+              "DEMO-05"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-06",
+            "title": "DEMO-06 presentation",
+            "start": "2026-10-17T12:20:00+08:00",
+            "end": "2026-10-17T12:30:00+08:00",
+            "depends_on": [
+              "DEMO-05-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-06-changeover",
+            "title": "DEMO-06 separate changeover",
+            "start": "2026-10-17T12:30:00+08:00",
+            "end": "2026-10-17T12:33:00+08:00",
+            "depends_on": [
+              "DEMO-06"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "lunch",
+            "title": "Lunch (proposed)",
+            "start": "2026-10-17T12:33:00+08:00",
+            "end": "2026-10-17T13:33:00+08:00",
+            "depends_on": [
+              "DEMO-06-changeover"
+            ],
+            "basis": "planner",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-07",
+            "title": "DEMO-07 presentation",
+            "start": "2026-10-17T13:33:00+08:00",
+            "end": "2026-10-17T13:43:00+08:00",
+            "depends_on": [
+              "lunch"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-07-changeover",
+            "title": "DEMO-07 separate changeover",
+            "start": "2026-10-17T13:43:00+08:00",
+            "end": "2026-10-17T13:46:00+08:00",
+            "depends_on": [
+              "DEMO-07"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-08",
+            "title": "DEMO-08 presentation",
+            "start": "2026-10-17T13:46:00+08:00",
+            "end": "2026-10-17T13:56:00+08:00",
+            "depends_on": [
+              "DEMO-07-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-08-changeover",
+            "title": "DEMO-08 separate changeover",
+            "start": "2026-10-17T13:56:00+08:00",
+            "end": "2026-10-17T13:59:00+08:00",
+            "depends_on": [
+              "DEMO-08"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-09",
+            "title": "DEMO-09 presentation",
+            "start": "2026-10-17T13:59:00+08:00",
+            "end": "2026-10-17T14:09:00+08:00",
+            "depends_on": [
+              "DEMO-08-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-09-changeover",
+            "title": "DEMO-09 separate changeover",
+            "start": "2026-10-17T14:09:00+08:00",
+            "end": "2026-10-17T14:12:00+08:00",
+            "depends_on": [
+              "DEMO-09"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-10",
+            "title": "DEMO-10 presentation",
+            "start": "2026-10-17T14:12:00+08:00",
+            "end": "2026-10-17T14:22:00+08:00",
+            "depends_on": [
+              "DEMO-09-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-10-changeover",
+            "title": "DEMO-10 separate changeover",
+            "start": "2026-10-17T14:22:00+08:00",
+            "end": "2026-10-17T14:25:00+08:00",
+            "depends_on": [
+              "DEMO-10"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-11",
+            "title": "DEMO-11 presentation",
+            "start": "2026-10-17T14:25:00+08:00",
+            "end": "2026-10-17T14:35:00+08:00",
+            "depends_on": [
+              "DEMO-10-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-11-changeover",
+            "title": "DEMO-11 separate changeover",
+            "start": "2026-10-17T14:35:00+08:00",
+            "end": "2026-10-17T14:38:00+08:00",
+            "depends_on": [
+              "DEMO-11"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-12",
+            "title": "DEMO-12 presentation",
+            "start": "2026-10-17T14:38:00+08:00",
+            "end": "2026-10-17T14:48:00+08:00",
+            "depends_on": [
+              "DEMO-11-changeover"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "DEMO-12-changeover",
+            "title": "DEMO-12 separate changeover",
+            "start": "2026-10-17T14:48:00+08:00",
+            "end": "2026-10-17T14:51:00+08:00",
+            "depends_on": [
+              "DEMO-12"
+            ],
+            "basis": "PROG-R3",
+            "scope": "programme"
+          },
+          {
+            "id": "break-2",
+            "title": "Second break (proposed)",
+            "start": "2026-10-17T14:51:00+08:00",
+            "end": "2026-10-17T15:06:00+08:00",
+            "depends_on": [
+              "DEMO-12-changeover"
+            ],
+            "basis": "planner",
+            "scope": "programme"
+          },
+          {
+            "id": "partner-overview",
+            "title": "Partner overview / discussion (proposed)",
+            "start": "2026-10-17T15:06:00+08:00",
+            "end": "2026-10-17T16:30:00+08:00",
+            "depends_on": [
+              "break-2"
+            ],
+            "basis": "planner",
+            "scope": "programme"
+          },
+          {
+            "id": "closing",
+            "title": "Closing (proposed)",
+            "start": "2026-10-17T16:30:00+08:00",
+            "end": "2026-10-17T17:00:00+08:00",
+            "depends_on": [
+              "partner-overview"
+            ],
+            "basis": "brief/planner",
+            "scope": "programme"
+          },
+          {
+            "id": "teardown",
+            "title": "Teardown (proposed allocation)",
+            "start": "2026-10-17T17:00:00+08:00",
+            "end": "2026-10-17T18:15:00+08:00",
+            "depends_on": [
+              "closing"
+            ],
+            "basis": "Proposed; changed-arrangement readiness confirmation required (Operations / Programme)",
+            "scope": "operations"
+          },
+          {
+            "id": "clearance",
+            "title": "Clearance check (proposed allocation)",
+            "start": "2026-10-17T18:15:00+08:00",
+            "end": "2026-10-17T18:30:00+08:00",
+            "depends_on": [
+              "teardown"
+            ],
+            "basis": "Proposed; changed-arrangement readiness confirmation required (Operations / Programme)",
+            "scope": "operations"
+          }
+        ]
+      }
+    ],
+    "budget_baseline": [
+      {
+        "id": "budget-basis",
+        "summary": "Package prices, zero/nonzero commitments retained separately; category allowances",
+        "evidence_ids": [
+          "src-budget"
+        ],
+        "owner": null,
+        "categories": [
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Learner Experience",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 80000,
+            "planned_amount_twd": 65000,
+            "category": "accessibility",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 6"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Operations",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 135000,
+            "planned_amount_twd": 115000,
+            "category": "catering",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 7"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Communications",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 30000,
+            "planned_amount_twd": 25000,
+            "category": "communications",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 4"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Operations",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 50000,
+            "planned_amount_twd": 40000,
+            "category": "contingency",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 2"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Programme",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 100000,
+            "planned_amount_twd": 85000,
+            "category": "production",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 5"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Operations",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 35000,
+            "planned_amount_twd": 25000,
+            "category": "security",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 3"
+          },
+          {
+            "unrelated_extra": "ignored",
+            "record_version": "budget-2026-08-26",
+            "owner": "Operations",
+            "committed_amount_twd": 0,
+            "approval_limit_twd": 180000,
+            "planned_amount_twd": 155000,
+            "category": "venue",
+            "evidence_id": "src-budget",
+            "locator": "Budget!A1:P25; row 8"
+          }
+        ]
+      }
+    ],
+    "accessibility_baseline": [
+      {
+        "id": "access-basis",
+        "summary": "Exercise routes/allocation from coordination brief; public spatial observations bounded",
+        "evidence_ids": [
+          "src-brief",
+          "src-floor-plan"
+        ],
+        "owner": null,
+        "needs": {
+          "wheelchair_spaces": 6,
+          "mobility_companions": 4,
+          "live_caption_requests": 23,
+          "hearing_loop_requests": 7,
+          "quiet_room_requests": 9,
+          "vegetarian_meals": 28,
+          "halal_meals": 12,
+          "severe_allergy_follow_up": 4
+        }
+      }
+    ],
+    "records": [
+      {
+        "id": "basis",
+        "summary": "Shared run-bound planning basis",
+        "evidence_ids": [
+          "src-attendees",
+          "src-budget",
+          "src-calendar",
+          "src-brief",
+          "src-floor-plan"
+        ],
+        "owner": null
+      }
+    ],
+    "planning_people": 255,
+    "registered_attendees": 180,
+    "attendance_components": [
+      {
+        "unrelated_extra": "ignored",
+        "confidence": "high",
+        "observed_at": "2026-08-24",
+        "unit": "people",
+        "value": 148,
+        "signal": "registered_attendees",
+        "segment": "fellows",
+        "source": "registration_form",
+        "signal_id": "SIG-001",
+        "evidence_id": "src-attendees",
+        "locator": "'Attendee Signals'!A1:P25; row 14"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "confidence": "high",
+        "observed_at": "2026-08-24",
+        "unit": "people",
+        "value": 32,
+        "signal": "registered_attendees",
+        "segment": "partners",
+        "source": "partner_form",
+        "signal_id": "SIG-002",
+        "evidence_id": "src-attendees",
+        "locator": "'Attendee Signals'!A1:P25; row 13"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "confidence": "high",
+        "observed_at": "2026-08-25",
+        "unit": "people",
+        "value": 18,
+        "signal": "required_on_site",
+        "segment": "staff",
+        "source": "operations_plan",
+        "signal_id": "SIG-003",
+        "evidence_id": "src-attendees",
+        "locator": "'Attendee Signals'!A1:P25; row 12"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "confidence": "high",
+        "observed_at": "2026-08-25",
+        "unit": "people",
+        "value": 12,
+        "signal": "required_on_site",
+        "segment": "speakers",
+        "source": "programme_plan",
+        "signal_id": "SIG-004",
+        "evidence_id": "src-attendees",
+        "locator": "'Attendee Signals'!A1:P25; row 11"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "confidence": "medium",
+        "observed_at": "2026-08-26",
+        "unit": "people",
+        "value": 45,
+        "signal": "expected_attendees",
+        "segment": "walk_ins",
+        "source": "forecast",
+        "signal_id": "SIG-005",
+        "evidence_id": "src-attendees",
+        "locator": "'Attendee Signals'!A1:P25; row 10"
+      }
+    ],
+    "checkin_target": 144,
+    "calendar_records": [
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Preferred event date",
+        "priority": "hard",
+        "end_at": "2026-10-17T17:00:00+08:00",
+        "start_at": "2026-10-17T09:30:00+08:00",
+        "constraint_type": "preferred_event_window",
+        "owner": "Operations",
+        "constraint_id": "CAL-001",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 9"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Fallback date",
+        "priority": "soft",
+        "end_at": "2026-10-24T17:00:00+08:00",
+        "start_at": "2026-10-24T09:30:00+08:00",
+        "constraint_type": "fallback_event_window",
+        "owner": "Operations",
+        "constraint_id": "CAL-002",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 8"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Hold expires 2026-09-05",
+        "priority": "hard",
+        "end_at": "2026-10-17T18:30:00+08:00",
+        "start_at": "2026-10-17T08:00:00+08:00",
+        "constraint_type": "venue_hold",
+        "owner": "TICC",
+        "constraint_id": "CAL-003",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 7"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Keynote unavailable on fallback date",
+        "priority": "hard",
+        "end_at": "2026-10-17T11:00:00+08:00",
+        "start_at": "2026-10-17T10:00:00+08:00",
+        "constraint_type": "keynote_availability",
+        "owner": "Programme",
+        "constraint_id": "CAL-004",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 6"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Plan and budget decision",
+        "priority": "hard",
+        "end_at": "2026-09-04T17:00:00+08:00",
+        "start_at": "2026-09-04T17:00:00+08:00",
+        "constraint_type": "decision_deadline",
+        "owner": "Operations",
+        "constraint_id": "CAL-005",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 5"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Venue confirmation required first",
+        "priority": "hard",
+        "end_at": "2026-09-25T16:00:00+08:00",
+        "start_at": "2026-09-25T14:00:00+08:00",
+        "constraint_type": "accessibility_walkthrough",
+        "owner": "Learner Experience",
+        "constraint_id": "CAL-006",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 4"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "Remote backup acceptable",
+        "priority": "soft",
+        "end_at": "2026-10-16T18:00:00+08:00",
+        "start_at": "2026-10-16T15:00:00+08:00",
+        "constraint_type": "rehearsal_window",
+        "owner": "Programme",
+        "constraint_id": "CAL-007",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 3"
+      },
+      {
+        "unrelated_extra": "ignored",
+        "record_version": "calendar-2026-08-26",
+        "notes": "All vendors clear by 18:30",
+        "priority": "hard",
+        "end_at": "2026-10-17T18:30:00+08:00",
+        "start_at": "2026-10-17T17:00:00+08:00",
+        "constraint_type": "teardown_deadline",
+        "owner": "TICC",
+        "constraint_id": "CAL-008",
+        "evidence_id": "src-calendar",
+        "locator": "'Calendar Constraints'!A1:P25; row 2"
+      }
+    ],
+    "boundary": {
+      "id": "boundary-4",
+      "summary": "Observed completion of planning-baseline",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    },
+    {
+      "id": "gap-readiness",
+      "summary": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+      "evidence_ids": [
+        "src-brief",
+        "src-calendar"
+      ],
+      "owner": "Operations / Programme"
+    }
+  ],
+  "decisions": []
+}

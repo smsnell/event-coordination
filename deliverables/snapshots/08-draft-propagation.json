@@ -1,15 +1,15 @@
 {
   "schema_version": "event-coordination-stage-snapshot/2",
-  "snapshot_id": "run-20261014T210204Z-5a3561fa-08",
-  "run_id": "run-20261014T210204Z-5a3561fa",
+  "snapshot_id": "run-20261014T215247Z-0376ac6d-08",
+  "run_id": "run-20261014T215247Z-0376ac6d",
   "stage": "draft-propagation",
   "sequence": 8,
-  "created_at": "2026-10-14T21:02:04.954576+00:00",
+  "created_at": "2026-10-14T21:52:47.172486+00:00",
   "status": "complete",
   "predecessor": {
-    "snapshot_id": "run-20261014T210204Z-5a3561fa-07",
+    "snapshot_id": "run-20261014T215247Z-0376ac6d-07",
     "path": "/home/mike/event-coordination/deliverables/snapshots/07-decision-and-approval.json",
-    "sha256": "sha256:5aa164645592d99634a2a2a6c46862c9e404c861e9562236ca286a34f68780fd"
+    "sha256": "sha256:6e7a23b4bb6cbd281040f3e2d57de04cb1a1ccfd40a2fb485455244ac728e395"
   },
   "consumed_record_ids": [
     "basis",
@@ -33,25 +33,25 @@
       {
         "id": "artifact-1",
         "path": "/home/mike/event-coordination/deliverables/vendor-comparison.csv",
-        "sha256": "sha256:ee6a1c5ab877a1b706ad0e3eec8c80b7bfe3d6ae58f7445359a625f684d1e876",
+        "sha256": "sha256:bd4585267fa1c48cdb55fbf5830d7fa06756ad33a07997262ac17e351b0fd2e4",
         "validation_status": "valid"
       },
       {
         "id": "artifact-2",
         "path": "/home/mike/event-coordination/deliverables/event-plan.md",
-        "sha256": "sha256:c5448e86e3c37cd073d1988ee649974529a339d8952f5896b9bf898bb275ac07",
+        "sha256": "sha256:0136134ec84398f8b98c727ef1a2099a66c3176412b8dccee263028f686e82fa",
         "validation_status": "valid"
       },
       {
         "id": "artifact-3",
         "path": "/home/mike/event-coordination/deliverables/event-calendar.ics",
-        "sha256": "sha256:177932e83dd1fc1a377e2b78b76b90c7b8e1d6efa34a0e0e9677fd10ec5d1e90",
+        "sha256": "sha256:4a6f542b10d2247f20ffc067fe1da11622f46c890b2377e1fb14e4756791cec0",
         "validation_status": "valid"
       },
       {
         "id": "artifact-4",
         "path": "/home/mike/event-coordination/deliverables/draft-communications.md",
-        "sha256": "sha256:7b9df7848a7a2f7a8d5553a55ea598847ed477de095a4c95d7a7af02aeb9f98a",
+        "sha256": "sha256:5fa3474a927ba69908602f9fecd55bb9ae881e298d4b197023097d2039e6ef6e",
         "validation_status": "valid"
       }
     ],

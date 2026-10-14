@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-10-14T22:14:01.279161+00:00",
+  "corrected_synthetic_run_id": "run-20261014T221400Z-9e0c2590",
+  "retained_prior_run_id": "run-20261014T215248Z-d148f12f",
+  "corrected_path": "/home/mike/event-coordination/.planning-tmp/g2-synthetic-15l2pqgh/changes/result",
+  "status": "partial",
+  "options": [
+    {
+      "id": "option-green-table",
+      "cost_twd": 496000,
+      "feasibility": "conditional"
+    },
+    {
+      "id": "option-city-pantry",
+      "cost_twd": 512000,
+      "feasibility": "conditional"
+    }
+  ],
+  "recommendation": null,
+  "confirmation_owner": "Operations / Programme",
+  "gap": "VEN-R2 does not independently confirm readiness for the changed venue access arrangement; Operations / Programme must obtain coordinated vendor/venue confirmation before treating the proposed setup/check window as feasible",
+  "checks": [
+    "Nine snapshot bindings and four draft hashes passed",
+    "Conditional status and owner propagated to all four actual drafts",
+    "Prior synthetic outputs retained byte-identically",
+    "All approvals pending on corrected run",
+    "Live baseline remains unchanged and validates"
+  ],
+  "scope": "Targeted readiness correction only; full suite not rerun"
+}

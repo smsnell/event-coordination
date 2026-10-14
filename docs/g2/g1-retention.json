@@ -1,0 +1,105 @@
+{
+  "observed_at": "2026-10-14T21:51:26.237180+00:00",
+  "commit": "907ca5f",
+  "run_id": "run-20261014T210204Z-5a3561fa",
+  "verdict": "passed",
+  "checked_files": [
+    {
+      "path": "draft-communications.md",
+      "sha256": "sha256:7b9df7848a7a2f7a8d5553a55ea598847ed477de095a4c95d7a7af02aeb9f98a"
+    },
+    {
+      "path": "event-calendar.ics",
+      "sha256": "sha256:177932e83dd1fc1a377e2b78b76b90c7b8e1d6efa34a0e0e9677fd10ec5d1e90"
+    },
+    {
+      "path": "event-plan.md",
+      "sha256": "sha256:c5448e86e3c37cd073d1988ee649974529a339d8952f5896b9bf898bb275ac07"
+    },
+    {
+      "path": "snapshots/01-scope-and-approval-gates.json",
+      "sha256": "sha256:85581b32f14328c1e617a55e61a7b85d77c2bad1e75d1825f5de8c5224216b0a"
+    },
+    {
+      "path": "snapshots/02-source-capture.json",
+      "sha256": "sha256:baa4763ccb28b33ff8a5f9de3c243ee6ccde5648a916124b6b17738cb7d0ab64"
+    },
+    {
+      "path": "snapshots/03-constraint-model.json",
+      "sha256": "sha256:60aba29892a05f7e23477e6336ff678164619198fd35761d84d4fdf2960831e5"
+    },
+    {
+      "path": "snapshots/04-planning-baseline.json",
+      "sha256": "sha256:a397d488d08ccfff496c965bccfe591782774ecb7286348cb92917630a24c47d"
+    },
+    {
+      "path": "snapshots/05-option-generation.json",
+      "sha256": "sha256:3be6a7f781c278d68d6c1de9c436b64881c1e44c5682dfac40fcaec68c1aeba4"
+    },
+    {
+      "path": "snapshots/06-feasibility-testing.json",
+      "sha256": "sha256:03f19161ce455d2af070b55f403d3638fddc6f41deb849c33cda9c18894444a7"
+    },
+    {
+      "path": "snapshots/07-decision-and-approval.json",
+      "sha256": "sha256:5aa164645592d99634a2a2a6c46862c9e404c861e9562236ca286a34f68780fd"
+    },
+    {
+      "path": "snapshots/08-draft-propagation.json",
+      "sha256": "sha256:98cc58e5e7a65bbb5bc5b87ee5c69c831b3557af92bdd7bb7191b11cb26cfc9a"
+    },
+    {
+      "path": "snapshots/09-publication-validation.json",
+      "sha256": "sha256:5cc43262759674f6ac7deec05493d297a632b1ec3b1d3f6c95fc91baacb5d229"
+    },
+    {
+      "path": "snapshots/evidence/accessibility.json",
+      "sha256": "sha256:8295f62a73075e5c8a3687952b40a3714e71edce9cfd3ee172550d6158da845a"
+    },
+    {
+      "path": "snapshots/evidence/attendees.json",
+      "sha256": "sha256:7a2b28fc1ad86f3399c18c058c946a79f5ccac9f92835e5dc8bcf224d0e3bb4a"
+    },
+    {
+      "path": "snapshots/evidence/budget.json",
+      "sha256": "sha256:7b3d13de33131afbaf89ffa01c20944fd31743d193a8c84bc06f33a3faace438"
+    },
+    {
+      "path": "snapshots/evidence/calendar.json",
+      "sha256": "sha256:311a82b249132e58f26500267f171af385a59da169641b3b37bd0de15058ff18"
+    },
+    {
+      "path": "snapshots/evidence/event-brief.md",
+      "sha256": "sha256:59e1d858db62ab701956c84f7d67e17ba59c0e2fd03bfebbbc249a2fda283d4b"
+    },
+    {
+      "path": "snapshots/evidence/floor-plan-meta.json",
+      "sha256": "sha256:a5bbc9b6c82437bb22f16f7abe5db5102ace7a89d0d549d32ad197856f7a0095"
+    },
+    {
+      "path": "snapshots/evidence/floor-plan.pdf",
+      "sha256": "sha256:8805ab527b7bb202a70534120ed4037dbde633301f1935e80bd04f12a7c70367"
+    },
+    {
+      "path": "snapshots/evidence/hall.json",
+      "sha256": "sha256:07589c87636ea5c6a46acff00baee8d9e58ee75b8fefcf14d3d2f251097a0d5c"
+    },
+    {
+      "path": "snapshots/evidence/interpretation.json",
+      "sha256": "sha256:92e618f0336cf33534ea162c102f340a3ca59a07e7a3e4526b5040f0e7d8af74"
+    },
+    {
+      "path": "snapshots/evidence/vendors.json",
+      "sha256": "sha256:bd807bdf433965a9f0892f4e0644059a2755afd568528654dd618f67842889bb"
+    },
+    {
+      "path": "vendor-comparison.csv",
+      "sha256": "sha256:ee6a1c5ab877a1b706ad0e3eec8c80b7bfe3d6ae58f7445359a625f684d1e876"
+    }
+  ],
+  "checks": [
+    "All G1 current snapshot/evidence/draft bytes equal committed originals",
+    "Historical bindings validate with read-only relocation resolution",
+    "Original schema/interview/brief hashes unchanged"
+  ]
+}

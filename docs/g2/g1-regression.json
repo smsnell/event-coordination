@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-10-14T21:52:49.248432+00:00",
+  "run_id": "run-20261014T215247Z-0376ac6d",
+  "checks": [
+    {
+      "check": "live shared basis / lineage / drafts / programme / inspected media",
+      "result": "passed",
+      "run_id": "run-20261014T215247Z-0376ac6d"
+    },
+    {
+      "check": "SYNTHETIC unavailable media: partial, withheld claims, nine snapshots/four drafts",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC unavailable vendors: blocked, empty calendar, unknown costs and unsent clarification",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC invalid required number held before headcount interpretation",
+      "result": "passed"
+    },
+    {
+      "check": "SYNTHETIC missing supported deadline: failure.json, no invented stage/draft success",
+      "result": "passed"
+    }
+  ],
+  "synthetic_path": "/home/mike/event-coordination/.planning-tmp/g1-synthetic-5mqsur3q",
+  "scope": "G1 checks only; this report does not establish G2 acceptance or G3 independent review/operator feedback",
+  "retained_binding_root": "/home/mike/event-coordination/docs/g2/g1-synthetic-5mqsur3q",
+  "relocation_note": "Exact synthetic bytes relocated to designated ignored project temp; validate with original binding root. No snapshot/artifact edits."
+}

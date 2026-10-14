@@ -1,0 +1,110 @@
+{
+  "id": "budget",
+  "source_url": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+  "retrieval_started_at": "2026-10-14T21:41:25Z",
+  "retrieved_at": "2026-10-14T21:41:29Z",
+  "retrieval_status": "retrieved",
+  "content_type": "application/json",
+  "representation": "Google Sheets FORMATTED_VALUE",
+  "metadata": {
+    "spreadsheetId": "1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Cxo7CvcgImz9HbT8PThZyvaTuyd44ug7w5rBA1z5qlM/edit",
+    "properties": {
+      "title": "Project C — Budget",
+      "locale": "zh_TW",
+      "timeZone": "Asia/Taipei"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Budget",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ]
+  },
+  "capture": {
+    "range": "Budget!A1:P25",
+    "majorDimension": "ROWS",
+    "values": [
+      [
+        "unrelated_extra",
+        "record_version",
+        "owner",
+        "committed_amount_twd",
+        "approval_limit_twd",
+        "planned_amount_twd",
+        "category"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Operations",
+        "0",
+        "50000",
+        "40000",
+        "contingency"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Operations",
+        "0",
+        "35000",
+        "25000",
+        "security"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Communications",
+        "0",
+        "30000",
+        "25000",
+        "communications"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Programme",
+        "0",
+        "100000",
+        "85000",
+        "production"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Learner Experience",
+        "0",
+        "80000",
+        "65000",
+        "accessibility"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Operations",
+        "0",
+        "135000",
+        "115000",
+        "catering"
+      ],
+      [
+        "ignored",
+        "budget-2026-08-26",
+        "Operations",
+        "0",
+        "180000",
+        "155000",
+        "venue"
+      ]
+    ]
+  }
+}

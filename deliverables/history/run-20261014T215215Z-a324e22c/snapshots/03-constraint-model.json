@@ -1,0 +1,149 @@
+{
+  "schema_version": "event-coordination-stage-snapshot/2",
+  "snapshot_id": "run-20261014T215215Z-a324e22c-03",
+  "run_id": "run-20261014T215215Z-a324e22c",
+  "stage": "constraint-model",
+  "sequence": 3,
+  "created_at": "2026-10-14T21:52:15.284578+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "run-20261014T215215Z-a324e22c-02",
+    "path": "/home/mike/event-coordination/deliverables/snapshots/02-source-capture.json",
+    "sha256": "sha256:6e39c9cc6e3452c0945838299a066e1ca88640b5cf18fb0f8415addf9ff0adc6"
+  },
+  "consumed_record_ids": [
+    "scope",
+    "src-accessibility",
+    "src-attempts",
+    "src-attendees",
+    "src-brief",
+    "src-budget",
+    "src-calendar",
+    "src-floor-plan",
+    "src-floor-plan-meta",
+    "src-hall",
+    "src-interpretation",
+    "src-vendors"
+  ],
+  "produced_record_ids": [
+    "assumption-allocations",
+    "boundary-3",
+    "hard-access",
+    "hard-budget",
+    "hard-demos",
+    "hard-window",
+    "pending-operations",
+    "pending-stream",
+    "preference-familiar"
+  ],
+  "state": {
+    "hard_constraints": [
+      {
+        "id": "hard-budget",
+        "summary": "Ceiling 520000 TWD",
+        "evidence_ids": [
+          "src-brief"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "hard-window",
+        "summary": "17 October opening 09:30 and completion 17:00; keynote fixed",
+        "evidence_ids": [
+          "src-brief",
+          "src-calendar"
+        ],
+        "owner": "Programme"
+      },
+      {
+        "id": "hard-access",
+        "summary": "Step-free programme/restrooms, wheelchair seating, captions and staffed quiet room",
+        "evidence_ids": [
+          "src-brief",
+          "src-attendees"
+        ],
+        "owner": "Operations"
+      },
+      {
+        "id": "hard-demos",
+        "summary": "Each supplied team demo and separate changeover once",
+        "evidence_ids": [
+          "src-brief"
+        ],
+        "owner": "Programme"
+      }
+    ],
+    "preferences": [
+      {
+        "id": "preference-familiar",
+        "summary": "Familiar vendors preferred, not mandatory",
+        "evidence_ids": [
+          "src-brief"
+        ],
+        "owner": null
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "assumption-allocations",
+        "summary": "Setup, breaks, lunch, partner discussion and teardown intervals are planner allocations, not vendor durations",
+        "evidence_ids": [
+          "src-brief"
+        ],
+        "owner": "Programme"
+      }
+    ],
+    "unknowns": [
+      {
+        "id": "pending-stream",
+        "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+        "evidence_ids": [
+          "src-vendors",
+          "src-brief",
+          "src-hall"
+        ],
+        "owner": "Operations / Programme"
+      },
+      {
+        "id": "pending-operations",
+        "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+        "evidence_ids": [
+          "src-calendar",
+          "src-brief",
+          "src-hall"
+        ],
+        "owner": "Operations"
+      }
+    ],
+    "conflicts": [],
+    "boundary": {
+      "id": "boundary-3",
+      "summary": "Observed completion of constraint-model",
+      "evidence_ids": [],
+      "owner": null
+    }
+  },
+  "unresolved": [
+    {
+      "id": "pending-stream",
+      "summary": "Optional livestream network test owner/result and venue provider confirmation unresolved; excluded from confirmed base bundles; priced add-on also exceeds ceilings.",
+      "evidence_ids": [
+        "src-vendors",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations / Programme"
+    },
+    {
+      "id": "pending-operations",
+      "summary": "Operations must review package/headcount, confirm venue before future walkthrough and arrange technical coordination/safety briefing; no real booking or completed prerequisite observed.",
+      "evidence_ids": [
+        "src-calendar",
+        "src-brief",
+        "src-hall"
+      ],
+      "owner": "Operations"
+    }
+  ],
+  "decisions": []
+}
