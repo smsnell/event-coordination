@@ -318,3 +318,21 @@ Update the tracker with observed runtime, available token usage, meaningful deci
 Report the gate verdict, actual run and artifacts, verified business outcomes, test results, unresolved limitations, and any decisions requiring my attention.
 
 Do not begin P2, commit, or push.
+
+---
+
+I personally reviewed the G1 event plan. The underlying planning results appear reasonable, but the document is too technical and difficult for the intended Event and Operations Manager to scan.
+
+Record my review and accept G1 technically, subject to the following presentation improvements before final acceptance:
+
+- Lead with a concise executive summary, recommendation, option comparison, key trade-offs, and decisions required.
+- Use readable tables instead of inline JSON where appropriate.
+- Keep detailed quote information, source hashes, and provenance available without overwhelming the main narrative.
+- Examine the 15-minute arrival/check-in window and the break immediately before lunch as operational usability concerns.
+- Verify the evidence basis for labeling both venue-dependent options feasible despite the venue hold and outstanding confirmation steps.
+
+Preserve all required information, evidence bindings, and draft-only boundaries. Do not alter generated artifacts manually or invalidate their hashes.
+
+Record these as my actual review observations in PROJECT-TRACKER.md. Defer nonblocking presentation improvements to the appropriate later phase.
+
+Prepare the G1 checkpoint commit and report Entire capture status. Do not begin P2 yet.
